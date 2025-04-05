@@ -61,6 +61,7 @@
             // 
             this.txtSenha.Location = new System.Drawing.Point(61, 244);
             this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(184, 20);
             this.txtSenha.TabIndex = 5;
             // 
@@ -146,6 +147,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Name = "login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login Achados e Perdidos Senac Lapa Tito";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

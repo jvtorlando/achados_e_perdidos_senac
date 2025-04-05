@@ -24,14 +24,11 @@ namespace achados_e_perdidos_senac
 
             if(txtUsuario.Text == User & txtSenha.Text == Password)
             {
-                Form1 FrmMain = new Form1();
-                FrmMain.Show();
+                Home FrmHome = new Home();
+                FrmHome.Show();
                 this.Hide();
             }
             else
-            {
-
-            }
             {
                 MessageBox.Show("Usuário ou Senha incorreto");
             }
