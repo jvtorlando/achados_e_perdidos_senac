@@ -16,5 +16,17 @@ namespace achados_e_perdidos_senac.Screen.Splash
         {
             InitializeComponent();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            panelLoading.Width += 3;
+            if (panelLoading.Width >= 800)
+            {
+                timer1.Stop();
+                login loginScreen = new login();
+                loginScreen.Show();
+                this.Hide();
+            }
+        }
     }
 }
