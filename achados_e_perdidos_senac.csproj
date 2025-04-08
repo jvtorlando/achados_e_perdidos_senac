@@ -66,6 +66,7 @@
     <Compile Include="Screen\Splash\SplashScreen.Designer.cs">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Services\CloseEntireApplication.cs" />
     <EmbeddedResource Include="Screen\Home\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>

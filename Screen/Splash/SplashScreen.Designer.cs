@@ -67,7 +67,7 @@
             this.panelLoading.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(148)))), ((int)(((byte)(30)))));
             this.panelLoading.Location = new System.Drawing.Point(0, 0);
             this.panelLoading.Name = "panelLoading";
-            this.panelLoading.Size = new System.Drawing.Size(68, 17);
+            this.panelLoading.Size = new System.Drawing.Size(153, 17);
             this.panelLoading.TabIndex = 1;
             // 
             // panel4
@@ -116,7 +116,7 @@
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 5;
+            this.timer1.Interval = 10;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // SplashScreen
@@ -127,6 +127,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SplashScreen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashScreen";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

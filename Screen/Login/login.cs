@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using achados_e_perdidos_senac.Services;
 
 namespace achados_e_perdidos_senac
 {
@@ -15,6 +16,8 @@ namespace achados_e_perdidos_senac
         public login()
         {
             InitializeComponent();
+            this.FormClosing += CloseEntireApplication.CloseApplication;
+
         }
 
         private void btnLogin_Click(object sender, EventArgs e)

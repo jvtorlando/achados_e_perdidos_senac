@@ -19,7 +19,7 @@ namespace achados_e_perdidos_senac.Screen.Splash
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            panelLoading.Width += 3;
+            panelLoading.Width += 15;
             if (panelLoading.Width >= 800)
             {
                 timer1.Stop();
