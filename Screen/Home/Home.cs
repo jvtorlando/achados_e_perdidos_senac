@@ -7,14 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using achados_e_perdidos_senac.Services;
 
 namespace achados_e_perdidos_senac
 {
-    public partial class Form1 : Form
+    public partial class Home : Form
     {
-        public Form1()
+        public Home()
         {
             InitializeComponent();
+            this.FormClosing += CloseEntireApplication.CloseApplication;
         }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }
