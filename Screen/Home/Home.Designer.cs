@@ -53,6 +53,9 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -78,21 +81,24 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.button8);
+            this.panel6.Controls.Add(this.button7);
+            this.panel6.Controls.Add(this.button6);
             this.panel6.Controls.Add(this.button5);
             this.panel6.Controls.Add(this.panel7);
-            this.panel6.Location = new System.Drawing.Point(265, 118);
+            this.panel6.Location = new System.Drawing.Point(268, 92);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(468, 306);
+            this.panel6.Size = new System.Drawing.Size(468, 327);
             this.panel6.TabIndex = 3;
             // 
             // button5
             // 
             this.button5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button5.Location = new System.Drawing.Point(0, 54);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(468, 68);
             this.button5.TabIndex = 1;
-            this.button5.Text = "button5";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // panel7
@@ -224,8 +230,9 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(141)))));
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Location = new System.Drawing.Point(22, 249);
@@ -323,6 +330,36 @@
             this.panel10.Size = new System.Drawing.Size(200, 100);
             this.panel10.TabIndex = 1;
             // 
+            // button6
+            // 
+            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button6.Location = new System.Drawing.Point(0, 122);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(468, 68);
+            this.button6.TabIndex = 2;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button7.Location = new System.Drawing.Point(0, 190);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(468, 68);
+            this.button7.TabIndex = 3;
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button8.Location = new System.Drawing.Point(0, 258);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(468, 68);
+            this.button8.TabIndex = 4;
+            this.button8.UseVisualStyleBackColor = true;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -379,5 +416,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button6;
     }
 }
