@@ -33,8 +33,29 @@ namespace achados_e_perdidos_senac
             }
             else
             {
-                MessageBox.Show("Usuário ou Senha incorreto");
+                // Mensagem com ícone de erro e botão OK
+                MessageBox.Show(
+                    "Usuário ou senha incorretos. Por favor, tente novamente.",
+                    "Falha no Login",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
             }
+        }
+
+        private void linkLabelEsqueceuSenha_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+           string message = "Se esqueceu sua senha ou login, entre em contato com:\n\n" +
+                 "• Suporte técnico: pedido@sp.senac.br\n" +
+                 "• Telefone: (11) 2187-4450\n\n" +
+                 "Horário de atendimento: 08h às 21h";
+
+            MessageBox.Show(
+                message,
+                "Recuperação de Acesso",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+                );
         }
     }
 }
