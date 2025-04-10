@@ -70,6 +70,9 @@
     <EmbeddedResource Include="Screen\Home\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Screen\Login\login.pt.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screen\Login\login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
