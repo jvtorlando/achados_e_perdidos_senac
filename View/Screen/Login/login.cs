@@ -30,11 +30,18 @@ namespace achados_e_perdidos_senac
                 Home FrmHome = new Home();
                 FrmHome.Show();
                 this.Hide();
+
             }
             else
             {
                 MessageBox.Show("Usuário ou Senha incorreto");
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+
         }
     }
 }
