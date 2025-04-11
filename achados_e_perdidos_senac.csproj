@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CadastroItens\CadastroItens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroItens\CadastroItens.Designer.cs">
+      <DependentUpon>CadastroItens.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screen\Login\login.cs">
       <SubType>Form</SubType>
     </Compile>
