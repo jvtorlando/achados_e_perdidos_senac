@@ -30,32 +30,32 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.lblTexto1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.linkLabelEsqueceuSenha = new System.Windows.Forms.LinkLabel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtSenha = new System.Windows.Forms.TextBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.lblTexto1 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -78,6 +78,39 @@
             this.panel1.Controls.Add(this.pictureBox8);
             this.panel1.Name = "panel1";
             // 
+            // pictureBox7
+            // 
+            resources.ApplyResources(this.pictureBox7, "pictureBox7");
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
+            // 
+            // pictureBox6
+            // 
+            resources.ApplyResources(this.pictureBox6, "pictureBox6");
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.TabStop = false;
+            // 
+            // lblTexto1
+            // 
+            resources.ApplyResources(this.lblTexto1, "lblTexto1");
+            this.lblTexto1.BackColor = System.Drawing.Color.Transparent;
+            this.lblTexto1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblTexto1.Name = "lblTexto1";
+            this.lblTexto1.Click += new System.EventHandler(this.lblTexto1_Click);
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            resources.ApplyResources(this.pictureBox5, "pictureBox5");
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.TabStop = false;
+            // 
             // linkLabelEsqueceuSenha
             // 
             this.linkLabelEsqueceuSenha.ActiveLinkColor = System.Drawing.Color.Navy;
@@ -94,12 +127,6 @@
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            // 
             // pictureBox2
             // 
             resources.ApplyResources(this.pictureBox2, "pictureBox2");
@@ -109,21 +136,22 @@
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
-            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.BackColor = System.Drawing.Color.White;
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Name = "label2";
             // 
             // txtUsuario
             // 
-            this.txtUsuario.BackColor = System.Drawing.Color.Silver;
+            this.txtUsuario.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.txtUsuario, "txtUsuario");
+            this.txtUsuario.ForeColor = System.Drawing.Color.Silver;
             this.txtUsuario.Name = "txtUsuario";
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
-            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.BackColor = System.Drawing.Color.White;
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Name = "label1";
             // 
@@ -139,11 +167,19 @@
             // 
             // txtSenha
             // 
-            this.txtSenha.BackColor = System.Drawing.Color.Silver;
+            this.txtSenha.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.txtSenha, "txtSenha");
+            this.txtSenha.ForeColor = System.Drawing.Color.DarkGray;
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            resources.ApplyResources(this.pictureBox8, "pictureBox8");
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.TabStop = false;
             // 
             // panel2
             // 
@@ -159,40 +195,6 @@
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.TabStop = false;
             // 
-            // lblTexto1
-            // 
-            resources.ApplyResources(this.lblTexto1, "lblTexto1");
-            this.lblTexto1.BackColor = System.Drawing.Color.Transparent;
-            this.lblTexto1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTexto1.Name = "lblTexto1";
-            this.lblTexto1.Click += new System.EventHandler(this.lblTexto1_Click);
-            // 
-            // pictureBox6
-            // 
-            resources.ApplyResources(this.pictureBox6, "pictureBox6");
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            resources.ApplyResources(this.pictureBox7, "pictureBox7");
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
-            // 
-            // pictureBox5
-            // 
-            resources.ApplyResources(this.pictureBox5, "pictureBox5");
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            resources.ApplyResources(this.pictureBox8, "pictureBox8");
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.TabStop = false;
-            // 
             // login
             // 
             this.AcceptButton = this.btnLogin;
@@ -204,15 +206,15 @@
             this.Load += new System.EventHandler(this.login_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
 
         }
