@@ -73,6 +73,9 @@
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Services\CloseEntireApplication.cs" />
+    <EmbeddedResource Include="CadastroItens\CadastroItens.resx">
+      <DependentUpon>CadastroItens.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screen\Home\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>

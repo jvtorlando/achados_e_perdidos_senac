@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace achados_e_perdidos_senac.CadastroItens
 {
-    public partial class CadastroItens : Form
+    public partial class CadastroItens: Form
     {
         public CadastroItens()
         {
