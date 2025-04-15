@@ -68,7 +68,7 @@ namespace achados_e_perdidos_senac
                             string message = "Se esqueceu sua senha ou login, entre em contato com:\n\n" +
                             "• Suporte técnico: pedido@sp.senac.br\n" +
                             "• Telefone: (11) 2187-4450\n\n" +
-                            "Horário de atendimento: 08h às 21h";
+                            "Horário de atendimento: 08h às 19h";
 
                     // Opcional: desabilita botão de login ou fecha app
                     MessageBox.Show(message, "Recuperação de Acesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
