@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Drawing2D;
 using achados_e_perdidos_senac.Services;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace achados_e_perdidos_senac
 {
@@ -17,6 +19,20 @@ namespace achados_e_perdidos_senac
         {
             InitializeComponent();
             this.FormClosing += CloseEntireApplication.CloseApplication;
+
+            txtUsuario.Text = "Digite seu nome de usuário";
+            txtUsuario.ForeColor = Color.Gray;
+            txtSenha.Text = "Digite sua senha";
+            txtSenha.ForeColor = Color.Gray;
+            txtSenha.UseSystemPasswordChar = false; 
+
+            
+            txtUsuario.Enter += RemovePlaceholderUsuario;
+            txtUsuario.Leave += RestorePlaceholderUsuario;
+            txtSenha.Enter += RemovePlaceholderSenha;
+            txtSenha.Leave += RestorePlaceholderSenha;
+
+            txtSenha.TextChanged += txtSenha_TextChanged;
 
         }
 
@@ -80,7 +96,58 @@ namespace achados_e_perdidos_senac
 
         private void txtSenha_TextChanged(object sender, EventArgs e)
         {
+            if (txtSenha.Text != "Digite sua senha" && !string.IsNullOrEmpty(txtSenha.Text))
+            {
+                txtSenha.UseSystemPasswordChar = true;
+            }
+        }
 
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RemovePlaceholderUsuario(object sender, EventArgs e)
+        {
+            if (txtUsuario.Text == "Digite seu nome de usuário")
+            {
+                txtUsuario.Text = "";
+                txtUsuario.ForeColor = Color.DimGray;
+            }
+        }
+
+        private void RestorePlaceholderUsuario(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtUsuario.Text))
+            {
+                txtUsuario.Text = "Digite seu nome de usuário";
+                txtUsuario.ForeColor = Color.Gray;
+            }
+        }
+
+        private void RemovePlaceholderSenha(object sender, EventArgs e)
+        {
+            if (txtSenha.Text == "Digite sua senha")
+            {
+                txtSenha.Text = "";
+                txtSenha.ForeColor = Color.DimGray;
+                txtSenha.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void RestorePlaceholderSenha(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtSenha.Text))
+            {
+                txtSenha.Text = "Digite sua senha";
+                txtSenha.ForeColor = Color.Gray;
+                txtSenha.UseSystemPasswordChar = false;
+            }
         }
     }
 }
