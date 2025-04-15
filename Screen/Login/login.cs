@@ -12,16 +12,17 @@ using achados_e_perdidos_senac.Services;
 namespace achados_e_perdidos_senac
 {
     public partial class login : Form
-    {
+
+    {   //MessageBox.Show após 3 tentativas erradas
         int tentativasLogin = 0;
 
         public login()
-        {
+
+        {   // fechar aplicação por completo
             InitializeComponent();
             this.FormClosing += CloseEntireApplication.CloseApplication;
-
         }
-
+        //Configuração 
         private void btnLogin_Click(object sender, EventArgs e)
         {
             // Verifica se os campos estão preenchidos
@@ -35,8 +36,8 @@ namespace achados_e_perdidos_senac
                 );
                 return;
             }
-            string User = "senac";
-            string Password = "senac123";
+                        string User = "senac";
+                        string Password = "senac123";
 
             if (txtUsuario.Text == User & txtSenha.Text == Password)
             {
@@ -49,14 +50,14 @@ namespace achados_e_perdidos_senac
             {
                 tentativasLogin++; // incrementa tentativa
 
-                // Mensagem com ícone de erro e botão OK
-                MessageBox.Show(
+                    // Mensagem com ícone de erro e botão OK
+                    MessageBox.Show(
                     "Usuário ou senha incorretos. Por favor, tente novamente.",
                     "Falha no Login",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error
                 );
-                // Verifica se ultrapassou o limite de tentativas
+                    // Verifica se ultrapassou o limite de tentativas
                 if (tentativasLogin >= 3)
                 {
                     MessageBox.Show(
