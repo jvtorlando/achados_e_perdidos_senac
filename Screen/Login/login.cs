@@ -71,7 +71,7 @@ namespace achados_e_perdidos_senac
                             "Horário de atendimento: 08h às 21h";
 
                     // Opcional: desabilita botão de login ou fecha app
-                    MessageBox.Show(message, "Recuperação de Acesso", MessageBoxButtons.OK, icon: MessageBoxIcon.Information);
+                    MessageBox.Show(message, "Recuperação de Acesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }
