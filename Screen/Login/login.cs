@@ -34,30 +34,51 @@ namespace achados_e_perdidos_senac
 
             txtSenha.TextChanged += txtSenha_TextChanged;
 
-        }
+            pictureBoxLogin.Cursor = Cursors.Hand;  // Muda o cursor para "mãozinha"
 
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            string User = "senac";
-            string Password = "senac123";
+            // Adiciona os eventos
+            pictureBoxLogin.Click += pictureBoxLogin_Click;
+            pictureBoxLogin.MouseEnter += PictureBoxLogin_MouseEnter;  // Efeito hover
+            pictureBoxLogin.MouseLeave += PictureBoxLogin_MouseLeave;
 
-            if(txtUsuario.Text == User & txtSenha.Text == Password)
+            // Efeitos visuais na PictureBox
+            pictureBoxLogin.MouseDown += (sender, e) =>
             {
-                Home FrmHome = new Home();
-                FrmHome.Show();
-                this.Hide();
-            }
-            else
-            {
-                // Mensagem com ícone de erro e botão OK
-                MessageBox.Show(
-                    "Usuário ou senha incorretos. Por favor, tente novamente.",
-                    "Falha no Login",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error
+                // Escurece a imagem (75% do brilho original)
+                pictureBoxLogin.BackColor = Color.FromArgb(190, 190, 190);
+
+                // Reduz levemente o tamanho (5% menor)
+                pictureBoxLogin.Size = new Size(
+                    (int)(pictureBoxLogin.Width * 0.95),
+                    (int)(pictureBoxLogin.Height * 0.95)
                 );
-            }
+
+                // Centraliza novamente (caso esteja com Anchor ou Dock)
+                pictureBoxLogin.Location = new Point(
+                    pictureBoxLogin.Location.X + (int)(pictureBoxLogin.Width * 0.025),
+                    pictureBoxLogin.Location.Y + (int)(pictureBoxLogin.Height * 0.025)
+                );
+            };
+
+            pictureBoxLogin.MouseUp += (sender, e) =>
+            {
+                // Volta ao normal
+                pictureBoxLogin.BackColor = SystemColors.Control; // Ou a cor original
+                pictureBoxLogin.Size = originalSize; // Restaura o tamanho
+                pictureBoxLogin.Location = originalLocation; // Restaura a posição
+            };
+
+            pictureBoxLogin.MouseLeave += (sender, e) =>
+            {
+                // Garante que volte ao normal se o mouse sair durante o clique
+                pictureBoxLogin.BackColor = SystemColors.Control;
+                pictureBoxLogin.Size = originalSize;
+                pictureBoxLogin.Location = originalLocation;
+            };
         }
+
+        private Size originalSize;
+        private Point originalLocation;
 
         private void linkLabelEsqueceuSenha_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -81,7 +102,8 @@ namespace achados_e_perdidos_senac
 
         private void login_Load(object sender, EventArgs e)
         {
-
+            originalSize = pictureBoxLogin.Size;
+            originalLocation = pictureBoxLogin.Location;
         }
 
         private void lblTexto1_Click(object sender, EventArgs e)
@@ -148,6 +170,74 @@ namespace achados_e_perdidos_senac
                 txtSenha.ForeColor = Color.Gray;
                 txtSenha.UseSystemPasswordChar = false;
             }
+        }
+
+        private void pictureBoxLogin_Click(object sender, EventArgs e)
+        {
+            
+            string User = "senac";
+            string Password = "senac123";
+
+            if (!ValidarCampos())
+                return;
+
+            if (txtUsuario.Text == "Digite seu nome de usuário" || txtSenha.Text == "Digite sua senha")
+            {
+                MessageBox.Show("Por favor, preencha ambos os campos corretamente");
+                return;
+            }
+
+            if (txtUsuario.Text.Trim() == User && txtSenha.Text.Trim() == Password)
+            {
+                Home FrmHome = new Home();
+                FrmHome.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show(
+                    "Usuário ou senha incorretos. Por favor, tente novamente.",
+                    "Falha no Login",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
+            }
+        }
+
+        private bool ValidarCampos()
+        {
+            // Verifica se o usuário está vazio ou é o placeholder
+            if (string.IsNullOrWhiteSpace(txtUsuario.Text) || txtUsuario.Text == "Digite seu nome de usuário")
+            {
+                MessageBox.Show("Por favor, insira um usuário válido!", "Campo vazio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtUsuario.Focus(); // Foca no campo usuário
+                return false;
+            }
+
+            // Verifica se a senha está vazia ou é o placeholder
+            if (string.IsNullOrWhiteSpace(txtSenha.Text) || txtSenha.Text == "Digite sua senha")
+            {
+                MessageBox.Show("Por favor, insira sua senha!", "Campo vazio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtSenha.Focus(); // Foca no campo senha
+                return false;
+            }
+
+            return true; // Campos válidos
+        }
+
+        private void PictureBoxLogin_MouseEnter(object sender, EventArgs e)
+        {
+            pictureBoxLogin.BackColor = Color.LightGray;  // Ou qualquer efeito visual
+        }
+
+        private void PictureBoxLogin_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBoxLogin.BackColor = this.BackColor;  // Volta à cor original
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
