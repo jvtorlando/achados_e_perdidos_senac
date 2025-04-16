@@ -23,5 +23,17 @@ namespace achados_e_perdidos_senac
         {
 
         }
+
+        private void btnCadastrarItem_Click(object sender, EventArgs e)
+        {
+            cadastro cadastrarItem = new cadastro();
+            this.Show();
+        }
+
+        private void btnEditarItem_Click(object sender, EventArgs e)
+        {
+            editar editarItem = new editar();
+            this.Show();
+        }
     }
 }
