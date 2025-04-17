@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnLogin = new achados_e_perdidos_senac.Screen.Login.roundButton();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -47,7 +48,6 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxLogin = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -60,14 +60,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogin)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
-            this.panel1.Controls.Add(this.pictureBoxLogin);
+            this.panel1.Controls.Add(this.btnLogin);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.txtSenha);
             this.panel1.Controls.Add(this.pictureBox10);
@@ -84,6 +83,19 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox8);
             this.panel1.Name = "panel1";
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(135)))));
+            this.btnLogin.ClickColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(47)))), ((int)(((byte)(95)))));
+            this.btnLogin.CornerRadius = 10;
+            this.btnLogin.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(135)))));
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnLogin, "btnLogin");
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(115)))));
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.UseVisualStyleBackColor = false;
             // 
             // pictureBox3
             // 
@@ -206,13 +218,6 @@
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.TabStop = false;
             // 
-            // pictureBoxLogin
-            // 
-            resources.ApplyResources(this.pictureBoxLogin, "pictureBoxLogin");
-            this.pictureBoxLogin.Name = "pictureBoxLogin";
-            this.pictureBoxLogin.TabStop = false;
-            this.pictureBoxLogin.Click += new System.EventHandler(this.pictureBoxLogin_Click);
-            // 
             // login
             // 
             resources.ApplyResources(this, "$this");
@@ -234,7 +239,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogin)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -258,7 +262,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBoxLogin;
+        private Screen.Login.roundButton btnLogin;
     }
 }
 
