@@ -58,6 +58,12 @@
     <Compile Include="CadastroItens\EdicaoDeItens.Designer.cs">
       <DependentUpon>EdicaoDeItens.cs</DependentUpon>
     </Compile>
+    <Compile Include="CadastroItens\FrmSelecionarItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroItens\FrmSelecionarItem.Designer.cs">
+      <DependentUpon>FrmSelecionarItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screen\Login\login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroItens\EdicaoDeItens.resx">
       <DependentUpon>EdicaoDeItens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroItens\FrmSelecionarItem.resx">
+      <DependentUpon>FrmSelecionarItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screen\Home\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
