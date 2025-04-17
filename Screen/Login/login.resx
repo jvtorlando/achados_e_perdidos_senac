@@ -121,75 +121,52 @@
   <data name="panel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBoxLogin.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
+  <data name="btnLogin.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
-  <data name="pictureBoxLogin.Location" type="System.Drawing.Point, System.Drawing">
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnLogin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Myanmar Text, 9pt, style=Bold</value>
+  </data>
+  <data name="btnLogin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnLogin.Location" type="System.Drawing.Point, System.Drawing">
     <value>31, 242</value>
   </data>
-  <data name="pictureBoxLogin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 50</value>
-  </data>
-  <data name="pictureBoxLogin.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
+  <data name="btnLogin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>276, 48</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pictureBoxLogin.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="btnLogin.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
   </data>
-  <data name="&gt;&gt;pictureBoxLogin.Name" xml:space="preserve">
-    <value>pictureBoxLogin</value>
+  <data name="btnLogin.Text" xml:space="preserve">
+    <value>FAZER LOGIN</value>
   </data>
-  <data name="&gt;&gt;pictureBoxLogin.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;btnLogin.Name" xml:space="preserve">
+    <value>btnLogin</value>
   </data>
-  <data name="&gt;&gt;pictureBoxLogin.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnLogin.Type" xml:space="preserve">
+    <value>achados_e_perdidos_senac.Screen.Login.roundButton, achados_e_perdidos_senac, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnLogin.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;pictureBoxLogin.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnLogin.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAAKNJREFUOE/FkbEKwkAQBfMNWim2+n1383IxvcHCT7Hws7Sx0cpUhoNgsW5CBMWB
+        DAAACwwBP0AiyAAAAKNJREFUOE/FkbEKwkAQBfMNWim2+n1383IxvcHCT7Hws7Sx0cpUhoNgsW5CBMWB
         a4bZY7kril+QUlpLOgJX4A6cgI3tXPrhs6RY1/U8hLCQlIBLVVUr278BHMqyDNZL2uatrJ9MSmkp6Wb9
         R0h6WvcC2ANtjsZO3zR2Pl/Qxhhn1ltyI+lh/fh6Brd15QBu68oB3NaVA7jtNx6xmfqNwM7O/48O29B+
         5W//h4AAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="pictureBox3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>40, 197</value>
@@ -251,7 +228,7 @@
   <data name="pictureBox10.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAApIAAADQCAYAAAC0h4EoAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAADAVJREFUeF7t3etSFFm3htG6/5trAUEUDw0i0Bylo8NuQMwdLzswsmaWOFXwU2rM
+        vQAADr0BR/uQrQAADAVJREFUeF7t3etSFFm3htG6/5trAUEUDw0i0Bylo8NuQMwdLzswsmaWOFXwU2rM
         iPGnMOvgrycyc62cDT9xPn36NPz333/D+fn5cHR0NLx79254/fr1sLm5Oayvrw+rq6vDH3/8AQDAAmml
         NFPaKQ2VlkpTpa3SWGmtnzmz+sJ9z/X19c2P29vbG54/fz48efJk8p8CAMCPSWOltdJcaa802EPPg4Xk
         xcXFcHBwMGxsbEx+KAAADysNlhZLkz3U3HtI5svu7Ow48wgA8AtIk6XNHiIo7y0kr66u2gH59OnT4eXL
@@ -304,6 +281,9 @@
         DysNlhZLkz3UPFhIjueff/65uWb//PlzZyoBAB5AGiutleZKe/2M+SkhOZ48cifX+Y+Ojm72o8xzvLMk
         Pc95vGvBDgDAsksrpZnSTmmotFSaKm3Vfazhfc7/AaI5Q2TpZTdWAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="pictureBox10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="pictureBox10.Location" type="System.Drawing.Point, System.Drawing">
     <value>31, 187</value>
@@ -362,7 +342,7 @@
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAAMxJREFUOE/VkDFuwkAURF3RJaIHbgQCcQ/L8jzbrZsIw31IuiTHSA5AcgDCAdBI
+        DAAACwwBP0AiyAAAAMxJREFUOE/VkDFuwkAURF3RJaIHbgQCcQ/L8jzbrZsIw31IuiTHSA5AcgDCAdBI
         BsVf2FI68qQtdnb+n9EmyV1S1/UI2AHfkr4kba1FXy8ekLTP83xSVdUUeAaa6OvFqR78dZ9Z67oGuLUA
         OHRdA7iua3tJm/4iaRN9vbSf2LiJkz38p08EFpLeJZ18gDdJ8+i7idOAj6IolmVZPvhIWkn6BJ6iv4OT
         PZxl2Ti+WfOSwSau7eSoXwDWkl6jfgX4ceWoX0jT9FHSMer/nDNdV25PDnlG1QAAAABJRU5ErkJggg==
@@ -398,7 +378,7 @@
   <data name="pictureBox9.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAApIAAADQCAYAAAC0h4EoAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAADAVJREFUeF7t3etSFFm3htG6/5trAUEUDw0i0Bylo8NuQMwdLzswsmaWOFXwU2rM
+        vQAADr0BR/uQrQAADAVJREFUeF7t3etSFFm3htG6/5trAUEUDw0i0Bylo8NuQMwdLzswsmaWOFXwU2rM
         iPGnMOvgrycyc62cDT9xPn36NPz333/D+fn5cHR0NLx79254/fr1sLm5Oayvrw+rq6vDH3/8AQDAAmml
         NFPaKQ2VlkpTpa3SWGmtnzmz+sJ9z/X19c2P29vbG54/fz48efJk8p8CAMCPSWOltdJcaa802EPPg4Xk
         xcXFcHBwMGxsbEx+KAAADysNlhZLkz3U3HtI5svu7Ow48wgA8AtIk6XNHiIo7y0kr66u2gH59OnT4eXL
@@ -452,6 +432,9 @@
         Pc95vGvBDgDAsksrpZnSTmmotFSaKm3Vfazhfc7/AaI5Q2TpZTdWAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="pictureBox9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="pictureBox9.Location" type="System.Drawing.Point, System.Drawing">
     <value>31, 125</value>
   </data>
@@ -479,7 +462,7 @@
   <data name="pictureBox7.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAB4AAAAQ4CAYAAADo08FDAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAKUFJREFUeF7t2TENACAAwDAQhzZkw48Dlh59ZmFjrn0AAAAAAAAA+N94AwAAAAAA
+        vAAADrwBlbxySQAAKUFJREFUeF7t2TENACAAwDAQhzZkw48Dlh59ZmFjrn0AAAAAAAAA+N94AwAAAAAA
         AAB/MoABAAAAAAAAIgxgAAAAAAAAgAgDGAAAAAAAACDCAAYAAAAAAACIMIABAAAAAAAAIgxgAAAAAAAA
         gAgDGAAAAAAAACDCAAYAAAAAAACIMIABAAAAAAAAIgxgAAAAAAAAgAgDGAAAAAAAACDCAAYAAAAAAACI
         MIABAAAAAAAAIgxgAAAAAAAAgAgDGAAAAAAAACDCAAYAAAAAAACIMIABAAAAAAAAIgxgAAAAAAAAgAgD
@@ -661,7 +644,7 @@
   <data name="pictureBox7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAArwAAAK8CAYAAAANumxDAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAAWfxJREFUeF7t3Xm0bllZ3/tZVfRSKKgDENBgTBRQUC9YUhRN0VXRQ4wOE4KIDUEB
+        DAAACwwBP0AiyAAAWfxJREFUeF7t3Xm0bllZ3/tZVfRSKKgDENBgTBRQUC9YUhRN0VXRQ4wOE4KIDUEB
         iZBoTBhmmGjMwMRhMGqMcURmrm1QbryXSFMFRdFTUIAdiAgKioSmIiiNCDXv+HnWts7+zXnO2d273nf9
         1vePzz/PKDj7nc+cz3r2u+eas7TWCgAAAJCqCwAAAABJugAAAACQpAsAAAAASboAAAAAkKQLAAAAAEm6
         AAAAAJCkCwAAAABJugAAAACQpAsAAAAASboAAAAAkKQLAAAAAEm6AAAAAJCkCwAAAABJugAAAACQpAsA
@@ -1048,6 +1031,9 @@
         SboAAAAAkOT/BwH+Tf8a6eNBAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="pictureBox7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="pictureBox7.Location" type="System.Drawing.Point, System.Drawing">
     <value>163, 31</value>
   </data>
@@ -1075,7 +1061,7 @@
   <data name="pictureBox6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAPYAAAAaCAYAAACElKExAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAACNlJREFUeF7tm79vGkkUx/MnRErhwkWQXFhKY4nCBYVlWQoRSeSYKA4hJztGDjFS
+        vAAADrwBlbxySQAACNlJREFUeF7tm79vGkkUx/MnRErhwkWQXFhKY4nCBYVlWQoRSeSYKA4hJztGDjFS
         bGzfoZiDWCG3ctZnLCFdQUtJ6c6tSzpKWko6Srff0y7ssvPmJwYlnG+LTwOz782+N9/ZmbezDx48/Rss
         dkhIyH+dUNghIfeQUNghIfeQcYS9up1Eu7gyJAn7Bd9GRuR5AbX9BNqni+j/mHfpVWJo5bdQ27QQ8dse
         oen7WEH7OIsUZ6+M+rGujUcRjcKobStbFLSR+HYoJNH8mEFju4BXz2l7BXELh9ubuClG0Rveb/+vKFr5
@@ -1116,6 +1102,9 @@
         BgLrCJ/KzAAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="pictureBox6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="pictureBox6.Location" type="System.Drawing.Point, System.Drawing">
     <value>130, 56</value>
   </data>
@@ -1149,7 +1138,7 @@
   <data name="lblTexto1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAB4AAAAQ4CAYAAADo08FDAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAKUFJREFUeF7t2TENACAAwDAQhzZkw48Dlh59ZmFjrn0AAAAAAAAA+N94AwAAAAAA
+        vAAADrwBlbxySQAAKUFJREFUeF7t2TENACAAwDAQhzZkw48Dlh59ZmFjrn0AAAAAAAAA+N94AwAAAAAA
         AAB/MoABAAAAAAAAIgxgAAAAAAAAgAgDGAAAAAAAACDCAAYAAAAAAACIMIABAAAAAAAAIgxgAAAAAAAA
         gAgDGAAAAAAAACDCAAYAAAAAAACIMIABAAAAAAAAIgxgAAAAAAAAgAgDGAAAAAAAACDCAAYAAAAAAACI
         MIABAAAAAAAAIgxgAAAAAAAAgAgDGAAAAAAAACDCAAYAAAAAAACIMIABAAAAAAAAIgxgAAAAAAAAgAgD
@@ -1328,6 +1317,9 @@
         AAAAIgxgAAAAAAAAgIgLF1wFAwrH5pAAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="lblTexto1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="lblTexto1.Location" type="System.Drawing.Point, System.Drawing">
     <value>188, 31</value>
   </data>
@@ -1355,7 +1347,7 @@
   <data name="pictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAB4AAAAQ4CAYAAADo08FDAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAKUFJREFUeF7t2TENACAAwDAQhzZkw48Dlh59ZmFjrn0AAAAAAAAA+N94AwAAAAAA
+        vAAADrwBlbxySQAAKUFJREFUeF7t2TENACAAwDAQhzZkw48Dlh59ZmFjrn0AAAAAAAAA+N94AwAAAAAA
         AAB/MoABAAAAAAAAIgxgAAAAAAAAgAgDGAAAAAAAACDCAAYAAAAAAACIMIABAAAAAAAAIgxgAAAAAAAA
         gAgDGAAAAAAAACDCAAYAAAAAAACIMIABAAAAAAAAIgxgAAAAAAAAgAgDGAAAAAAAACDCAAYAAAAAAACI
         MIABAAAAAAAAIgxgAAAAAAAAgAgDGAAAAAAAACDCAAYAAAAAAACIMIABAAAAAAAAIgxgAAAAAAAAgAgD
@@ -5814,6 +5806,9 @@
         Hsb7e8w8TxYoed4vCQxFRCTC+4OsmJPtZWb8fob/D+F/V8zauqXBAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
   </data>
@@ -5841,7 +5836,7 @@
   <data name="pictureBox5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAB4AAAAQ4CAYAAADo08FDAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAALWRJREFUeF7s2kXYrld5huGNFAotVigVHIK7uxN3d7cd1x1320mIkBABWqxCFSrQ
+        vAAADrwBlbxySQAALWRJREFUeF7s2kXYrld5huGNFAotVigVHIK7uxN3d7cd1x1320mIkBABWqxCFSrQ
         FqeOVqAGdaTFnZYhPTr5/nctSOa5/nNwTp7ZGq7jujfcacvNPwAAAAAAAADgjm/DfAAAAAAAAADgjkkA
         BgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAA
         AAAAAACACAEYAAAAAAAAIEIABgAAAAAAAIgQgAEAAAAAAAAiBGAAAAAAAACACAEYAAAAAAAAIEIABgAA
@@ -6071,6 +6066,9 @@
   <data name="linkLabelEsqueceuSenha.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
+  <data name="linkLabelEsqueceuSenha.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="linkLabelEsqueceuSenha.Location" type="System.Drawing.Point, System.Drawing">
     <value>90, 310</value>
   </data>
@@ -6100,6 +6098,9 @@
   </data>
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>28, 171</value>
@@ -6131,6 +6132,9 @@
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>28, 109</value>
   </data>
@@ -6154,6 +6158,9 @@
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>14</value>
+  </data>
+  <data name="pictureBox8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="pictureBox8.Location" type="System.Drawing.Point, System.Drawing">
     <value>-1, 97</value>
@@ -6203,7 +6210,7 @@
   <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAB4AAAAQ4CAYAAADo08FDAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAA/7JJREFUeF7s3WV7G0nXLuz9g24z2zLLzBxT4sSOmZmZLbPQEJiZ/3m9R1V3dVet
+        vQAADr0BR/uQrQAA/7JJREFUeF7s3WV7G0nXLuz9g24z2zLLzBxT4sSOmZmZLbPQEJiZ/3m9R1V3dVet
         qpZkJ3PvZ79PPlyH1auqWwoN+Mxa9X9isSfEYjEn0WgUUfaVvzZErNE98jXdk8wa3UefKa7pGt3z5kTt
         0Lq8ZtqjrkVMiViJu4fsVULXvPb9CUmERK7TvV73eO312mOq0cRbk2L/uovfN7GY9TUcjiAUCiMYCvGv
         56dnGBkcwsTIKC7OLxEMBvHM/hyz+6TPw+6zEpZeyzU5dF3eE0EoHLYSskOvk43nfezHJkLXko35fuvn

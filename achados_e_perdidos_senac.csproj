@@ -60,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Screen\Login\roundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Screen\Splash\SplashScreen.cs">
       <SubType>Form</SubType>
     </Compile>

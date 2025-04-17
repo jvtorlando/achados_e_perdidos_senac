@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -34,47 +35,8 @@ namespace achados_e_perdidos_senac
 
             txtSenha.TextChanged += txtSenha_TextChanged;
 
-            pictureBoxLogin.Cursor = Cursors.Hand;  // Muda o cursor para "mãozinha"
+            btnLogin.Click += btnLogin_Click_1;
 
-            // Adiciona os eventos
-            pictureBoxLogin.Click += pictureBoxLogin_Click;
-            pictureBoxLogin.MouseEnter += PictureBoxLogin_MouseEnter;  // Efeito hover
-            pictureBoxLogin.MouseLeave += PictureBoxLogin_MouseLeave;
-
-            // Efeitos visuais na PictureBox
-            pictureBoxLogin.MouseDown += (sender, e) =>
-            {
-                // Escurece a imagem (75% do brilho original)
-                pictureBoxLogin.BackColor = Color.FromArgb(190, 190, 190);
-
-                // Reduz levemente o tamanho (5% menor)
-                pictureBoxLogin.Size = new Size(
-                    (int)(pictureBoxLogin.Width * 0.95),
-                    (int)(pictureBoxLogin.Height * 0.95)
-                );
-
-                // Centraliza novamente (caso esteja com Anchor ou Dock)
-                pictureBoxLogin.Location = new Point(
-                    pictureBoxLogin.Location.X + (int)(pictureBoxLogin.Width * 0.025),
-                    pictureBoxLogin.Location.Y + (int)(pictureBoxLogin.Height * 0.025)
-                );
-            };
-
-            pictureBoxLogin.MouseUp += (sender, e) =>
-            {
-                // Volta ao normal
-                pictureBoxLogin.BackColor = SystemColors.Control; // Ou a cor original
-                pictureBoxLogin.Size = originalSize; // Restaura o tamanho
-                pictureBoxLogin.Location = originalLocation; // Restaura a posição
-            };
-
-            pictureBoxLogin.MouseLeave += (sender, e) =>
-            {
-                // Garante que volte ao normal se o mouse sair durante o clique
-                pictureBoxLogin.BackColor = SystemColors.Control;
-                pictureBoxLogin.Size = originalSize;
-                pictureBoxLogin.Location = originalLocation;
-            };
         }
 
         private Size originalSize;
@@ -102,8 +64,7 @@ namespace achados_e_perdidos_senac
 
         private void login_Load(object sender, EventArgs e)
         {
-            originalSize = pictureBoxLogin.Size;
-            originalLocation = pictureBoxLogin.Location;
+
         }
 
         private void lblTexto1_Click(object sender, EventArgs e)
@@ -202,7 +163,7 @@ namespace achados_e_perdidos_senac
                     MessageBoxIcon.Error
                 );
             }
-        }
+        } 
 
         private bool ValidarCampos()
         {
@@ -225,19 +186,57 @@ namespace achados_e_perdidos_senac
             return true; // Campos válidos
         }
 
-        private void PictureBoxLogin_MouseEnter(object sender, EventArgs e)
-        {
-            pictureBoxLogin.BackColor = Color.LightGray;  // Ou qualquer efeito visual
-        }
-
-        private void PictureBoxLogin_MouseLeave(object sender, EventArgs e)
-        {
-            pictureBoxLogin.BackColor = this.BackColor;  // Volta à cor original
-        }
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogin_Click_1(object sender, EventArgs e)
+        {
+            // Configurações de design (cor e borda)
+            btnLogin.BackColor = Color.FromArgb(0, 69, 135); // Equivalente ao #004587
+            btnLogin.ForeColor = Color.White; 
+            btnLogin.FlatStyle = FlatStyle.Flat;
+            btnLogin.FlatAppearance.BorderSize = 0; 
+
+            // Efeitos de hover
+            btnLogin.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 58, 115); 
+            btnLogin.FlatAppearance.MouseDownBackColor = Color.FromArgb(0, 47, 95); 
+
+
+            string User = "senac";
+            string Password = "senac123";
+
+            if (!ValidarCampos())
+                return;
+
+            if (txtUsuario.Text == "Digite seu nome de usuário" || txtSenha.Text == "Digite sua senha")
+            {
+                MessageBox.Show("Por favor, preencha ambos os campos corretamente");
+                return;
+            }
+
+            if (txtUsuario.Text.Trim() == User && txtSenha.Text.Trim() == Password)
+            {
+                Home FrmHome = new Home();
+                FrmHome.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show(
+                    "Usuário ou senha incorretos. Por favor, tente novamente.",
+                    "Falha no Login",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
+            }
         }
     }
 }
