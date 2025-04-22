@@ -41,7 +41,7 @@
             // 
             // txtPesquisa
             // 
-            this.txtPesquisa.Location = new System.Drawing.Point(207, 121);
+            this.txtPesquisa.Location = new System.Drawing.Point(207, 129);
             this.txtPesquisa.Multiline = true;
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(467, 35);
@@ -59,7 +59,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(126, 121);
+            this.button1.Location = new System.Drawing.Point(103, 129);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 35);
             this.button1.TabIndex = 2;
