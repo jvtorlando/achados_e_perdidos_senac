@@ -35,12 +35,9 @@ namespace achados_e_perdidos_senac
 
             txtSenha.TextChanged += txtSenha_TextChanged;
 
-            btnLogin.Click += btnLogin_Click_1;
+            btnLogin.Click += btnLogin_Click;
 
         }
-
-        private Size originalSize;
-        private Point originalLocation;
 
         private void linkLabelEsqueceuSenha_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -72,22 +69,12 @@ namespace achados_e_perdidos_senac
 
         }
 
-        private void pictureBox7_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtSenha_TextChanged(object sender, EventArgs e)
         {
             if (txtSenha.Text != "Digite sua senha" && !string.IsNullOrEmpty(txtSenha.Text))
             {
                 txtSenha.UseSystemPasswordChar = true;
             }
-        }
-
-        private void pictureBox9_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void txtUsuario_TextChanged(object sender, EventArgs e)
@@ -133,7 +120,7 @@ namespace achados_e_perdidos_senac
             }
         }
 
-        private void pictureBoxLogin_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
             
             string User = "senac";
@@ -163,31 +150,43 @@ namespace achados_e_perdidos_senac
                     MessageBoxIcon.Error
                 );
             }
+
+
         } 
 
         private bool ValidarCampos()
         {
-            // Verifica se o usuário está vazio ou é o placeholder
+            bool isValid = true;
+
             if (string.IsNullOrWhiteSpace(txtUsuario.Text) || txtUsuario.Text == "Digite seu nome de usuário")
             {
-                MessageBox.Show("Por favor, insira um usuário válido!", "Campo vazio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtUsuario.Focus(); // Foca no campo usuário
-                return false;
+                MessageBox.Show("Por favor, insira um usuário válido!", "Campo vazio",
+                               MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtUsuario.Focus();
+                isValid = false;
             }
-
-            // Verifica se a senha está vazia ou é o placeholder
-            if (string.IsNullOrWhiteSpace(txtSenha.Text) || txtSenha.Text == "Digite sua senha")
+            else if (string.IsNullOrWhiteSpace(txtSenha.Text) || txtSenha.Text == "Digite sua senha")
             {
-                MessageBox.Show("Por favor, insira sua senha!", "Campo vazio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtSenha.Focus(); // Foca no campo senha
-                return false;
+                MessageBox.Show("Por favor, insira sua senha!", "Campo vazio",
+                               MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtSenha.Focus();
+                isValid = false;
             }
 
-            return true; // Campos válidos
+            return isValid;
         }
 
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void pictureBox8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
         {
 
         }
@@ -195,48 +194,6 @@ namespace achados_e_perdidos_senac
         private void pictureBox11_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void btnLogin_Click_1(object sender, EventArgs e)
-        {
-            // Configurações de design (cor e borda)
-            btnLogin.BackColor = Color.FromArgb(0, 69, 135); // Equivalente ao #004587
-            btnLogin.ForeColor = Color.White; 
-            btnLogin.FlatStyle = FlatStyle.Flat;
-            btnLogin.FlatAppearance.BorderSize = 0; 
-
-            // Efeitos de hover
-            btnLogin.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 58, 115); 
-            btnLogin.FlatAppearance.MouseDownBackColor = Color.FromArgb(0, 47, 95); 
-
-
-            string User = "senac";
-            string Password = "senac123";
-
-            if (!ValidarCampos())
-                return;
-
-            if (txtUsuario.Text == "Digite seu nome de usuário" || txtSenha.Text == "Digite sua senha")
-            {
-                MessageBox.Show("Por favor, preencha ambos os campos corretamente");
-                return;
-            }
-
-            if (txtUsuario.Text.Trim() == User && txtSenha.Text.Trim() == Password)
-            {
-                Home FrmHome = new Home();
-                FrmHome.Show();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show(
-                    "Usuário ou senha incorretos. Por favor, tente novamente.",
-                    "Falha no Login",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error
-                );
-            }
         }
     }
 }

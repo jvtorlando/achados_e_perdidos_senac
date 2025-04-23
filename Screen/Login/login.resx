@@ -201,11 +201,8 @@
   <data name="txtSenha.Location" type="System.Drawing.Point, System.Drawing">
     <value>66, 197</value>
   </data>
-  <data name="txtSenha.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="txtSenha.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 17</value>
+    <value>217, 15</value>
   </data>
   <data name="txtSenha.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -228,7 +225,7 @@
   <data name="pictureBox10.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAApIAAADQCAYAAAC0h4EoAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAADAVJREFUeF7t3etSFFm3htG6/5trAUEUDw0i0Bylo8NuQMwdLzswsmaWOFXwU2rM
+        vAAADrwBlbxySQAADAVJREFUeF7t3etSFFm3htG6/5trAUEUDw0i0Bylo8NuQMwdLzswsmaWOFXwU2rM
         iPGnMOvgrycyc62cDT9xPn36NPz333/D+fn5cHR0NLx79254/fr1sLm5Oayvrw+rq6vDH3/8AQDAAmml
         NFPaKQ2VlkpTpa3SWGmtnzmz+sJ9z/X19c2P29vbG54/fz48efJk8p8CAMCPSWOltdJcaa802EPPg4Xk
         xcXFcHBwMGxsbEx+KAAADysNlhZLkz3U3HtI5svu7Ow48wgA8AtIk6XNHiIo7y0kr66u2gH59OnT4eXL
@@ -315,11 +312,8 @@
   <data name="txtUsuario.Location" type="System.Drawing.Point, System.Drawing">
     <value>66, 137</value>
   </data>
-  <data name="txtUsuario.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="txtUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 17</value>
+    <value>217, 15</value>
   </data>
   <data name="txtUsuario.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -378,7 +372,7 @@
   <data name="pictureBox9.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAApIAAADQCAYAAAC0h4EoAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAADAVJREFUeF7t3etSFFm3htG6/5trAUEUDw0i0Bylo8NuQMwdLzswsmaWOFXwU2rM
+        vAAADrwBlbxySQAADAVJREFUeF7t3etSFFm3htG6/5trAUEUDw0i0Bylo8NuQMwdLzswsmaWOFXwU2rM
         iPGnMOvgrycyc62cDT9xPn36NPz333/D+fn5cHR0NLx79254/fr1sLm5Oayvrw+rq6vDH3/8AQDAAmml
         NFPaKQ2VlkpTpa3SWGmtnzmz+sJ9z/X19c2P29vbG54/fz48efJk8p8CAMCPSWOltdJcaa802EPPg4Xk
         xcXFcHBwMGxsbEx+KAAADysNlhZLkz3U3HtI5svu7Ow48wgA8AtIk6XNHiIo7y0kr66u2gH59OnT4eXL
@@ -6097,7 +6091,7 @@
     <value>True</value>
   </data>
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+    <value>Microsoft Tai Le, 8.25pt, style=Bold</value>
   </data>
   <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -6106,7 +6100,7 @@
     <value>28, 171</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 13</value>
+    <value>39, 14</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -6130,7 +6124,7 @@
     <value>True</value>
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+    <value>Microsoft Tai Le, 8.25pt, style=Bold</value>
   </data>
   <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -6139,7 +6133,7 @@
     <value>28, 109</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 13</value>
+    <value>98, 14</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -6210,7 +6204,7 @@
   <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAB4AAAAQ4CAYAAADo08FDAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAA/7JJREFUeF7s3WV7G0nXLuz9g24z2zLLzBxT4sSOmZmZLbPQEJiZ/3m9R1V3dVet
+        vAAADrwBlbxySQAA/7JJREFUeF7s3WV7G0nXLuz9g24z2zLLzBxT4sSOmZmZLbPQEJiZ/3m9R1V3dVet
         qpZkJ3PvZ79PPlyH1auqWwoN+Mxa9X9isSfEYjEn0WgUUfaVvzZErNE98jXdk8wa3UefKa7pGt3z5kTt
         0Lq8ZtqjrkVMiViJu4fsVULXvPb9CUmERK7TvV73eO312mOq0cRbk2L/uovfN7GY9TUcjiAUCiMYCvGv
         56dnGBkcwsTIKC7OLxEMBvHM/hyz+6TPw+6zEpZeyzU5dF3eE0EoHLYSskOvk43nfezHJkLXko35fuvn
@@ -29502,7 +29496,7 @@
     <value>0, 0</value>
   </data>
   <data name="pictureBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>723, 466</value>
+    <value>723, 469</value>
   </data>
   <data name="pictureBox4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>

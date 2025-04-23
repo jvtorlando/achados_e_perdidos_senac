@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnLogin = new achados_e_perdidos_senac.Screen.Login.roundButton();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -48,6 +47,7 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.btnLogin = new achados_e_perdidos_senac.Screen.Login.roundButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -83,19 +83,6 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox8);
             this.panel1.Name = "panel1";
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(135)))));
-            this.btnLogin.ClickColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(47)))), ((int)(((byte)(95)))));
-            this.btnLogin.CornerRadius = 10;
-            this.btnLogin.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(135)))));
-            this.btnLogin.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btnLogin, "btnLogin");
-            this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(115)))));
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.UseVisualStyleBackColor = false;
             // 
             // pictureBox3
             // 
@@ -186,14 +173,14 @@
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.label2.Name = "label2";
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.label1.Name = "label1";
             // 
             // pictureBox8
@@ -217,6 +204,19 @@
             resources.ApplyResources(this.pictureBox4, "pictureBox4");
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.TabStop = false;
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(135)))));
+            this.btnLogin.ClickColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(47)))), ((int)(((byte)(95)))));
+            this.btnLogin.CornerRadius = 10;
+            this.btnLogin.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(135)))));
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnLogin, "btnLogin");
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(115)))));
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.UseVisualStyleBackColor = false;
             // 
             // login
             // 
