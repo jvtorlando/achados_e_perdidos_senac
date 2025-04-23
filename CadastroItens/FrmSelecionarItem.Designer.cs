@@ -107,6 +107,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridViewItens);
             this.Controls.Add(this.txtPesquisa);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmSelecionarItem";
             this.Text = "FrmSelecionarItem";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItens)).EndInit();

@@ -59,15 +59,15 @@
             this.panel1.Controls.Add(this.pictureBoxFoto);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Location = new System.Drawing.Point(3, 2);
+            this.panel1.Location = new System.Drawing.Point(2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(803, 450);
+            this.panel1.Size = new System.Drawing.Size(803, 485);
             this.panel1.TabIndex = 0;
             // 
             // btnSalvar
             // 
             this.btnSalvar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSalvar.Location = new System.Drawing.Point(710, 402);
+            this.btnSalvar.Location = new System.Drawing.Point(710, 419);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
             this.btnSalvar.TabIndex = 11;
@@ -78,7 +78,7 @@
             // btnSelecionarFoto
             // 
             this.btnSelecionarFoto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSelecionarFoto.Location = new System.Drawing.Point(604, 402);
+            this.btnSelecionarFoto.Location = new System.Drawing.Point(604, 419);
             this.btnSelecionarFoto.Name = "btnSelecionarFoto";
             this.btnSelecionarFoto.Size = new System.Drawing.Size(75, 23);
             this.btnSelecionarFoto.TabIndex = 10;
@@ -89,7 +89,7 @@
             // dateTimePickerDataCadastro
             // 
             this.dateTimePickerDataCadastro.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePickerDataCadastro.Location = new System.Drawing.Point(3, 333);
+            this.dateTimePickerDataCadastro.Location = new System.Drawing.Point(3, 350);
             this.dateTimePickerDataCadastro.Name = "dateTimePickerDataCadastro";
             this.dateTimePickerDataCadastro.Size = new System.Drawing.Size(200, 20);
             this.dateTimePickerDataCadastro.TabIndex = 9;
@@ -99,7 +99,7 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 317);
+            this.label4.Location = new System.Drawing.Point(9, 334);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 13);
             this.label4.TabIndex = 8;
@@ -110,7 +110,7 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(251, 134);
+            this.label3.Location = new System.Drawing.Point(251, 151);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 7;
@@ -120,7 +120,7 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 118);
+            this.label2.Location = new System.Drawing.Point(9, 135);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 6;
@@ -129,7 +129,7 @@
             // txtDescricao
             // 
             this.txtDescricao.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtDescricao.Location = new System.Drawing.Point(237, 150);
+            this.txtDescricao.Location = new System.Drawing.Point(237, 167);
             this.txtDescricao.Multiline = true;
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.Size = new System.Drawing.Size(433, 154);
@@ -138,7 +138,7 @@
             // pictureBoxFoto
             // 
             this.pictureBoxFoto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBoxFoto.Location = new System.Drawing.Point(9, 134);
+            this.pictureBoxFoto.Location = new System.Drawing.Point(9, 151);
             this.pictureBoxFoto.Name = "pictureBoxFoto";
             this.pictureBoxFoto.Size = new System.Drawing.Size(191, 170);
             this.pictureBoxFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -150,7 +150,7 @@
             this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(141)))));
             this.panel4.Controls.Add(this.label1);
-            this.panel4.Location = new System.Drawing.Point(206, 3);
+            this.panel4.Location = new System.Drawing.Point(206, 20);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(581, 75);
             this.panel4.TabIndex = 3;
@@ -171,7 +171,7 @@
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Location = new System.Drawing.Point(3, 20);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(197, 74);
             this.panel3.TabIndex = 2;
@@ -180,8 +180,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 487);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CadastroItens";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
