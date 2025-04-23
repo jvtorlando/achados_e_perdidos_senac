@@ -37,6 +37,8 @@ namespace achados_e_perdidos_senac
 
             btnLogin.Click += btnLogin_Click;
 
+            this.AcceptButton = btnLogin;
+
         }
 
         private void linkLabelEsqueceuSenha_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -87,7 +89,7 @@ namespace achados_e_perdidos_senac
             if (txtUsuario.Text == "Digite seu nome de usuário")
             {
                 txtUsuario.Text = "";
-                txtUsuario.ForeColor = Color.DimGray;
+                txtUsuario.ForeColor = Color.Black;
             }
         }
 
@@ -96,7 +98,7 @@ namespace achados_e_perdidos_senac
             if (string.IsNullOrWhiteSpace(txtUsuario.Text))
             {
                 txtUsuario.Text = "Digite seu nome de usuário";
-                txtUsuario.ForeColor = Color.Gray;
+                txtUsuario.ForeColor = Color.DimGray;
             }
         }
 
@@ -105,7 +107,7 @@ namespace achados_e_perdidos_senac
             if (txtSenha.Text == "Digite sua senha")
             {
                 txtSenha.Text = "";
-                txtSenha.ForeColor = Color.DimGray;
+                txtSenha.ForeColor = Color.Black;
                 txtSenha.UseSystemPasswordChar = true;
             }
         }
@@ -115,7 +117,7 @@ namespace achados_e_perdidos_senac
             if (string.IsNullOrWhiteSpace(txtSenha.Text))
             {
                 txtSenha.Text = "Digite sua senha";
-                txtSenha.ForeColor = Color.Gray;
+                txtSenha.ForeColor = Color.DimGray;
                 txtSenha.UseSystemPasswordChar = false;
             }
         }
