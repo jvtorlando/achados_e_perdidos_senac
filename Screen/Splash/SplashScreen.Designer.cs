@@ -71,7 +71,11 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+<<<<<<< HEAD
             this.pictureBox1.Location = new System.Drawing.Point(139, 112);
+=======
+            this.pictureBox1.Location = new System.Drawing.Point(150, 109);
+>>>>>>> master
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(236, 180);
             this.pictureBox1.TabIndex = 5;
