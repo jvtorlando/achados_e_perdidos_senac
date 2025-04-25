@@ -71,7 +71,11 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+<<<<<<< HEAD
+            this.pictureBox1.Location = new System.Drawing.Point(139, 112);
+=======
             this.pictureBox1.Location = new System.Drawing.Point(150, 109);
+>>>>>>> master
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(236, 180);
             this.pictureBox1.TabIndex = 5;
@@ -109,7 +113,7 @@
             // 
             this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel4.Location = new System.Drawing.Point(405, 133);
+            this.panel4.Location = new System.Drawing.Point(347, 157);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(282, 135);
             this.panel4.TabIndex = 1;
