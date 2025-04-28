@@ -4,10 +4,12 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using achados_e_perdidos_senac.Services;
+using MySql.Data.MySqlClient;
 
 namespace achados_e_perdidos_senac
 {
@@ -25,8 +27,9 @@ namespace achados_e_perdidos_senac
             string User = "senac";
             string Password = "senac123";
 
-            if(txtUsuario.Text == User & txtSenha.Text == Password)
+            if (txtUsuario.Text == User & txtSenha.Text == Password)
             {
+
                 Home FrmHome = new Home();
                 FrmHome.Show();
                 this.Hide();

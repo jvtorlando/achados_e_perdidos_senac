@@ -57,9 +57,15 @@ namespace achados_e_perdidos_senac.CadastroItens
 
             // Opcional: Limpar os campos após salvartxtDescricao.Clear();
             pictureBoxFoto.ImageLocation = null;
+
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDescricao_TextChanged(object sender, EventArgs e)
         {
 
         }

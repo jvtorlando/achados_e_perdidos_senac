@@ -134,6 +134,7 @@
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.Size = new System.Drawing.Size(433, 154);
             this.txtDescricao.TabIndex = 5;
+            this.txtDescricao.TextChanged += new System.EventHandler(this.txtDescricao_TextChanged);
             // 
             // pictureBoxFoto
             // 
