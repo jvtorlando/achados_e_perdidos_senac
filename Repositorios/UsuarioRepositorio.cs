@@ -53,6 +53,45 @@ namespace achados_e_perdidos_senac.Repositorios
         }
 
 
+        public bool CriarNovoUsuario(Usuario usuario, string password)
+        {
+            try
+            {
+                string query = @"INSERT INTO usuario
+                                (nome, matricula, cpf, email, telefone, curso, sala,  senha) 
+                                VALUES 
+                                (@nome, @matricula, @cpf, @email, @telefone, @curso, @sala, @senha)";
 
+                var parameters = new MySqlParameter[]
+                {
+                    new MySqlParameter("@nome", usuario.nome),
+                    new MySqlParameter("@matricula", usuario.matricula),
+                    new MySqlParameter("@cpf", usuario.cpf),
+                    new MySqlParameter("@email", usuario.email),
+                    new MySqlParameter("@telefone", usuario.telefone),
+                    new MySqlParameter("@curso", usuario.curso),
+                    new MySqlParameter("@sala", usuario.sala),
+                    new MySqlParameter("@senha", Criptografia.HashPassword(password))
+                };
+
+                int affectedRows = databaseService.ExecuteNonQuery(query, parameters);
+                if (affectedRows > 0)
+                {
+                    return true;
+                }
+
+                return false;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro ao registrar usuário: " + ex.Message);
+            }
+        }
     }
+
+
+
+
+
 }
+

@@ -13,6 +13,8 @@ namespace achados_e_perdidos_senac.Model
         public string nome { get; set; }
         public string matricula { get; set; }
         public string email { get; set; }
+
+        public string cpf { get; set; }
         public string telefone { get; set; }
         public string curso { get; set; }
         public string sala { get; set; }
@@ -37,6 +39,7 @@ namespace achados_e_perdidos_senac.Model
                 nome = reader["nome"].ToString(),
                 email = reader["email"].ToString(),
                 matricula = reader["matricula"].ToString(),
+                cpf = reader["cpf"].ToString(),
                 telefone = reader["telefone"].ToString(),
                 curso = reader["curso"].ToString(),
                 sala = reader["sala"].ToString(),
