@@ -11,11 +11,15 @@ using System.Windows.Forms;
 using System.Drawing.Drawing2D;
 using achados_e_perdidos_senac.Services;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using achados_e_perdidos_senac.Controllers;
+using achados_e_perdidos_senac.Model;
 
 namespace achados_e_perdidos_senac
 {
     public partial class login : Form
     {
+
+        private LoginController _loginController;
         public login()
         {
             InitializeComponent();
@@ -38,6 +42,8 @@ namespace achados_e_perdidos_senac
             btnLogin.Click += btnLogin_Click;
 
             this.AcceptButton = btnLogin;
+
+            _loginController = new LoginController(new AuthService(new DatabaseService()));
 
         }
 
@@ -125,33 +131,33 @@ namespace achados_e_perdidos_senac
         private void btnLogin_Click(object sender, EventArgs e)
         {
             
-            string User = "senac";
-            string Password = "senac123";
+            //string User = "senac";
+            //string Password = "senac123";
 
-            if (!ValidarCampos())
-                return;
+            //if (!ValidarCampos())
+            //    return;
 
-            if (txtUsuario.Text == "Digite seu nome de usuário" || txtSenha.Text == "Digite sua senha")
-            {
-                MessageBox.Show("Por favor, preencha ambos os campos corretamente");
-                return;
-            }
+            //if (txtUsuario.Text == "Digite seu nome de usuário" || txtSenha.Text == "Digite sua senha")
+            //{
+            //    MessageBox.Show("Por favor, preencha ambos os campos corretamente");
+            //    return;
+            //}
 
-            if (txtUsuario.Text.Trim() == User && txtSenha.Text.Trim() == Password)
-            {
-                Home FrmHome = new Home();
-                FrmHome.Show();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show(
-                    "Usuário ou senha incorretos. Por favor, tente novamente.",
-                    "Falha no Login",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error
-                );
-            }
+            //if (txtUsuario.Text.Trim() == User && txtSenha.Text.Trim() == Password)
+            //{
+            //    Home FrmHome = new Home();
+            //    FrmHome.Show();
+            //    this.Hide();
+            //}
+            //else
+            //{
+            //    MessageBox.Show(
+            //        "Usuário ou senha incorretos. Por favor, tente novamente.",
+            //        "Falha no Login",
+            //        MessageBoxButtons.OK,
+            //        MessageBoxIcon.Error
+            //    );
+            //}
 
 
         } 
@@ -194,6 +200,24 @@ namespace achados_e_perdidos_senac
         }
 
         private void pictureBox11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogin_Click_1(object sender, EventArgs e)
+        {
+         Usuario usuario = _loginController.Login(txtUsuario.Text, txtSenha.Text);
+
+            if (usuario != null)
+            {
+                MessageBox.Show($"Usuario logado: {usuario.nome}");
+                this.Hide();
+
+            }
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

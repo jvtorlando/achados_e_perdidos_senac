@@ -319,7 +319,7 @@
     <value>3</value>
   </data>
   <data name="txtUsuario.Text" xml:space="preserve">
-    <value>Digite seu nome de de usuário</value>
+    <value>Digite seu email</value>
   </data>
   <data name="&gt;&gt;txtUsuario.Name" xml:space="preserve">
     <value>txtUsuario</value>
@@ -6133,13 +6133,13 @@
     <value>28, 109</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 14</value>
+    <value>95, 14</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Nome de Usuário</value>
+    <value>Email do Usuário</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>

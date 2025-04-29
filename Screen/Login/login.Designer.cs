@@ -182,6 +182,7 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.label1.Name = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox8
             // 
@@ -217,6 +218,7 @@
             this.btnLogin.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(115)))));
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click_1);
             // 
             // login
             // 

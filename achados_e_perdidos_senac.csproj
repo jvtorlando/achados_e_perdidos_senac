@@ -125,10 +125,12 @@
     <Compile Include="CadastroItens\FrmSelecionarItem.Designer.cs">
       <DependentUpon>FrmSelecionarItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Model\HistoricoDevolucao.cs" />
     <Compile Include="Model\ItemPerdido.cs" />
     <Compile Include="Model\MonitoramentoItem.cs" />
     <Compile Include="Model\Usuario.cs" />
+    <Compile Include="Repositorios\UsuarioRepositorio.cs" />
     <Compile Include="Screen\Login\login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,7 +154,9 @@
     <Compile Include="Screen\Splash\SplashScreen.Designer.cs">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Services\AuthService.cs" />
     <Compile Include="Services\CloseEntireApplication.cs" />
+    <Compile Include="Services\Criptografia.cs" />
     <Compile Include="Services\DatabaseService.cs" />
     <EmbeddedResource Include="CadastroItens\CadastroItens.resx">
       <DependentUpon>CadastroItens.cs</DependentUpon>

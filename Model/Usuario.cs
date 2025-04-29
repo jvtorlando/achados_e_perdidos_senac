@@ -16,7 +16,7 @@ namespace achados_e_perdidos_senac.Model
         public string telefone { get; set; }
         public string curso { get; set; }
         public string sala { get; set; }
-        public TipoUsuario tipo_usuario { get; set; }
+        //public TipoUsuario tipo_usuario { get; set; }
 
 
         public enum TipoUsuario
@@ -33,14 +33,13 @@ namespace achados_e_perdidos_senac.Model
 
             return new Usuario
             {
-                id = Convert.ToInt32(reader["id"].ToString()),
+                id = Convert.ToInt32(reader["id_usuario"].ToString()),
                 nome = reader["nome"].ToString(),
                 email = reader["email"].ToString(),
                 matricula = reader["matricula"].ToString(),
                 telefone = reader["telefone"].ToString(),
                 curso = reader["curso"].ToString(),
                 sala = reader["sala"].ToString(),
-                tipo_usuario = (TipoUsuario)Enum.Parse(typeof(TipoUsuario), reader["tipo_usuario"].ToString()),
             };
            
            
