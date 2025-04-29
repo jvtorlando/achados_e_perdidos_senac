@@ -154,6 +154,12 @@
     <Compile Include="Screen\Splash\SplashScreen.Designer.cs">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screen\telaCadastroUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen\telaCadastroUsuario.Designer.cs">
+      <DependentUpon>telaCadastroUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Services\AuthService.cs" />
     <Compile Include="Services\CloseEntireApplication.cs" />
     <Compile Include="Services\Criptografia.cs" />
@@ -187,6 +193,9 @@
     </Compile>
     <EmbeddedResource Include="Screen\Splash\SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screen\telaCadastroUsuario.resx">
+      <DependentUpon>telaCadastroUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

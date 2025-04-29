@@ -13,6 +13,7 @@ using achados_e_perdidos_senac.Services;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using achados_e_perdidos_senac.Controllers;
 using achados_e_perdidos_senac.Model;
+using achados_e_perdidos_senac.Screen;
 
 namespace achados_e_perdidos_senac
 {
@@ -211,6 +212,8 @@ namespace achados_e_perdidos_senac
             if (usuario != null)
             {
                 MessageBox.Show($"Usuario logado: {usuario.nome}");
+                telaCadastroUsuario FrmTelaCadastro = new telaCadastroUsuario();
+                FrmTelaCadastro.Show();
                 this.Hide();
 
             }
