@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblCadastrarUsuario = new System.Windows.Forms.LinkLabel();
             this.btnLogin = new achados_e_perdidos_senac.Screen.Login.roundButton();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
@@ -48,7 +49,6 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.lblCadastrarUsuario = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -85,6 +85,16 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox8);
             this.panel1.Name = "panel1";
+            // 
+            // lblCadastrarUsuario
+            // 
+            this.lblCadastrarUsuario.ActiveLinkColor = System.Drawing.Color.Navy;
+            resources.ApplyResources(this.lblCadastrarUsuario, "lblCadastrarUsuario");
+            this.lblCadastrarUsuario.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblCadastrarUsuario.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(141)))));
+            this.lblCadastrarUsuario.Name = "lblCadastrarUsuario";
+            this.lblCadastrarUsuario.TabStop = true;
+            this.lblCadastrarUsuario.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblCadastrarUsuario_LinkClicked);
             // 
             // btnLogin
             // 
@@ -141,6 +151,7 @@
             resources.ApplyResources(this.pictureBox9, "pictureBox9");
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click_1);
             // 
             // pictureBox7
             // 
@@ -221,16 +232,6 @@
             resources.ApplyResources(this.pictureBox4, "pictureBox4");
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.TabStop = false;
-            // 
-            // lblCadastrarUsuario
-            // 
-            this.lblCadastrarUsuario.ActiveLinkColor = System.Drawing.Color.Navy;
-            resources.ApplyResources(this.lblCadastrarUsuario, "lblCadastrarUsuario");
-            this.lblCadastrarUsuario.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblCadastrarUsuario.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(141)))));
-            this.lblCadastrarUsuario.Name = "lblCadastrarUsuario";
-            this.lblCadastrarUsuario.TabStop = true;
-            this.lblCadastrarUsuario.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblCadastrarUsuario_LinkClicked);
             // 
             // login
             // 

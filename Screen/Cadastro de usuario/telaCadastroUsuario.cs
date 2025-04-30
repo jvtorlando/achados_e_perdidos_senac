@@ -16,5 +16,18 @@ namespace achados_e_perdidos_senac.Screen
         {
             InitializeComponent();
         }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblJaTemCadastro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            login FrmLogin = new login();
+            FrmLogin.Show();
+            this.Hide();
+            return;
+        }
     }
 }

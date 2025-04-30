@@ -230,6 +230,12 @@ namespace achados_e_perdidos_senac
             telaCadastroUsuario FrmTelaCadastro = new telaCadastroUsuario();
             FrmTelaCadastro.Show();
             this.Hide();
+            return;
+        }
+
+        private void pictureBox9_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
