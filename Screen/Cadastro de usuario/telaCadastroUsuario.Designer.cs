@@ -34,12 +34,12 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.roundButton1 = new achados_e_perdidos_senac.Screen.Login.roundButton();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -110,6 +110,19 @@
             this.pictureBox10.TabIndex = 25;
             this.pictureBox10.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label2.Location = new System.Drawing.Point(23, 172);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(39, 14);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "Senha";
+            // 
             // txtUsuario
             // 
             this.txtUsuario.BackColor = System.Drawing.SystemColors.Control;
@@ -170,19 +183,6 @@
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 21;
             this.pictureBox9.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(23, 172);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 14);
-            this.label2.TabIndex = 24;
-            this.label2.Text = "Senha";
             // 
             // label1
             // 

@@ -121,10 +121,44 @@
   <data name="panel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblCadastrarUsuario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblCadastrarUsuario.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="lblCadastrarUsuario.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblCadastrarUsuario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 320</value>
+  </data>
+  <data name="lblCadastrarUsuario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 13</value>
+  </data>
+  <data name="lblCadastrarUsuario.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="lblCadastrarUsuario.Text" xml:space="preserve">
+    <value>Cadastrar Usuário</value>
+  </data>
+  <data name="&gt;&gt;lblCadastrarUsuario.Name" xml:space="preserve">
+    <value>lblCadastrarUsuario</value>
+  </data>
+  <data name="&gt;&gt;lblCadastrarUsuario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCadastrarUsuario.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lblCadastrarUsuario.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="btnLogin.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnLogin.Font" type="System.Drawing.Font, System.Drawing">
     <value>Myanmar Text, 9pt, style=Bold</value>
   </data>
@@ -137,7 +171,6 @@
   <data name="btnLogin.Size" type="System.Drawing.Size, System.Drawing">
     <value>276, 48</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnLogin.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
   </data>
@@ -154,7 +187,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;btnLogin.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -190,7 +223,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="txtSenha.AccessibleDescription" xml:space="preserve">
     <value />
@@ -220,7 +253,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;txtSenha.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="pictureBox10.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -304,7 +337,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;pictureBox10.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="txtUsuario.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
@@ -331,7 +364,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;txtUsuario.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -367,7 +400,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="pictureBox9.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -451,7 +484,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;pictureBox9.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="pictureBox7.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1050,7 +1083,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;pictureBox7.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="pictureBox6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1121,7 +1154,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;pictureBox6.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="lblTexto1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1336,7 +1369,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;lblTexto1.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="pictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -5825,7 +5858,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="pictureBox5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -6052,7 +6085,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;pictureBox5.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="linkLabelEsqueceuSenha.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6064,7 +6097,7 @@
     <value>NoControl</value>
   </data>
   <data name="linkLabelEsqueceuSenha.Location" type="System.Drawing.Point, System.Drawing">
-    <value>90, 310</value>
+    <value>87, 295</value>
   </data>
   <data name="linkLabelEsqueceuSenha.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 13</value>
@@ -6085,7 +6118,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;linkLabelEsqueceuSenha.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6118,7 +6151,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6151,7 +6184,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="pictureBox8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -6175,7 +6208,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;pictureBox8.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>190, 74</value>

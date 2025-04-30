@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnLogin = new achados_e_perdidos_senac.Screen.Login.roundButton();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -47,7 +48,7 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btnLogin = new achados_e_perdidos_senac.Screen.Login.roundButton();
+            this.lblCadastrarUsuario = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -66,6 +67,7 @@
             // 
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.Controls.Add(this.lblCadastrarUsuario);
             this.panel1.Controls.Add(this.btnLogin);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.txtSenha);
@@ -83,6 +85,20 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox8);
             this.panel1.Name = "panel1";
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(135)))));
+            this.btnLogin.ClickColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(47)))), ((int)(((byte)(95)))));
+            this.btnLogin.CornerRadius = 10;
+            this.btnLogin.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(135)))));
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnLogin, "btnLogin");
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(115)))));
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click_1);
             // 
             // pictureBox3
             // 
@@ -206,19 +222,15 @@
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.TabStop = false;
             // 
-            // btnLogin
+            // lblCadastrarUsuario
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(135)))));
-            this.btnLogin.ClickColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(47)))), ((int)(((byte)(95)))));
-            this.btnLogin.CornerRadius = 10;
-            this.btnLogin.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(135)))));
-            this.btnLogin.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btnLogin, "btnLogin");
-            this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(115)))));
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click_1);
+            this.lblCadastrarUsuario.ActiveLinkColor = System.Drawing.Color.Navy;
+            resources.ApplyResources(this.lblCadastrarUsuario, "lblCadastrarUsuario");
+            this.lblCadastrarUsuario.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblCadastrarUsuario.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(141)))));
+            this.lblCadastrarUsuario.Name = "lblCadastrarUsuario";
+            this.lblCadastrarUsuario.TabStop = true;
+            this.lblCadastrarUsuario.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblCadastrarUsuario_LinkClicked);
             // 
             // login
             // 
@@ -265,6 +277,7 @@
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox3;
         private Screen.Login.roundButton btnLogin;
+        private System.Windows.Forms.LinkLabel lblCadastrarUsuario;
     }
 }
 

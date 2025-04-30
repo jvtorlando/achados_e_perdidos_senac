@@ -224,5 +224,12 @@ namespace achados_e_perdidos_senac
         {
 
         }
+
+        private void lblCadastrarUsuario_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            telaCadastroUsuario FrmTelaCadastro = new telaCadastroUsuario();
+            FrmTelaCadastro.Show();
+            this.Hide();
+        }
     }
 }
