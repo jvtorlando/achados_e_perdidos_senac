@@ -56,7 +56,8 @@ namespace achados_e_perdidos_senac.CadastroItens
             }
 
             // CONEXÃO COM O BANCO - substitua pelos seus dados
-            string connectionString = "server=localhost;database=achados_perdidos;uid=seu_usuario;pwd=sua_senha;";
+            string connectionString = "server=localhost;database=achados_perdidos;uid=root;pwd=123456;";
+
 
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
