@@ -53,6 +53,9 @@ namespace achados_e_perdidos_senac.Screen
             {
                 MessageBox.Show("Usuário cadastrado com sucesso");
                 //FEchar a tela e mandar para tela de login
+                login FrmLogin = new login();
+                FrmLogin.Show();
+                this.Close();
             }
             else {
 
