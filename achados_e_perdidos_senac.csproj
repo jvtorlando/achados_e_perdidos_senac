@@ -126,6 +126,7 @@
       <DependentUpon>FrmSelecionarItem.cs</DependentUpon>
     </Compile>
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Model\HistoricoDevolucao.cs" />
     <Compile Include="Model\ItemPerdido.cs" />
     <Compile Include="Model\MonitoramentoItem.cs" />

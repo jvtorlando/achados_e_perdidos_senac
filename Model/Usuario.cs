@@ -11,13 +11,11 @@ namespace achados_e_perdidos_senac.Model
     {
         public int id { get; set; }
         public string nome { get; set; }
-        public string matricula { get; set; }
         public string email { get; set; }
+        public string senha { get; set; }
 
         public string cpf { get; set; }
         public string telefone { get; set; }
-        public string curso { get; set; }
-        public string sala { get; set; }
         //public TipoUsuario tipo_usuario { get; set; }
 
 
@@ -38,11 +36,9 @@ namespace achados_e_perdidos_senac.Model
                 id = Convert.ToInt32(reader["id_usuario"].ToString()),
                 nome = reader["nome"].ToString(),
                 email = reader["email"].ToString(),
-                matricula = reader["matricula"].ToString(),
                 cpf = reader["cpf"].ToString(),
+                senha = reader["senha"].ToString(),
                 telefone = reader["telefone"].ToString(),
-                curso = reader["curso"].ToString(),
-                sala = reader["sala"].ToString(),
             };
            
            

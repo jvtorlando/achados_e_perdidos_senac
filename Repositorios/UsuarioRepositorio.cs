@@ -58,19 +58,16 @@ namespace achados_e_perdidos_senac.Repositorios
             try
             {
                 string query = @"INSERT INTO usuario
-                                (nome, matricula, cpf, email, telefone, curso, sala,  senha) 
+                                (nome, cpf, email, telefone, senha) 
                                 VALUES 
-                                (@nome, @matricula, @cpf, @email, @telefone, @curso, @sala, @senha)";
+                                (@nome, @cpf, @email, @telefone, @senha)";
 
                 var parameters = new MySqlParameter[]
                 {
                     new MySqlParameter("@nome", usuario.nome),
-                    new MySqlParameter("@matricula", usuario.matricula),
                     new MySqlParameter("@cpf", usuario.cpf),
                     new MySqlParameter("@email", usuario.email),
                     new MySqlParameter("@telefone", usuario.telefone),
-                    new MySqlParameter("@curso", usuario.curso),
-                    new MySqlParameter("@sala", usuario.sala),
                     new MySqlParameter("@senha", Criptografia.HashPassword(password))
                 };
 
