@@ -55,7 +55,7 @@ namespace achados_e_perdidos_senac.CadastroItens
                 return;
             }
 
-            // CONEXÃO COM O BANCO - substitua pelos seus dados
+
             string connectionString = "server=localhost;database=achados_perdidos;uid=root;pwd=123456;";
 
 
