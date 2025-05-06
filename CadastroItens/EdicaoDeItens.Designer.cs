@@ -48,27 +48,29 @@
             // btnSalvar
             // 
             this.btnSalvar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSalvar.Location = new System.Drawing.Point(715, 413);
+            this.btnSalvar.Location = new System.Drawing.Point(503, 397);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(75, 23);
+            this.btnSalvar.Size = new System.Drawing.Size(86, 35);
             this.btnSalvar.TabIndex = 21;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnSelecionarFoto
             // 
             this.btnSelecionarFoto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSelecionarFoto.Location = new System.Drawing.Point(620, 415);
+            this.btnSelecionarFoto.Location = new System.Drawing.Point(617, 397);
             this.btnSelecionarFoto.Name = "btnSelecionarFoto";
-            this.btnSelecionarFoto.Size = new System.Drawing.Size(75, 23);
+            this.btnSelecionarFoto.Size = new System.Drawing.Size(86, 35);
             this.btnSelecionarFoto.TabIndex = 20;
             this.btnSelecionarFoto.Text = "Selecionar";
             this.btnSelecionarFoto.UseVisualStyleBackColor = true;
+            this.btnSelecionarFoto.Click += new System.EventHandler(this.btnSelecionarFoto_Click);
             // 
             // dateTimePickerDataCadastro
             // 
             this.dateTimePickerDataCadastro.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePickerDataCadastro.Location = new System.Drawing.Point(8, 343);
+            this.dateTimePickerDataCadastro.Location = new System.Drawing.Point(14, 343);
             this.dateTimePickerDataCadastro.Name = "dateTimePickerDataCadastro";
             this.dateTimePickerDataCadastro.Size = new System.Drawing.Size(200, 20);
             this.dateTimePickerDataCadastro.TabIndex = 19;
@@ -77,44 +79,46 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(14, 327);
+            this.label4.Location = new System.Drawing.Point(11, 327);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(127, 13);
             this.label4.TabIndex = 18;
-            this.label4.Text = "label4";
+            this.label4.Text = "Data de encontro do item";
             // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(224, 129);
+            this.label3.Location = new System.Drawing.Point(237, 126);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.Size = new System.Drawing.Size(92, 13);
             this.label3.TabIndex = 17;
-            this.label3.Text = "label3";
+            this.label3.Text = "Descrição do item";
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 109);
+            this.label2.Location = new System.Drawing.Point(11, 126);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 16;
-            this.label2.Text = "label2";
+            this.label2.Text = "Imagem";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(240, 158);
+            this.textBox1.Location = new System.Drawing.Point(240, 142);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(433, 154);
+            this.textBox1.Size = new System.Drawing.Size(433, 221);
             this.textBox1.TabIndex = 15;
             // 
             // pictureBoxFoto
             // 
             this.pictureBoxFoto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBoxFoto.BackColor = System.Drawing.Color.White;
             this.pictureBoxFoto.Location = new System.Drawing.Point(14, 142);
             this.pictureBoxFoto.Name = "pictureBoxFoto";
             this.pictureBoxFoto.Size = new System.Drawing.Size(191, 170);
@@ -127,9 +131,9 @@
             this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(141)))));
             this.panel4.Controls.Add(this.label1);
-            this.panel4.Location = new System.Drawing.Point(211, 14);
+            this.panel4.Location = new System.Drawing.Point(211, -3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(581, 75);
+            this.panel4.Size = new System.Drawing.Size(592, 92);
             this.panel4.TabIndex = 13;
             // 
             // label1
@@ -146,27 +150,33 @@
             // panel3
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel3.Location = new System.Drawing.Point(8, 14);
+            this.panel3.Location = new System.Drawing.Point(3, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(197, 74);
+            this.panel3.Size = new System.Drawing.Size(211, 88);
             this.panel3.TabIndex = 12;
             // 
             // btnExcluir
             // 
             this.btnExcluir.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnExcluir.Location = new System.Drawing.Point(529, 415);
+            this.btnExcluir.BackColor = System.Drawing.Color.Red;
+            this.btnExcluir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExcluir.BackgroundImage")));
+            this.btnExcluir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcluir.Location = new System.Drawing.Point(737, 386);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
+            this.btnExcluir.Size = new System.Drawing.Size(51, 46);
             this.btnExcluir.TabIndex = 22;
-            this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // EdicaoDeItens
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnSalvar);
