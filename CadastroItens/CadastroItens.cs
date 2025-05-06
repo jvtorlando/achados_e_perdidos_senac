@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace achados_e_perdidos_senac.CadastroItens
 {
@@ -41,7 +43,7 @@ namespace achados_e_perdidos_senac.CadastroItens
             dateTimePickerDataCadastro.Enabled = false; 
         }
 
-            private void btnSalvar_Click(object sender, EventArgs e)
+        private void btnSalvar_Click(object sender, EventArgs e)
         {
             string descricao = txtDescricao.Text;
             string caminhoFoto = pictureBoxFoto.ImageLocation;
@@ -53,11 +55,38 @@ namespace achados_e_perdidos_senac.CadastroItens
                 return;
             }
 
-            // Aqui você pode salvar os dados em um banco de dados, arquivo ou listaMessageBox.Show("Item cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            // Opcional: Limpar os campos após salvartxtDescricao.Clear();
-            pictureBoxFoto.ImageLocation = null;
+            string connectionString = "server=localhost;database=achados_perdidos;uid=root;pwd=123456;";
 
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+
+                    string query = "INSERT INTO itens (descricao, caminho_foto, data_cadastro) VALUES (@descricao, @caminhoFoto, @dataCadastro)";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@descricao", descricao);
+                        cmd.Parameters.AddWithValue("@caminhoFoto", caminhoFoto);
+                        cmd.Parameters.AddWithValue("@dataCadastro", dataCadastro);
+
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    MessageBox.Show("Item cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Limpar os campos
+                    txtDescricao.Clear();
+                    pictureBoxFoto.ImageLocation = null;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao salvar no banco de dados:\n" + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void label4_Click(object sender, EventArgs e)
