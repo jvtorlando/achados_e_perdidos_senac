@@ -64,5 +64,96 @@ namespace achados_e_perdidos_senac.Screen
             }
 
         }
+        //Ocultar nome do campo de preenchimento de campo ao coloar mouse encima (Nome)
+        private void txtCadastroNome_MouseEnter(object sender, EventArgs e)
+        {
+            if (txtCadastroNome.Text == "Nome")
+            {
+                txtCadastroNome.Text = "";
+                txtCadastroNome.ForeColor = Color.Black;
+            }
+        }
+        //Ocultar nome do campo de preenchimento de campo ao coloar mouse encima (Nome)
+        private void txtCadastroNome_MouseLeave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtCadastroNome.Text))
+            {
+                txtCadastroNome.Text = "Nome";
+                txtCadastroNome.ForeColor = Color.DarkGray;
+            }
+        }
+        //Ocultar nome do campo de preenchimento de campo ao coloar mouse encima (Email)
+        private void txtCadastroEmail_MouseEnter(object sender, EventArgs e)
+        {
+            if (txtCadastroEmail.Text == "Email")
+            {
+                txtCadastroEmail.Text = "";
+                txtCadastroEmail.ForeColor = Color.Black;
+            }
+        
+        }
+        //Ocultar nome do campo de preenchimento de campo ao coloar mouse encima (Email)
+        private void txtCadastroEmail_MouseLeave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtCadastroEmail.Text))
+            {
+                txtCadastroEmail.Text = "Email";
+                txtCadastroEmail.ForeColor = Color.DarkGray;
+            }
+        }
+        //Ocultar nome do campo de preenchimento de campo ao coloar mouse encima (Telefone)
+        private void txtCadastroTelefone_MouseEnter(object sender, EventArgs e)
+        {
+            if (txtCadastroTelefone.Text == "Telefone")
+            {
+                txtCadastroTelefone.Text = "";
+                txtCadastroTelefone.ForeColor = Color.Black;
+            }
+        }
+        //Ocultar nome do campo de preenchimento de campo ao coloar mouse encima (Telefone)
+        private void txtCadastroTelefone_MouseLeave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtCadastroTelefone.Text))
+            {
+                txtCadastroTelefone.Text = "Telefone";
+                txtCadastroTelefone.ForeColor = Color.DarkGray;
+            }
+        }
+        //Ocultar nome do campo de preenchimento de campo ao coloar mouse encima (Senha)
+        private void txtCadastroSenha_MouseEnter(object sender, EventArgs e)
+        {
+            if (txtCadastroSenha.Text == "Senha")
+            {
+                txtCadastroSenha.Text = "";
+                txtCadastroSenha.ForeColor = Color.Black;
+            }
+        }
+        //Ocultar nome do campo de preenchimento de campo ao coloar mouse encima (Senha)
+        private void txtCadastroSenha_MouseLeave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtCadastroSenha.Text))
+            {
+                txtCadastroSenha.Text = "Senha";
+                txtCadastroSenha.ForeColor = Color.DarkGray;
+            }
+        }
+        //Ocultar nome do campo de preenchimento de campo ao coloar mouse encima (CPF)
+        private void txtCadastroCpf_MouseEnter(object sender, EventArgs e)
+        {
+            if (txtCadastroCpf.Text == "CPF")
+            {
+                txtCadastroCpf.Text = "";
+                txtCadastroCpf.ForeColor = Color.Black;
+            }
+        }
+        //Ocultar nome do campo de preenchimento de campo ao coloar mouse encima (CPF)
+        private void txtCadastroCpf_MouseLeave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtCadastroCpf.Text))
+            {
+                txtCadastroCpf.Text = "CPF";
+                txtCadastroCpf.ForeColor = Color.DarkGray;
+            }
+        }
     }
 }
