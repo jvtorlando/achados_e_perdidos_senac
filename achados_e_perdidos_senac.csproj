@@ -125,12 +125,14 @@
     <Compile Include="CadastroItens\FrmSelecionarItem.Designer.cs">
       <DependentUpon>FrmSelecionarItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\ItemPerdidoController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Model\HistoricoDevolucao.cs" />
     <Compile Include="Model\ItemPerdido.cs" />
     <Compile Include="Model\MonitoramentoItem.cs" />
     <Compile Include="Model\Usuario.cs" />
+    <Compile Include="Repositorios\ItemRepositorio.cs" />
     <Compile Include="Repositorios\UsuarioRepositorio.cs" />
     <Compile Include="Screen\Login\login.cs">
       <SubType>Form</SubType>

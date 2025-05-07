@@ -7,14 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using achados_e_perdidos_senac.Controllers;
+using achados_e_perdidos_senac.Model;
+using achados_e_perdidos_senac.Repositorios;
+using achados_e_perdidos_senac.Services;
 
 namespace achados_e_perdidos_senac.CadastroItens
 {
     public partial class FrmCadastroItens: Form
     {
+        private ItemPerdidoController itemPerdidoController;
         public FrmCadastroItens()
         {
             InitializeComponent();
+            itemPerdidoController = new ItemPerdidoController(new ItemRepositorio(new DatabaseService()));
+
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -54,6 +61,15 @@ namespace achados_e_perdidos_senac.CadastroItens
 
         private void btnSalvarItem_Click(object sender, EventArgs e)
         {
+            ItemPerdido itemPerdido = new ItemPerdido();
+
+            itemPerdido.andar = SelectAndar.SelectedItem.ToString();
+            itemPerdido.categoria = SelectCategoria.SelectedItem.ToString();
+            itemPerdido.data = dateTimePickerDataCadastro.Value;
+            itemPerdido.descricao = txtDescricao.Text;
+            itemPerdido.imagem_url = pictureBoxFoto.ImageLocation;
+
+
             string selectCategoria = SelectCategoria.Text;
             string caminhoFoto = pictureBoxFoto.ImageLocation;
             DateTime dataCadastro = dateTimePickerDataCadastro.Value;
@@ -63,6 +79,10 @@ namespace achados_e_perdidos_senac.CadastroItens
                 MessageBox.Show("Por favor, preencha todos os campos e selecione uma foto.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
+            itemPerdidoController.InserirItemPerdido(itemPerdido);
+
+
 
             // Aqui você pode salvar os dados em um banco de dados, arquivo ou listaMessageBox.Show("Item cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 

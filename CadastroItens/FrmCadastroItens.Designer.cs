@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCadastroItens));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.SelectAndar = new System.Windows.Forms.ComboBox();
             this.SelectCategoria = new System.Windows.Forms.ComboBox();
             this.btnSalvarItem = new achados_e_perdidos_senac.Screen.Login.roundButton();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -42,6 +42,8 @@
             this.dateTimePickerDataCadastro = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtDescricao = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -59,23 +61,23 @@
             this.panel1.Size = new System.Drawing.Size(803, 485);
             this.panel1.TabIndex = 0;
             // 
-            // comboBox2
+            // SelectAndar
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.SelectAndar.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SelectAndar.FormattingEnabled = true;
+            this.SelectAndar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.SelectAndar.Items.AddRange(new object[] {
             "SS",
             "1",
             "2",
             "3",
             "4",
             "5"});
-            this.comboBox2.Location = new System.Drawing.Point(71, 238);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(205, 36);
-            this.comboBox2.TabIndex = 30;
-            this.comboBox2.Text = "Andar";
+            this.SelectAndar.Location = new System.Drawing.Point(71, 168);
+            this.SelectAndar.Name = "SelectAndar";
+            this.SelectAndar.Size = new System.Drawing.Size(205, 36);
+            this.SelectAndar.TabIndex = 30;
+            this.SelectAndar.Text = "Andar";
             // 
             // SelectCategoria
             // 
@@ -91,7 +93,7 @@
             "Livros, Materiais de Estudo",
             "Chaves",
             "Outros"});
-            this.SelectCategoria.Location = new System.Drawing.Point(71, 181);
+            this.SelectCategoria.Location = new System.Drawing.Point(71, 111);
             this.SelectCategoria.Name = "SelectCategoria";
             this.SelectCategoria.Size = new System.Drawing.Size(205, 36);
             this.SelectCategoria.TabIndex = 29;
@@ -119,10 +121,12 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.txtDescricao);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.btnSalvarItem);
-            this.panel2.Controls.Add(this.comboBox2);
+            this.panel2.Controls.Add(this.SelectAndar);
             this.panel2.Controls.Add(this.dateTimePickerDataCadastro);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.SelectCategoria);
@@ -153,7 +157,7 @@
             this.pictureBoxFoto.Location = new System.Drawing.Point(339, 181);
             this.pictureBoxFoto.Name = "pictureBoxFoto";
             this.pictureBoxFoto.Size = new System.Drawing.Size(330, 166);
-            this.pictureBoxFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxFoto.TabIndex = 4;
             this.pictureBoxFoto.TabStop = false;
             // 
@@ -206,7 +210,7 @@
             this.dateTimePickerDataCadastro.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePickerDataCadastro.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePickerDataCadastro.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dateTimePickerDataCadastro.Location = new System.Drawing.Point(71, 289);
+            this.dateTimePickerDataCadastro.Location = new System.Drawing.Point(71, 219);
             this.dateTimePickerDataCadastro.Name = "dateTimePickerDataCadastro";
             this.dateTimePickerDataCadastro.RightToLeftLayout = true;
             this.dateTimePickerDataCadastro.Size = new System.Drawing.Size(205, 35);
@@ -234,6 +238,25 @@
             this.label2.Size = new System.Drawing.Size(168, 28);
             this.label2.TabIndex = 32;
             this.label2.Text = "Cadastrar Item";
+            // 
+            // txtDescricao
+            // 
+            this.txtDescricao.Location = new System.Drawing.Point(71, 288);
+            this.txtDescricao.Multiline = true;
+            this.txtDescricao.Name = "txtDescricao";
+            this.txtDescricao.Size = new System.Drawing.Size(205, 83);
+            this.txtDescricao.TabIndex = 33;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
+            this.label3.Location = new System.Drawing.Point(74, 265);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(140, 20);
+            this.label3.TabIndex = 34;
+            this.label3.Text = "Descrição do ítem:";
             // 
             // FrmCadastroItens
             // 
@@ -265,8 +288,10 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ComboBox SelectCategoria;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox SelectAndar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtDescricao;
     }
 }
