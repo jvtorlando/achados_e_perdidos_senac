@@ -55,9 +55,9 @@ namespace achados_e_perdidos_senac.Repositorios
             try
             {
                 string query = @"INSERT INTO item_perdido
-                                (categoria, descricao, andar, imagem_url) 
+                                (categoria, descricao, andar, imagem_url, data) 
                                 VALUES 
-                                (@categoria, @descricao, @andar, @imagem_url)";
+                                (@categoria, @descricao, @andar, @imagem_url, @data)";
 
                 var parameters = new MySqlParameter[]
                 {
@@ -65,6 +65,7 @@ namespace achados_e_perdidos_senac.Repositorios
                     new MySqlParameter("@descricao", itemPerdido.descricao),
                     new MySqlParameter("@andar", itemPerdido.andar),
                     new MySqlParameter("@imagem_url", itemPerdido.imagem_url),
+                    new MySqlParameter("@data", itemPerdido.data),
                 };
 
                 int affectedRows = databaseService.ExecuteNonQuery(query, parameters);

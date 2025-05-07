@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,6 +19,13 @@ namespace achados_e_perdidos_senac.CadastroItens
     public partial class FrmCadastroItens: Form
     {
         private ItemPerdidoController itemPerdidoController;
+
+        OpenFileDialog openFileDialog = new OpenFileDialog
+        {
+            Filter = "Imagens|*.jpg;*.jpeg;*.png;",
+            Title = "Selecionar Foto"
+        };
+
         public FrmCadastroItens()
         {
             InitializeComponent();
@@ -47,11 +56,7 @@ namespace achados_e_perdidos_senac.CadastroItens
 
         private void btnSubirArquivo_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog
-            {
-                Filter = "Imagens|*.jpg;*.jpeg;*.png;",
-                Title = "Selecionar Foto"
-            };
+            
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -61,14 +66,10 @@ namespace achados_e_perdidos_senac.CadastroItens
 
         private void btnSalvarItem_Click(object sender, EventArgs e)
         {
+
             ItemPerdido itemPerdido = new ItemPerdido();
 
-            itemPerdido.andar = SelectAndar.SelectedItem.ToString();
-            itemPerdido.categoria = SelectCategoria.SelectedItem.ToString();
-            itemPerdido.data = dateTimePickerDataCadastro.Value;
-            itemPerdido.descricao = txtDescricao.Text;
-            itemPerdido.imagem_url = pictureBoxFoto.ImageLocation;
-
+            CriarObjetoItemPerdido(itemPerdido);
 
             string selectCategoria = SelectCategoria.Text;
             string caminhoFoto = pictureBoxFoto.ImageLocation;
@@ -80,7 +81,10 @@ namespace achados_e_perdidos_senac.CadastroItens
                 return;
             }
 
-            itemPerdidoController.InserirItemPerdido(itemPerdido);
+            if (itemPerdidoController.InserirItemPerdido(itemPerdido))
+            {
+                AlterarLocalImagem();
+            }
 
 
 
@@ -91,6 +95,32 @@ namespace achados_e_perdidos_senac.CadastroItens
 
 
         }
+
+        private void AlterarLocalImagem() {
+
+            string destinoPasta = Path.Combine(Application.StartupPath, "Imagens"); // pasta "Imagens" no diretório da aplicação
+            if (!Directory.Exists(destinoPasta))
+                Directory.CreateDirectory(destinoPasta);
+
+            string nomeArquivo = Path.GetFileName(openFileDialog.FileName);
+            string caminhoDestino = Path.Combine(destinoPasta, nomeArquivo);
+
+            // Copiar o arquivo selecionado para o destino
+            File.Copy(openFileDialog.FileName, caminhoDestino, true);
+
+        }
+
+
+        private void CriarObjetoItemPerdido(ItemPerdido itemPerdido) {
+
+            itemPerdido.andar = SelectAndar.SelectedItem.ToString();
+            itemPerdido.categoria = SelectCategoria.SelectedItem.ToString();
+            itemPerdido.data = dateTimePickerDataCadastro.Value;
+            itemPerdido.descricao = txtDescricao.Text;
+            itemPerdido.imagem_url = Path.GetFileName(openFileDialog.FileName);
+
+        }
+
     }
     }
 
