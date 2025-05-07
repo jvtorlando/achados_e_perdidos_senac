@@ -213,8 +213,8 @@ namespace achados_e_perdidos_senac
             if (usuario != null)
             {
                 MessageBox.Show($"Usuario logado: {usuario.nome}");
-                CadastroItens.CadastroItens cadastroItem = new CadastroItens.CadastroItens();
-                cadastroItem.Show();
+                Home FrmHome = new Home();
+                FrmHome.Show();
                 this.Hide();
 
             }
@@ -230,7 +230,7 @@ namespace achados_e_perdidos_senac
         {
             telaCadastroUsuario FrmTelaCadastro = new telaCadastroUsuario();
             FrmTelaCadastro.Show();
-            this.Hide();
+            this.Hide(); 
             return;
         }
 

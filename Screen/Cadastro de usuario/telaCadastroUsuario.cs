@@ -20,6 +20,7 @@ namespace achados_e_perdidos_senac.Screen
 
         public telaCadastroUsuario()
         {
+            //Banco de dados
             InitializeComponent();
             _usuarioController = new UsuarioController(new UsuarioRepositorio(new DatabaseService()));
         }
@@ -31,6 +32,7 @@ namespace achados_e_perdidos_senac.Screen
 
         private void lblJaTemCadastro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            //Direcionar para a tela de Login
             login FrmLogin = new login();
             FrmLogin.Show();
             this.Hide();
@@ -39,6 +41,7 @@ namespace achados_e_perdidos_senac.Screen
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
+            //Conexão com o banco de dados
             Usuario usuario = new Usuario();
 
             usuario.nome = txtCadastroNome.Text;
@@ -47,18 +50,19 @@ namespace achados_e_perdidos_senac.Screen
             usuario.senha = txtCadastroSenha.Text;
             usuario.telefone = txtCadastroTelefone.Text;
 
-          bool result =  _usuarioController.CadastrarUsuario(usuario);
+            bool result =  _usuarioController.CadastrarUsuario(usuario);
 
             if (result)
-            {
+            {   
+                //Menssagem de sucesso caso cadastro efetuado com sucesso
                 MessageBox.Show("Usuário cadastrado com sucesso");
-                //FEchar a tela e mandar para tela de login
+                //Fechar a tela e mandar para tela de login
                 login FrmLogin = new login();
                 FrmLogin.Show();
                 this.Close();
             }
             else {
-
+                //Textbox com mensagem de erro
                 MessageBox.Show("Erro ao cadastrar usuário");
 
             }

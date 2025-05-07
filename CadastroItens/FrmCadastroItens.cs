@@ -10,14 +10,35 @@ using System.Windows.Forms;
 
 namespace achados_e_perdidos_senac.CadastroItens
 {
-    public partial class CadastroItens: Form
+    public partial class FrmCadastroItens: Form
     {
-        public CadastroItens()
+        public FrmCadastroItens()
         {
             InitializeComponent();
         }
 
-        private void btnSelecionarFoto_Click(object sender, EventArgs e)
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+            private void Form1_Load(object sender, EventArgs e)
+        {
+            dateTimePickerDataCadastro.Value = DateTime.Now;
+            dateTimePickerDataCadastro.Enabled = false; 
+        }
+
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDescricao_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSubirArquivo_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog
             {
@@ -31,17 +52,7 @@ namespace achados_e_perdidos_senac.CadastroItens
             }
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-            private void Form1_Load(object sender, EventArgs e)
-        {
-            dateTimePickerDataCadastro.Value = DateTime.Now;
-            dateTimePickerDataCadastro.Enabled = false; 
-        }
-
-            private void btnSalvar_Click(object sender, EventArgs e)
+        private void btnSalvarItem_Click(object sender, EventArgs e)
         {
             string descricao = txtDescricao.Text;
             string caminhoFoto = pictureBoxFoto.ImageLocation;
@@ -57,17 +68,6 @@ namespace achados_e_perdidos_senac.CadastroItens
 
             // Opcional: Limpar os campos após salvartxtDescricao.Clear();
             pictureBoxFoto.ImageLocation = null;
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtDescricao_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
     }

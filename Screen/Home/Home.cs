@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using achados_e_perdidos_senac.CadastroItens;
 using achados_e_perdidos_senac.Services;
 
 namespace achados_e_perdidos_senac
@@ -15,6 +16,7 @@ namespace achados_e_perdidos_senac
     {
         public Home()
         {
+            //Fechar toda a aplicação
             InitializeComponent();
             this.FormClosing += CloseEntireApplication.CloseApplication;
         }
@@ -37,6 +39,19 @@ namespace achados_e_perdidos_senac
         private void button4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnPesquisarItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnCadastrarItem_Click(object sender, EventArgs e)
+        {
+            //Abrir tela de cadastro de item novo
+            FrmCadastroItens frmCadastroItem = new FrmCadastroItens();
+            frmCadastroItem.Show();
+            this.Hide();
         }
     }
 }
