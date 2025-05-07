@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using achados_e_perdidos_senac.CadastroItens;
 using achados_e_perdidos_senac.Screen.Splash;
 
 namespace achados_e_perdidos_senac
@@ -17,7 +18,7 @@ namespace achados_e_perdidos_senac
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SplashScreen());
+            Application.Run(new FrmCadastroItens());
         }
     }
 }

@@ -72,7 +72,7 @@
             this.dateTimePickerDataCadastro.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePickerDataCadastro.Location = new System.Drawing.Point(14, 343);
             this.dateTimePickerDataCadastro.Name = "dateTimePickerDataCadastro";
-            this.dateTimePickerDataCadastro.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePickerDataCadastro.Size = new System.Drawing.Size(215, 20);
             this.dateTimePickerDataCadastro.TabIndex = 19;
             // 
             // label4

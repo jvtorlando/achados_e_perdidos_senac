@@ -107,11 +107,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CadastroItens\CadastroItens.cs">
+    <Compile Include="CadastroItens\FrmCadastroItens.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CadastroItens\CadastroItens.Designer.cs">
-      <DependentUpon>CadastroItens.cs</DependentUpon>
+    <Compile Include="CadastroItens\FrmCadastroItens.Designer.cs">
+      <DependentUpon>FrmCadastroItens.cs</DependentUpon>
     </Compile>
     <Compile Include="CadastroItens\EdicaoDeItens.cs">
       <SubType>Form</SubType>
@@ -165,8 +165,8 @@
     <Compile Include="Services\CloseEntireApplication.cs" />
     <Compile Include="Services\Criptografia.cs" />
     <Compile Include="Services\DatabaseService.cs" />
-    <EmbeddedResource Include="CadastroItens\CadastroItens.resx">
-      <DependentUpon>CadastroItens.cs</DependentUpon>
+    <EmbeddedResource Include="CadastroItens\FrmCadastroItens.resx">
+      <DependentUpon>FrmCadastroItens.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroItens\EdicaoDeItens.resx">
       <DependentUpon>EdicaoDeItens.cs</DependentUpon>
