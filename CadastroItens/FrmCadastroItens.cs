@@ -54,11 +54,11 @@ namespace achados_e_perdidos_senac.CadastroItens
 
         private void btnSalvarItem_Click(object sender, EventArgs e)
         {
-            string descricao = txtDescricao.Text;
+            string selectCategoria = SelectCategoria.Text;
             string caminhoFoto = pictureBoxFoto.ImageLocation;
             DateTime dataCadastro = dateTimePickerDataCadastro.Value;
 
-            if (string.IsNullOrEmpty(descricao) || string.IsNullOrEmpty(caminhoFoto))
+            if (string.IsNullOrEmpty(selectCategoria) || string.IsNullOrEmpty(caminhoFoto))
             {
                 MessageBox.Show("Por favor, preencha todos os campos e selecione uma foto.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -68,6 +68,8 @@ namespace achados_e_perdidos_senac.CadastroItens
 
             // Opcional: Limpar os campos após salvartxtDescricao.Clear();
             pictureBoxFoto.ImageLocation = null;
+
+
         }
     }
     }
