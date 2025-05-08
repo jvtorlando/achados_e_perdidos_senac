@@ -49,6 +49,5 @@ namespace achados_e_perdidos_senac.CadastroItens
         {
             CarregarItens(txtPesquisa.Text);
         }
-
     }
 }

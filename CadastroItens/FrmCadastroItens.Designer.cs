@@ -30,20 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCadastroItens));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.SelectAndar = new System.Windows.Forms.ComboBox();
-            this.SelectCategoria = new System.Windows.Forms.ComboBox();
-            this.btnSalvarItem = new achados_e_perdidos_senac.Screen.Login.roundButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtDescricao = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnSalvarItem = new achados_e_perdidos_senac.Screen.Login.roundButton();
+            this.SelectAndar = new System.Windows.Forms.ComboBox();
+            this.dateTimePickerDataCadastro = new System.Windows.Forms.DateTimePicker();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.SelectCategoria = new System.Windows.Forms.ComboBox();
             this.pictureBoxFoto = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnSubirArquivo = new achados_e_perdidos_senac.Screen.Login.roundButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dateTimePickerDataCadastro = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtDescricao = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -60,64 +60,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(803, 485);
             this.panel1.TabIndex = 0;
-            // 
-            // SelectAndar
-            // 
-            this.SelectAndar.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SelectAndar.FormattingEnabled = true;
-            this.SelectAndar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.SelectAndar.Items.AddRange(new object[] {
-            "SS",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.SelectAndar.Location = new System.Drawing.Point(71, 168);
-            this.SelectAndar.Name = "SelectAndar";
-            this.SelectAndar.Size = new System.Drawing.Size(205, 36);
-            this.SelectAndar.TabIndex = 30;
-            this.SelectAndar.Text = "Andar";
-            // 
-            // SelectCategoria
-            // 
-            this.SelectCategoria.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SelectCategoria.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SelectCategoria.FormattingEnabled = true;
-            this.SelectCategoria.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.SelectCategoria.Items.AddRange(new object[] {
-            "Eletrônicos",
-            "Documentos",
-            "Acessorios Pessoais",
-            "Roupas",
-            "Livros, Materiais de Estudo",
-            "Chaves",
-            "Outros"});
-            this.SelectCategoria.Location = new System.Drawing.Point(71, 111);
-            this.SelectCategoria.Name = "SelectCategoria";
-            this.SelectCategoria.Size = new System.Drawing.Size(205, 36);
-            this.SelectCategoria.TabIndex = 29;
-            this.SelectCategoria.TabStop = false;
-            this.SelectCategoria.Text = "Categoria";
-            // 
-            // btnSalvarItem
-            // 
-            this.btnSalvarItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
-            this.btnSalvarItem.ClickColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(47)))), ((int)(((byte)(95)))));
-            this.btnSalvarItem.CornerRadius = 10;
-            this.btnSalvarItem.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(135)))));
-            this.btnSalvarItem.FlatAppearance.BorderSize = 0;
-            this.btnSalvarItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalvarItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnSalvarItem.ForeColor = System.Drawing.Color.White;
-            this.btnSalvarItem.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(115)))));
-            this.btnSalvarItem.Location = new System.Drawing.Point(569, 396);
-            this.btnSalvarItem.Name = "btnSalvarItem";
-            this.btnSalvarItem.Size = new System.Drawing.Size(147, 39);
-            this.btnSalvarItem.TabIndex = 13;
-            this.btnSalvarItem.Text = "Salvar Item";
-            this.btnSalvarItem.UseVisualStyleBackColor = false;
-            this.btnSalvarItem.Click += new System.EventHandler(this.btnSalvarItem_Click);
             // 
             // panel2
             // 
@@ -139,6 +81,99 @@
             this.panel2.Size = new System.Drawing.Size(769, 484);
             this.panel2.TabIndex = 16;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
+            this.label3.Location = new System.Drawing.Point(74, 265);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(140, 20);
+            this.label3.TabIndex = 34;
+            this.label3.Text = "Descrição do ítem:";
+            // 
+            // txtDescricao
+            // 
+            this.txtDescricao.Location = new System.Drawing.Point(71, 288);
+            this.txtDescricao.Multiline = true;
+            this.txtDescricao.Name = "txtDescricao";
+            this.txtDescricao.Size = new System.Drawing.Size(205, 83);
+            this.txtDescricao.TabIndex = 33;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
+            this.label2.Location = new System.Drawing.Point(423, 38);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(168, 28);
+            this.label2.TabIndex = 32;
+            this.label2.Text = "Cadastrar Item";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
+            this.label1.Location = new System.Drawing.Point(336, 153);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(333, 25);
+            this.label1.TabIndex = 31;
+            this.label1.Text = "A imagem do item aparecerá aqui";
+            // 
+            // btnSalvarItem
+            // 
+            this.btnSalvarItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
+            this.btnSalvarItem.ClickColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(47)))), ((int)(((byte)(95)))));
+            this.btnSalvarItem.CornerRadius = 10;
+            this.btnSalvarItem.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(135)))));
+            this.btnSalvarItem.FlatAppearance.BorderSize = 0;
+            this.btnSalvarItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalvarItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnSalvarItem.ForeColor = System.Drawing.Color.White;
+            this.btnSalvarItem.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(115)))));
+            this.btnSalvarItem.Location = new System.Drawing.Point(569, 396);
+            this.btnSalvarItem.Name = "btnSalvarItem";
+            this.btnSalvarItem.Size = new System.Drawing.Size(147, 39);
+            this.btnSalvarItem.TabIndex = 13;
+            this.btnSalvarItem.Text = "Salvar Item";
+            this.btnSalvarItem.UseVisualStyleBackColor = false;
+            this.btnSalvarItem.Click += new System.EventHandler(this.btnSalvarItem_Click);
+            // 
+            // SelectAndar
+            // 
+            this.SelectAndar.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SelectAndar.FormattingEnabled = true;
+            this.SelectAndar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.SelectAndar.Items.AddRange(new object[] {
+            "SS",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.SelectAndar.Location = new System.Drawing.Point(71, 168);
+            this.SelectAndar.Name = "SelectAndar";
+            this.SelectAndar.Size = new System.Drawing.Size(205, 36);
+            this.SelectAndar.TabIndex = 30;
+            this.SelectAndar.Text = "Andar";
+            // 
+            // dateTimePickerDataCadastro
+            // 
+            this.dateTimePickerDataCadastro.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dateTimePickerDataCadastro.CalendarMonthBackground = System.Drawing.SystemColors.WindowText;
+            this.dateTimePickerDataCadastro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dateTimePickerDataCadastro.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerDataCadastro.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerDataCadastro.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dateTimePickerDataCadastro.Location = new System.Drawing.Point(71, 219);
+            this.dateTimePickerDataCadastro.Name = "dateTimePickerDataCadastro";
+            this.dateTimePickerDataCadastro.RightToLeftLayout = true;
+            this.dateTimePickerDataCadastro.Size = new System.Drawing.Size(205, 35);
+            this.dateTimePickerDataCadastro.TabIndex = 9;
+            this.dateTimePickerDataCadastro.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
@@ -148,6 +183,27 @@
             this.pictureBox2.Size = new System.Drawing.Size(53, 39);
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
+            // 
+            // SelectCategoria
+            // 
+            this.SelectCategoria.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SelectCategoria.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SelectCategoria.FormattingEnabled = true;
+            this.SelectCategoria.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.SelectCategoria.Items.AddRange(new object[] {
+            "Eletrônicos",
+            "Documentos",
+            "Acessorios Pessoais",
+            "Roupas",
+            "Livros, Materiais de Estudo",
+            "Chaves",
+            "Outros"});
+            this.SelectCategoria.Location = new System.Drawing.Point(71, 111);
+            this.SelectCategoria.Name = "SelectCategoria";
+            this.SelectCategoria.Size = new System.Drawing.Size(205, 36);
+            this.SelectCategoria.TabIndex = 29;
+            this.SelectCategoria.TabStop = false;
+            this.SelectCategoria.Text = "Categoria";
             // 
             // pictureBoxFoto
             // 
@@ -202,62 +258,6 @@
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
-            // dateTimePickerDataCadastro
-            // 
-            this.dateTimePickerDataCadastro.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePickerDataCadastro.CalendarMonthBackground = System.Drawing.SystemColors.WindowText;
-            this.dateTimePickerDataCadastro.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dateTimePickerDataCadastro.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerDataCadastro.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerDataCadastro.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dateTimePickerDataCadastro.Location = new System.Drawing.Point(71, 219);
-            this.dateTimePickerDataCadastro.Name = "dateTimePickerDataCadastro";
-            this.dateTimePickerDataCadastro.RightToLeftLayout = true;
-            this.dateTimePickerDataCadastro.Size = new System.Drawing.Size(205, 35);
-            this.dateTimePickerDataCadastro.TabIndex = 9;
-            this.dateTimePickerDataCadastro.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
-            this.label1.Location = new System.Drawing.Point(336, 153);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(333, 25);
-            this.label1.TabIndex = 31;
-            this.label1.Text = "A imagem do item aparecerá aqui";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
-            this.label2.Location = new System.Drawing.Point(423, 38);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(168, 28);
-            this.label2.TabIndex = 32;
-            this.label2.Text = "Cadastrar Item";
-            // 
-            // txtDescricao
-            // 
-            this.txtDescricao.Location = new System.Drawing.Point(71, 288);
-            this.txtDescricao.Multiline = true;
-            this.txtDescricao.Name = "txtDescricao";
-            this.txtDescricao.Size = new System.Drawing.Size(205, 83);
-            this.txtDescricao.TabIndex = 33;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
-            this.label3.Location = new System.Drawing.Point(74, 265);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 20);
-            this.label3.TabIndex = 34;
-            this.label3.Text = "Descrição do ítem:";
-            // 
             // FrmCadastroItens
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -266,6 +266,8 @@
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmCadastroItens";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Achados e Perdidos - Senac Lapa Tito";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

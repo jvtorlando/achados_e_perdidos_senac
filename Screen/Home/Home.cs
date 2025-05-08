@@ -43,7 +43,9 @@ namespace achados_e_perdidos_senac
 
         private void btnPesquisarItem_Click(object sender, EventArgs e)
         {
-            
+            //Abrir tela de pesquisa de item
+            FrmSelecionarItem frmSelecionarItem = new FrmSelecionarItem();
+            frmSelecionarItem.ShowDialog();
         }
 
         private void btnCadastrarItem_Click(object sender, EventArgs e)
