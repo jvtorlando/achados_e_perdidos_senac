@@ -31,19 +31,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCadastroItens));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnSubirArquivo = new achados_e_perdidos_senac.Screen.Login.roundButton();
-            this.label3 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.txtDescricao = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnSalvarItem = new achados_e_perdidos_senac.Screen.Login.roundButton();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SelectAndar = new System.Windows.Forms.ComboBox();
             this.dateTimePickerDataCadastro = new System.Windows.Forms.DateTimePicker();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.SelectCategoria = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBoxFoto = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnSubirArquivo = new achados_e_perdidos_senac.Screen.Login.roundButton();
+            this.btnSalvarItem = new achados_e_perdidos_senac.Screen.Login.roundButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -81,24 +81,35 @@
             this.panel2.Size = new System.Drawing.Size(769, 484);
             this.panel2.TabIndex = 16;
             // 
-            // btnSubirArquivo
+            // panel3
             // 
-            this.btnSubirArquivo.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btnSubirArquivo.ClickColor = System.Drawing.Color.Transparent;
-            this.btnSubirArquivo.CornerRadius = 10;
-            this.btnSubirArquivo.DefaultColor = System.Drawing.SystemColors.ControlLight;
-            this.btnSubirArquivo.FlatAppearance.BorderSize = 0;
-            this.btnSubirArquivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubirArquivo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnSubirArquivo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(135)))));
-            this.btnSubirArquivo.HoverColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btnSubirArquivo.Location = new System.Drawing.Point(87, 390);
-            this.btnSubirArquivo.Name = "btnSubirArquivo";
-            this.btnSubirArquivo.Size = new System.Drawing.Size(147, 39);
-            this.btnSubirArquivo.TabIndex = 12;
-            this.btnSubirArquivo.Text = "Subir Arquivo";
-            this.btnSubirArquivo.UseVisualStyleBackColor = false;
-            this.btnSubirArquivo.Click += new System.EventHandler(this.btnSubirArquivo_Click);
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel3.Location = new System.Drawing.Point(103, 62);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(176, 56);
+            this.panel3.TabIndex = 2;
+            // 
+            // txtDescricao
+            // 
+            this.txtDescricao.Location = new System.Drawing.Point(88, 292);
+            this.txtDescricao.Multiline = true;
+            this.txtDescricao.Name = "txtDescricao";
+            this.txtDescricao.Size = new System.Drawing.Size(205, 83);
+            this.txtDescricao.TabIndex = 33;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Location = new System.Drawing.Point(240, 390);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(53, 39);
+            this.pictureBox2.TabIndex = 15;
+            this.pictureBox2.TabStop = false;
             // 
             // label3
             // 
@@ -110,55 +121,6 @@
             this.label3.Size = new System.Drawing.Size(166, 24);
             this.label3.TabIndex = 34;
             this.label3.Text = "Descrição do ítem:";
-            // 
-            // txtDescricao
-            // 
-            this.txtDescricao.Location = new System.Drawing.Point(88, 292);
-            this.txtDescricao.Multiline = true;
-            this.txtDescricao.Name = "txtDescricao";
-            this.txtDescricao.Size = new System.Drawing.Size(205, 83);
-            this.txtDescricao.TabIndex = 33;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
-            this.label2.Location = new System.Drawing.Point(408, 62);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(216, 36);
-            this.label2.TabIndex = 32;
-            this.label2.Text = "Cadastrar Item";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
-            this.label1.Location = new System.Drawing.Point(356, 153);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(333, 25);
-            this.label1.TabIndex = 31;
-            this.label1.Text = "A imagem do item aparecerá aqui";
-            // 
-            // btnSalvarItem
-            // 
-            this.btnSalvarItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
-            this.btnSalvarItem.ClickColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(47)))), ((int)(((byte)(95)))));
-            this.btnSalvarItem.CornerRadius = 10;
-            this.btnSalvarItem.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(135)))));
-            this.btnSalvarItem.FlatAppearance.BorderSize = 0;
-            this.btnSalvarItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalvarItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnSalvarItem.ForeColor = System.Drawing.Color.White;
-            this.btnSalvarItem.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(115)))));
-            this.btnSalvarItem.Location = new System.Drawing.Point(451, 390);
-            this.btnSalvarItem.Name = "btnSalvarItem";
-            this.btnSalvarItem.Size = new System.Drawing.Size(147, 39);
-            this.btnSalvarItem.TabIndex = 13;
-            this.btnSalvarItem.Text = "Salvar Item";
-            this.btnSalvarItem.UseVisualStyleBackColor = false;
-            this.btnSalvarItem.Click += new System.EventHandler(this.btnSalvarItem_Click);
             // 
             // SelectAndar
             // 
@@ -192,17 +154,6 @@
             this.dateTimePickerDataCadastro.Size = new System.Drawing.Size(205, 35);
             this.dateTimePickerDataCadastro.TabIndex = 9;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(240, 390);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(53, 39);
-            this.pictureBox2.TabIndex = 15;
-            this.pictureBox2.TabStop = false;
-            // 
             // SelectCategoria
             // 
             this.SelectCategoria.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -224,6 +175,28 @@
             this.SelectCategoria.TabStop = false;
             this.SelectCategoria.Text = "Categoria";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
+            this.label2.Location = new System.Drawing.Point(408, 62);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(216, 36);
+            this.label2.TabIndex = 32;
+            this.label2.Text = "Cadastrar Item";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
+            this.label1.Location = new System.Drawing.Point(356, 153);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(333, 25);
+            this.label1.TabIndex = 31;
+            this.label1.Text = "A imagem do item aparecerá aqui";
+            // 
             // pictureBoxFoto
             // 
             this.pictureBoxFoto.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -236,17 +209,6 @@
             this.pictureBoxFoto.TabIndex = 4;
             this.pictureBoxFoto.TabStop = false;
             // 
-            // panel3
-            // 
-            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel3.Location = new System.Drawing.Point(103, 62);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(176, 56);
-            this.panel3.TabIndex = 2;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
@@ -257,6 +219,44 @@
             this.pictureBox1.Size = new System.Drawing.Size(686, 432);
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
+            // 
+            // btnSubirArquivo
+            // 
+            this.btnSubirArquivo.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnSubirArquivo.ClickColor = System.Drawing.Color.Transparent;
+            this.btnSubirArquivo.CornerRadius = 10;
+            this.btnSubirArquivo.DefaultColor = System.Drawing.SystemColors.ControlLight;
+            this.btnSubirArquivo.FlatAppearance.BorderSize = 0;
+            this.btnSubirArquivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubirArquivo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnSubirArquivo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(135)))));
+            this.btnSubirArquivo.HoverColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnSubirArquivo.Location = new System.Drawing.Point(87, 390);
+            this.btnSubirArquivo.Name = "btnSubirArquivo";
+            this.btnSubirArquivo.Size = new System.Drawing.Size(147, 39);
+            this.btnSubirArquivo.TabIndex = 12;
+            this.btnSubirArquivo.Text = "Subir Arquivo";
+            this.btnSubirArquivo.UseVisualStyleBackColor = false;
+            this.btnSubirArquivo.Click += new System.EventHandler(this.btnSubirArquivo_Click);
+            // 
+            // btnSalvarItem
+            // 
+            this.btnSalvarItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
+            this.btnSalvarItem.ClickColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(47)))), ((int)(((byte)(95)))));
+            this.btnSalvarItem.CornerRadius = 10;
+            this.btnSalvarItem.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(135)))));
+            this.btnSalvarItem.FlatAppearance.BorderSize = 0;
+            this.btnSalvarItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalvarItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnSalvarItem.ForeColor = System.Drawing.Color.White;
+            this.btnSalvarItem.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(115)))));
+            this.btnSalvarItem.Location = new System.Drawing.Point(451, 390);
+            this.btnSalvarItem.Name = "btnSalvarItem";
+            this.btnSalvarItem.Size = new System.Drawing.Size(147, 39);
+            this.btnSalvarItem.TabIndex = 13;
+            this.btnSalvarItem.Text = "Salvar Item";
+            this.btnSalvarItem.UseVisualStyleBackColor = false;
+            this.btnSalvarItem.Click += new System.EventHandler(this.btnSalvarItem_Click);
             // 
             // FrmCadastroItens
             // 

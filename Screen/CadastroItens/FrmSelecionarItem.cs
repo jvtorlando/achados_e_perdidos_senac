@@ -49,5 +49,15 @@ namespace achados_e_perdidos_senac.CadastroItens
         {
             CarregarItens(txtPesquisa.Text);
         }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDelet_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

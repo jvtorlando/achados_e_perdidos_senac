@@ -94,11 +94,11 @@
             this.txtCadastroSenha.AccessibleDescription = "";
             this.txtCadastroSenha.BackColor = System.Drawing.Color.White;
             this.txtCadastroSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCadastroSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCadastroSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCadastroSenha.ForeColor = System.Drawing.Color.Gray;
             this.txtCadastroSenha.Location = new System.Drawing.Point(22, 233);
             this.txtCadastroSenha.Name = "txtCadastroSenha";
-            this.txtCadastroSenha.Size = new System.Drawing.Size(217, 19);
+            this.txtCadastroSenha.Size = new System.Drawing.Size(217, 17);
             this.txtCadastroSenha.TabIndex = 32;
             this.txtCadastroSenha.Text = "Senha";
             this.txtCadastroSenha.MouseEnter += new System.EventHandler(this.txtCadastroSenha_MouseEnter);
@@ -122,11 +122,11 @@
             this.txtCadastroCpf.AccessibleDescription = "";
             this.txtCadastroCpf.BackColor = System.Drawing.Color.White;
             this.txtCadastroCpf.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCadastroCpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCadastroCpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCadastroCpf.ForeColor = System.Drawing.Color.Gray;
             this.txtCadastroCpf.Location = new System.Drawing.Point(23, 278);
             this.txtCadastroCpf.Name = "txtCadastroCpf";
-            this.txtCadastroCpf.Size = new System.Drawing.Size(217, 19);
+            this.txtCadastroCpf.Size = new System.Drawing.Size(217, 17);
             this.txtCadastroCpf.TabIndex = 23;
             this.txtCadastroCpf.Text = "CPF";
             this.txtCadastroCpf.MouseEnter += new System.EventHandler(this.txtCadastroCpf_MouseEnter);
@@ -137,11 +137,11 @@
             this.txtCadastroTelefone.AccessibleDescription = "";
             this.txtCadastroTelefone.BackColor = System.Drawing.Color.White;
             this.txtCadastroTelefone.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCadastroTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCadastroTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCadastroTelefone.ForeColor = System.Drawing.Color.Gray;
             this.txtCadastroTelefone.Location = new System.Drawing.Point(25, 188);
             this.txtCadastroTelefone.Name = "txtCadastroTelefone";
-            this.txtCadastroTelefone.Size = new System.Drawing.Size(217, 19);
+            this.txtCadastroTelefone.Size = new System.Drawing.Size(217, 17);
             this.txtCadastroTelefone.TabIndex = 29;
             this.txtCadastroTelefone.Text = "Telefone";
             this.txtCadastroTelefone.MouseEnter += new System.EventHandler(this.txtCadastroTelefone_MouseEnter);
@@ -161,11 +161,11 @@
             // 
             this.txtCadastroNome.BackColor = System.Drawing.Color.White;
             this.txtCadastroNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCadastroNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCadastroNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCadastroNome.ForeColor = System.Drawing.Color.Gray;
             this.txtCadastroNome.Location = new System.Drawing.Point(26, 96);
             this.txtCadastroNome.Name = "txtCadastroNome";
-            this.txtCadastroNome.Size = new System.Drawing.Size(217, 19);
+            this.txtCadastroNome.Size = new System.Drawing.Size(217, 17);
             this.txtCadastroNome.TabIndex = 19;
             this.txtCadastroNome.Text = "Nome";
             this.txtCadastroNome.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
@@ -186,11 +186,11 @@
             // 
             this.txtCadastroEmail.BackColor = System.Drawing.Color.White;
             this.txtCadastroEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCadastroEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCadastroEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCadastroEmail.ForeColor = System.Drawing.Color.Gray;
             this.txtCadastroEmail.Location = new System.Drawing.Point(26, 145);
             this.txtCadastroEmail.Name = "txtCadastroEmail";
-            this.txtCadastroEmail.Size = new System.Drawing.Size(217, 19);
+            this.txtCadastroEmail.Size = new System.Drawing.Size(217, 17);
             this.txtCadastroEmail.TabIndex = 36;
             this.txtCadastroEmail.Text = "Email";
             this.txtCadastroEmail.MouseEnter += new System.EventHandler(this.txtCadastroEmail_MouseEnter);

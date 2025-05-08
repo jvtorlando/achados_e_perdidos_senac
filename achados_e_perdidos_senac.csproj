@@ -107,22 +107,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CadastroItens\FrmCadastroItens.cs">
+    <Compile Include="Screen\CadastroItens\FrmCadastroItens.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CadastroItens\FrmCadastroItens.Designer.cs">
+    <Compile Include="Screen\CadastroItens\FrmCadastroItens.Designer.cs">
       <DependentUpon>FrmCadastroItens.cs</DependentUpon>
     </Compile>
-    <Compile Include="CadastroItens\EdicaoDeItens.cs">
+    <Compile Include="Screen\CadastroItens\EdicaoDeItens.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CadastroItens\EdicaoDeItens.Designer.cs">
+    <Compile Include="Screen\CadastroItens\EdicaoDeItens.Designer.cs">
       <DependentUpon>EdicaoDeItens.cs</DependentUpon>
     </Compile>
-    <Compile Include="CadastroItens\FrmSelecionarItem.cs">
+    <Compile Include="Screen\CadastroItens\FrmSelecionarItem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CadastroItens\FrmSelecionarItem.Designer.cs">
+    <Compile Include="Screen\CadastroItens\FrmSelecionarItem.Designer.cs">
       <DependentUpon>FrmSelecionarItem.cs</DependentUpon>
     </Compile>
     <Compile Include="Controllers\ItemPerdidoController.cs" />
@@ -167,13 +167,13 @@
     <Compile Include="Services\CloseEntireApplication.cs" />
     <Compile Include="Services\Criptografia.cs" />
     <Compile Include="Services\DatabaseService.cs" />
-    <EmbeddedResource Include="CadastroItens\FrmCadastroItens.resx">
+    <EmbeddedResource Include="Screen\CadastroItens\FrmCadastroItens.resx">
       <DependentUpon>FrmCadastroItens.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CadastroItens\EdicaoDeItens.resx">
+    <EmbeddedResource Include="Screen\CadastroItens\EdicaoDeItens.resx">
       <DependentUpon>EdicaoDeItens.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CadastroItens\FrmSelecionarItem.resx">
+    <EmbeddedResource Include="Screen\CadastroItens\FrmSelecionarItem.resx">
       <DependentUpon>FrmSelecionarItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screen\Home\Home.resx">
