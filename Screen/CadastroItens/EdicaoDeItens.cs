@@ -82,14 +82,66 @@ namespace achados_e_perdidos_senac.CadastroItens
 
         private void btnSelecionarFoto_Click(object sender, EventArgs e)
         {
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "Imagens|*.jpg;*.jpeg;*.png;";
-            if (ofd.ShowDialog() == DialogResult.OK)
+            DialogResult result = MessageBox.Show("Deseja substituir a imagem atual?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
             {
-                pbImagem.Image = new Bitmap(ofd.FileName);
-                imageBytes = File.ReadAllBytes(ofd.FileName);
+                OpenFileDialog ofd = new OpenFileDialog();
+                ofd.Filter = "Imagens|*.jpg;*.jpeg;*.png;";
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    pbImagem.Image = new Bitmap(ofd.FileName);
+                    imageBytes = File.ReadAllBytes(ofd.FileName);
+                }
             }
+            else
+            {
+                // 1. Obtenha o nome da imagem a partir do banco de dados
+                string nomeImagemDoBanco = ObterNomeImagemDoBanco(); // você vai criar esse método
+
+                // 2. Abra o OpenFileDialog apontando para a pasta padrão e pré-selecionando o arquivo
+                OpenFileDialog ofd = new OpenFileDialog();
+                ofd.Filter = "Imagens|*.jpg;*.jpeg;*.png;";
+                ofd.InitialDirectory = Application.StartupPath + @"\imagens\"; // pasta onde as imagens estão
+                ofd.FileName = nomeImagemDoBanco;
+
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    pbImagem.Image = new Bitmap(ofd.FileName);
+                    imageBytes = File.ReadAllBytes(ofd.FileName);
+                }
+            }
+        } // <-- FECHA AQUI o método btnSelecionarFoto_Click
+
+        // Método fora de qualquer outro
+        private string ObterNomeImagemDoBanco()
+        {
+            string nomeImagem = "";
+
+            // Substitua pela sua string de conexão real
+            string connectionString = "Data Source=SERVIDOR;Initial Catalog=SEUBANCO;Integrated Security=True";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+
+                // Substitua pela sua consulta e tabela corretas
+                string query = "SELECT Imagem FROM SuaTabela WHERE ID = @id";
+                SqlCommand cmd = new SqlCommand(query, conn);
+
+                cmd.Parameters.AddWithValue("@id", 1); // substitua por lógica dinâmica se necessário
+
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    nomeImagem = reader["NomeImagem"].ToString();
+                }
+            }
+
+            return nomeImagem;
         }
+
     }
-    
 }
+
+
