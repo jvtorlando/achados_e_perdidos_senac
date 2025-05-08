@@ -83,7 +83,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(94, 66);
+            this.label1.Location = new System.Drawing.Point(87, 64);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(129, 18);
             this.label1.TabIndex = 42;
@@ -151,7 +151,7 @@
             // 
             this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox6.Location = new System.Drawing.Point(100, 4);
+            this.pictureBox6.Location = new System.Drawing.Point(97, 3);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(111, 56);
             this.pictureBox6.TabIndex = 38;
@@ -206,10 +206,10 @@
             this.lblJaTemCadastro.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(141)))));
             this.lblJaTemCadastro.Location = new System.Drawing.Point(56, 357);
             this.lblJaTemCadastro.Name = "lblJaTemCadastro";
-            this.lblJaTemCadastro.Size = new System.Drawing.Size(190, 16);
+            this.lblJaTemCadastro.Size = new System.Drawing.Size(183, 16);
             this.lblJaTemCadastro.TabIndex = 35;
             this.lblJaTemCadastro.TabStop = true;
-            this.lblJaTemCadastro.Text = "Já tenho cadastro. Clique aqui.";
+            this.lblJaTemCadastro.Text = "Já tem cadastro? Clique aqui.";
             this.lblJaTemCadastro.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblJaTemCadastro_LinkClicked);
             // 
             // btnCadastrar

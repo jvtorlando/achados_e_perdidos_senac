@@ -120,7 +120,6 @@ namespace achados_e_perdidos_senac.CadastroItens
             itemPerdido.imagem_url = Path.GetFileName(openFileDialog.FileName);
 
         }
-
     }
     }
 
