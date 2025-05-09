@@ -200,6 +200,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Screen\Retirada de item\FrmRetiradaDeItens.resx">
+      <DependentUpon>FrmRetiradaDeItens.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screen\Splash\SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
