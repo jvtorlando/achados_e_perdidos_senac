@@ -15,6 +15,8 @@ namespace achados_e_perdidos_senac.Model
         public string descricao { get; set; }
         public string andar { get; set; }
         public string imagem_url { get; set; }
+        public string nomeItem { get; set; }
+        public string status_item { get; set; }
         public DateTime data { get; set; }
 
         public static ItemPerdido ItemFromDataReader(MySqlDataReader reader)
@@ -24,6 +26,8 @@ namespace achados_e_perdidos_senac.Model
                 id_item = Convert.ToInt32(reader["id_item"]),
                 categoria = reader["categoria"].ToString(),
                 descricao = reader["descricao"].ToString(),
+                nomeItem = reader["nome_item"].ToString(),
+                status_item = reader["status_item"].ToString(),
                 andar = reader["andar"].ToString(),
                 imagem_url = reader["imagem_url"].ToString(),
                 data = Convert.ToDateTime(reader["data"]),

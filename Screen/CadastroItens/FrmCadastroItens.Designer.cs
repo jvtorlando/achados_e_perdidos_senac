@@ -34,16 +34,19 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtDescricao = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnSubirArquivo = new achados_e_perdidos_senac.Screen.Login.roundButton();
             this.label3 = new System.Windows.Forms.Label();
             this.SelectAndar = new System.Windows.Forms.ComboBox();
             this.dateTimePickerDataCadastro = new System.Windows.Forms.DateTimePicker();
             this.SelectCategoria = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnSalvarItem = new achados_e_perdidos_senac.Screen.Login.roundButton();
             this.pictureBoxFoto = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnSubirArquivo = new achados_e_perdidos_senac.Screen.Login.roundButton();
-            this.btnSalvarItem = new achados_e_perdidos_senac.Screen.Login.roundButton();
+            this.txtNomeItem = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.SelectStatus = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -56,13 +59,16 @@
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(4, 5);
+            this.panel1.Location = new System.Drawing.Point(4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(803, 485);
+            this.panel1.Size = new System.Drawing.Size(803, 503);
             this.panel1.TabIndex = 0;
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.SelectStatus);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.txtNomeItem);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.txtDescricao);
             this.panel2.Controls.Add(this.pictureBox2);
@@ -76,9 +82,9 @@
             this.panel2.Controls.Add(this.btnSalvarItem);
             this.panel2.Controls.Add(this.pictureBoxFoto);
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(8, 1);
+            this.panel2.Location = new System.Drawing.Point(8, 8);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(769, 484);
+            this.panel2.Size = new System.Drawing.Size(769, 477);
             this.panel2.TabIndex = 16;
             // 
             // panel3
@@ -87,14 +93,14 @@
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel3.Location = new System.Drawing.Point(103, 62);
+            this.panel3.Location = new System.Drawing.Point(88, 16);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(176, 56);
             this.panel3.TabIndex = 2;
             // 
             // txtDescricao
             // 
-            this.txtDescricao.Location = new System.Drawing.Point(88, 292);
+            this.txtDescricao.Location = new System.Drawing.Point(87, 302);
             this.txtDescricao.Multiline = true;
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.Size = new System.Drawing.Size(205, 83);
@@ -105,18 +111,37 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(240, 390);
+            this.pictureBox2.Location = new System.Drawing.Point(240, 400);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(53, 39);
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
+            // 
+            // btnSubirArquivo
+            // 
+            this.btnSubirArquivo.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnSubirArquivo.ClickColor = System.Drawing.Color.Transparent;
+            this.btnSubirArquivo.CornerRadius = 10;
+            this.btnSubirArquivo.DefaultColor = System.Drawing.SystemColors.ControlLight;
+            this.btnSubirArquivo.FlatAppearance.BorderSize = 0;
+            this.btnSubirArquivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubirArquivo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnSubirArquivo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(135)))));
+            this.btnSubirArquivo.HoverColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnSubirArquivo.Location = new System.Drawing.Point(87, 400);
+            this.btnSubirArquivo.Name = "btnSubirArquivo";
+            this.btnSubirArquivo.Size = new System.Drawing.Size(147, 39);
+            this.btnSubirArquivo.TabIndex = 12;
+            this.btnSubirArquivo.Text = "Subir Arquivo";
+            this.btnSubirArquivo.UseVisualStyleBackColor = false;
+            this.btnSubirArquivo.Click += new System.EventHandler(this.btnSubirArquivo_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
-            this.label3.Location = new System.Drawing.Point(87, 265);
+            this.label3.Location = new System.Drawing.Point(84, 266);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(166, 24);
             this.label3.TabIndex = 34;
@@ -134,7 +159,7 @@
             "3",
             "4",
             "5"});
-            this.SelectAndar.Location = new System.Drawing.Point(88, 184);
+            this.SelectAndar.Location = new System.Drawing.Point(87, 175);
             this.SelectAndar.Name = "SelectAndar";
             this.SelectAndar.Size = new System.Drawing.Size(205, 36);
             this.SelectAndar.TabIndex = 30;
@@ -148,7 +173,7 @@
             this.dateTimePickerDataCadastro.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePickerDataCadastro.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePickerDataCadastro.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dateTimePickerDataCadastro.Location = new System.Drawing.Point(88, 226);
+            this.dateTimePickerDataCadastro.Location = new System.Drawing.Point(88, 224);
             this.dateTimePickerDataCadastro.Name = "dateTimePickerDataCadastro";
             this.dateTimePickerDataCadastro.RightToLeftLayout = true;
             this.dateTimePickerDataCadastro.Size = new System.Drawing.Size(205, 35);
@@ -168,7 +193,7 @@
             "Livros, Materiais de Estudo",
             "Chaves",
             "Outros"});
-            this.SelectCategoria.Location = new System.Drawing.Point(88, 142);
+            this.SelectCategoria.Location = new System.Drawing.Point(88, 128);
             this.SelectCategoria.Name = "SelectCategoria";
             this.SelectCategoria.Size = new System.Drawing.Size(205, 36);
             this.SelectCategoria.TabIndex = 29;
@@ -180,7 +205,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
-            this.label2.Location = new System.Drawing.Point(408, 62);
+            this.label2.Location = new System.Drawing.Point(402, 62);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(216, 36);
             this.label2.TabIndex = 32;
@@ -191,53 +216,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
-            this.label1.Location = new System.Drawing.Point(356, 153);
+            this.label1.Location = new System.Drawing.Point(356, 180);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(333, 25);
             this.label1.TabIndex = 31;
             this.label1.Text = "A imagem do item aparecerá aqui";
-            // 
-            // pictureBoxFoto
-            // 
-            this.pictureBoxFoto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBoxFoto.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxFoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxFoto.Location = new System.Drawing.Point(359, 191);
-            this.pictureBoxFoto.Name = "pictureBoxFoto";
-            this.pictureBoxFoto.Size = new System.Drawing.Size(330, 166);
-            this.pictureBoxFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxFoto.TabIndex = 4;
-            this.pictureBoxFoto.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(51, 29);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(686, 432);
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnSubirArquivo
-            // 
-            this.btnSubirArquivo.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btnSubirArquivo.ClickColor = System.Drawing.Color.Transparent;
-            this.btnSubirArquivo.CornerRadius = 10;
-            this.btnSubirArquivo.DefaultColor = System.Drawing.SystemColors.ControlLight;
-            this.btnSubirArquivo.FlatAppearance.BorderSize = 0;
-            this.btnSubirArquivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubirArquivo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnSubirArquivo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(135)))));
-            this.btnSubirArquivo.HoverColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btnSubirArquivo.Location = new System.Drawing.Point(87, 390);
-            this.btnSubirArquivo.Name = "btnSubirArquivo";
-            this.btnSubirArquivo.Size = new System.Drawing.Size(147, 39);
-            this.btnSubirArquivo.TabIndex = 12;
-            this.btnSubirArquivo.Text = "Subir Arquivo";
-            this.btnSubirArquivo.UseVisualStyleBackColor = false;
-            this.btnSubirArquivo.Click += new System.EventHandler(this.btnSubirArquivo_Click);
             // 
             // btnSalvarItem
             // 
@@ -250,7 +233,7 @@
             this.btnSalvarItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnSalvarItem.ForeColor = System.Drawing.Color.White;
             this.btnSalvarItem.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(115)))));
-            this.btnSalvarItem.Location = new System.Drawing.Point(451, 390);
+            this.btnSalvarItem.Location = new System.Drawing.Point(431, 400);
             this.btnSalvarItem.Name = "btnSalvarItem";
             this.btnSalvarItem.Size = new System.Drawing.Size(147, 39);
             this.btnSalvarItem.TabIndex = 13;
@@ -258,11 +241,67 @@
             this.btnSalvarItem.UseVisualStyleBackColor = false;
             this.btnSalvarItem.Click += new System.EventHandler(this.btnSalvarItem_Click);
             // 
+            // pictureBoxFoto
+            // 
+            this.pictureBoxFoto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBoxFoto.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxFoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxFoto.Location = new System.Drawing.Point(359, 215);
+            this.pictureBoxFoto.Name = "pictureBoxFoto";
+            this.pictureBoxFoto.Size = new System.Drawing.Size(330, 166);
+            this.pictureBoxFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxFoto.TabIndex = 4;
+            this.pictureBoxFoto.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(26, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(705, 471);
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            // 
+            // txtNomeItem
+            // 
+            this.txtNomeItem.Location = new System.Drawing.Point(378, 151);
+            this.txtNomeItem.Name = "txtNomeItem";
+            this.txtNomeItem.Size = new System.Drawing.Size(240, 20);
+            this.txtNomeItem.TabIndex = 35;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(375, 135);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(72, 13);
+            this.label4.TabIndex = 36;
+            this.label4.Text = "Nome do item";
+            // 
+            // SelectStatus
+            // 
+            this.SelectStatus.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SelectStatus.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SelectStatus.FormattingEnabled = true;
+            this.SelectStatus.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.SelectStatus.Items.AddRange(new object[] {
+            "Perdido",
+            "Devolvido"});
+            this.SelectStatus.Location = new System.Drawing.Point(87, 83);
+            this.SelectStatus.Name = "SelectStatus";
+            this.SelectStatus.Size = new System.Drawing.Size(205, 36);
+            this.SelectStatus.TabIndex = 37;
+            this.SelectStatus.TabStop = false;
+            this.SelectStatus.Text = "Status do item";
+            this.SelectStatus.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // FrmCadastroItens
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(805, 492);
+            this.ClientSize = new System.Drawing.Size(805, 526);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmCadastroItens";
@@ -295,5 +334,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtDescricao;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtNomeItem;
+        private System.Windows.Forms.ComboBox SelectStatus;
     }
 }

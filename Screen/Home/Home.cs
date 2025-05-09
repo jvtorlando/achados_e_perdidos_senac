@@ -18,7 +18,7 @@ namespace achados_e_perdidos_senac
         {
             //Fechar toda a aplicação
             InitializeComponent();
-            //this.FormClosing += CloseEntireApplication.CloseApplication;
+            this.FormClosing += CloseEntireApplication.CloseApplication;
         }
 
         private void Home_Load(object sender, EventArgs e)

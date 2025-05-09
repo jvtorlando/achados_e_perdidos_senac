@@ -40,5 +40,17 @@ namespace achados_e_perdidos_senac.Controllers
 
 
         }
+        
+        public List<ItemPerdido> BuscarItemPorDescricao(string descricao) {
+
+           List<ItemPerdido> itensPerdidos =  itemRepositorio.BuscarItemPorDescricao(descricao);
+
+           
+           return itensPerdidos;
+
+
+
+
+        }
     }
 }

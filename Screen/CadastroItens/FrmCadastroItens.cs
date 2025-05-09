@@ -113,11 +113,18 @@ namespace achados_e_perdidos_senac.CadastroItens
 
         private void CriarObjetoItemPerdido(ItemPerdido itemPerdido) {
 
+            itemPerdido.nomeItem = txtNomeItem.Text;
             itemPerdido.andar = SelectAndar.SelectedItem.ToString();
             itemPerdido.categoria = SelectCategoria.SelectedItem.ToString();
             itemPerdido.data = dateTimePickerDataCadastro.Value;
             itemPerdido.descricao = txtDescricao.Text;
+            itemPerdido.status_item = SelectStatus.SelectedItem.ToString();
             itemPerdido.imagem_url = Path.GetFileName(openFileDialog.FileName);
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

@@ -49,7 +49,7 @@
             this.txtPesquisa.Location = new System.Drawing.Point(53, 181);
             this.txtPesquisa.Multiline = true;
             this.txtPesquisa.Name = "txtPesquisa";
-            this.txtPesquisa.Size = new System.Drawing.Size(227, 26);
+            this.txtPesquisa.Size = new System.Drawing.Size(596, 26);
             this.txtPesquisa.TabIndex = 0;
             this.txtPesquisa.TextChanged += new System.EventHandler(this.txtPesquisa_TextChanged);
             // 
@@ -60,7 +60,7 @@
             this.dataGridViewItens.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewItens.Location = new System.Drawing.Point(34, 17);
             this.dataGridViewItens.Name = "dataGridViewItens";
-            this.dataGridViewItens.Size = new System.Drawing.Size(537, 72);
+            this.dataGridViewItens.Size = new System.Drawing.Size(537, 218);
             this.dataGridViewItens.TabIndex = 1;
             this.dataGridViewItens.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -146,7 +146,7 @@
             this.panel2.Controls.Add(this.dataGridViewItens);
             this.panel2.Location = new System.Drawing.Point(53, 231);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(654, 108);
+            this.panel2.Size = new System.Drawing.Size(654, 249);
             this.panel2.TabIndex = 39;
             // 
             // label3
@@ -174,11 +174,12 @@
             this.roundButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.roundButton1.ForeColor = System.Drawing.Color.White;
             this.roundButton1.HoverColor = System.Drawing.Color.Transparent;
-            this.roundButton1.Location = new System.Drawing.Point(286, 177);
+            this.roundButton1.Location = new System.Drawing.Point(655, 175);
             this.roundButton1.Name = "roundButton1";
             this.roundButton1.Size = new System.Drawing.Size(42, 30);
             this.roundButton1.TabIndex = 41;
             this.roundButton1.UseVisualStyleBackColor = false;
+            this.roundButton1.Click += new System.EventHandler(this.roundButton1_Click);
             // 
             // FrmSelecionarItem
             // 

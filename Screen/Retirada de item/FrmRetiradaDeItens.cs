@@ -16,5 +16,25 @@ namespace achados_e_perdidos_senac.Screen.Retirada_de_item
         {
             InitializeComponent();
         }
+
+        private void txtDescricao_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSalvarItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

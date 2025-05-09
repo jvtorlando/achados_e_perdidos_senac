@@ -1,4 +1,6 @@
-﻿using System;
+﻿using achados_e_perdidos_senac.Controllers;
+using achados_e_perdidos_senac.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,9 +15,11 @@ namespace achados_e_perdidos_senac.CadastroItens
 {
     public partial class FrmSelecionarItem : Form
     {
+        private ItemPerdidoController itemPerdidoController;
         public FrmSelecionarItem()
         {
             InitializeComponent();
+            itemPerdidoController = new ItemPerdidoController(new Repositorios.ItemRepositorio(new Services.DatabaseService()));
         }
         private void FrmSelecionarItem_Load(object sender, EventArgs e)
         {
@@ -47,7 +51,7 @@ namespace achados_e_perdidos_senac.CadastroItens
        
             private void txtPesquisa_TextChanged(object sender, EventArgs e)
         {
-            CarregarItens(txtPesquisa.Text);
+            //CarregarItens(txtPesquisa.Text);
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -57,6 +61,18 @@ namespace achados_e_perdidos_senac.CadastroItens
 
         private void btnDelet_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void roundButton1_Click(object sender, EventArgs e)
+        {
+            List<ItemPerdido> listaItens = itemPerdidoController.BuscarItemPorDescricao(txtPesquisa.Text);
+            dataGridViewItens.DataSource = listaItens;
+            if (dataGridViewItens.Columns.Contains("id_item"))
+            {
+                dataGridViewItens.Columns["id_item"].Visible = false;
+                dataGridViewItens.Columns["imagem_url"].Visible = false;
+            }
 
         }
     }
