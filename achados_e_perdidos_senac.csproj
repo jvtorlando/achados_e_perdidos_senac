@@ -151,6 +151,12 @@
     <Compile Include="Screen\Login\roundButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Screen\Retirada de item\FrmRetiradaDeItens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen\Retirada de item\FrmRetiradaDeItens.Designer.cs">
+      <DependentUpon>FrmRetiradaDeItens.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screen\Splash\SplashScreen.cs">
       <SubType>Form</SubType>
     </Compile>
