@@ -18,7 +18,7 @@ namespace achados_e_perdidos_senac
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SplashScreen());
+            Application.Run(new Home());
         }
     }
 }
