@@ -61,7 +61,40 @@ namespace achados_e_perdidos_senac.CadastroItens
 
         private void btnDelet_Click(object sender, EventArgs e)
         {
+            if (dataGridViewItens.SelectedRows.Count > 0)
+            {
+                // Supondo que a primeira coluna seja o ID do item
+                int idSelecionado = Convert.ToInt32(dataGridViewItens.SelectedRows[0].Cells[0].Value);
 
+                DialogResult confirmacao = MessageBox.Show("Tem certeza que deseja excluir este item?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (confirmacao == DialogResult.Yes)
+                {
+                    try
+                    {
+                        using (SqlConnection conn = new SqlConnection("SUA_STRING_DE_CONEXAO"))
+                        {
+                            conn.Open();
+                            string sql = "DELETE FROM SuaTabela WHERE Id = @id";
+                            using (SqlCommand cmd = new SqlCommand(sql, conn))
+                            {
+                                cmd.Parameters.AddWithValue("@id", idSelecionado);
+                                cmd.ExecuteNonQuery();
+                            }
+                        }
+
+                        MessageBox.Show("Item excluído com sucesso!");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Erro ao excluir o item: " + ex.Message);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Selecione um item para excluir.");
+            }
         }
 
         //botão pesquisar

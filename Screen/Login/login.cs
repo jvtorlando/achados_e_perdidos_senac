@@ -81,12 +81,8 @@ namespace achados_e_perdidos_senac
 
         private void txtSenha_TextChanged(object sender, EventArgs e)
         {
-            if (txtSenha.Text != "Digite sua senha" && !string.IsNullOrEmpty(txtSenha.Text))
-            {
-                txtSenha.UseSystemPasswordChar = true;
-            }
-        }
 
+        }
         private void txtUsuario_TextChanged(object sender, EventArgs e)
         {
 
@@ -235,6 +231,11 @@ namespace achados_e_perdidos_senac
         }
 
         private void pictureBox9_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUsuario_TextChanged_1(object sender, EventArgs e)
         {
 
         }

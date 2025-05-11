@@ -30,20 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.txtSenha = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.linkLabelEsqueceuSenha = new System.Windows.Forms.LinkLabel();
-            this.btnLogin = new achados_e_perdidos_senac.Screen.Login.roundButton();
-            this.lblCadastrarUsuario = new System.Windows.Forms.LinkLabel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.lblCadastrarUsuario = new System.Windows.Forms.LinkLabel();
+            this.linkLabelEsqueceuSenha = new System.Windows.Forms.LinkLabel();
+            this.btnLogin = new achados_e_perdidos_senac.Screen.Login.roundButton();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -66,20 +66,17 @@
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
             // 
+            // pictureBox3
+            // 
+            resources.ApplyResources(this.pictureBox3, "pictureBox3");
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.TabStop = false;
+            // 
             // pictureBox2
             // 
             resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
-            // 
-            // txtUsuario
-            // 
-            this.txtUsuario.BackColor = System.Drawing.Color.White;
-            this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.txtUsuario, "txtUsuario");
-            this.txtUsuario.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             // 
             // txtSenha
             // 
@@ -90,45 +87,14 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
             // 
-            // pictureBox3
+            // txtUsuario
             // 
-            resources.ApplyResources(this.pictureBox3, "pictureBox3");
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.TabStop = false;
-            // 
-            // linkLabelEsqueceuSenha
-            // 
-            this.linkLabelEsqueceuSenha.ActiveLinkColor = System.Drawing.Color.Navy;
-            resources.ApplyResources(this.linkLabelEsqueceuSenha, "linkLabelEsqueceuSenha");
-            this.linkLabelEsqueceuSenha.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.linkLabelEsqueceuSenha.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(141)))));
-            this.linkLabelEsqueceuSenha.Name = "linkLabelEsqueceuSenha";
-            this.linkLabelEsqueceuSenha.TabStop = true;
-            this.linkLabelEsqueceuSenha.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelEsqueceuSenha_LinkClicked);
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(135)))));
-            this.btnLogin.ClickColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(47)))), ((int)(((byte)(95)))));
-            this.btnLogin.CornerRadius = 10;
-            this.btnLogin.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(135)))));
-            this.btnLogin.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btnLogin, "btnLogin");
-            this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(115)))));
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click_1);
-            // 
-            // lblCadastrarUsuario
-            // 
-            this.lblCadastrarUsuario.ActiveLinkColor = System.Drawing.Color.Navy;
-            resources.ApplyResources(this.lblCadastrarUsuario, "lblCadastrarUsuario");
-            this.lblCadastrarUsuario.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblCadastrarUsuario.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(141)))));
-            this.lblCadastrarUsuario.Name = "lblCadastrarUsuario";
-            this.lblCadastrarUsuario.TabStop = true;
-            this.lblCadastrarUsuario.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblCadastrarUsuario_LinkClicked);
+            this.txtUsuario.BackColor = System.Drawing.Color.White;
+            this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.txtUsuario, "txtUsuario");
+            this.txtUsuario.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged_1);
             // 
             // label1
             // 
@@ -156,6 +122,40 @@
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.TabStop = false;
             // 
+            // lblCadastrarUsuario
+            // 
+            this.lblCadastrarUsuario.ActiveLinkColor = System.Drawing.Color.Navy;
+            resources.ApplyResources(this.lblCadastrarUsuario, "lblCadastrarUsuario");
+            this.lblCadastrarUsuario.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblCadastrarUsuario.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(141)))));
+            this.lblCadastrarUsuario.Name = "lblCadastrarUsuario";
+            this.lblCadastrarUsuario.TabStop = true;
+            this.lblCadastrarUsuario.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblCadastrarUsuario_LinkClicked);
+            // 
+            // linkLabelEsqueceuSenha
+            // 
+            this.linkLabelEsqueceuSenha.ActiveLinkColor = System.Drawing.Color.Navy;
+            resources.ApplyResources(this.linkLabelEsqueceuSenha, "linkLabelEsqueceuSenha");
+            this.linkLabelEsqueceuSenha.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.linkLabelEsqueceuSenha.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(141)))));
+            this.linkLabelEsqueceuSenha.Name = "linkLabelEsqueceuSenha";
+            this.linkLabelEsqueceuSenha.TabStop = true;
+            this.linkLabelEsqueceuSenha.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelEsqueceuSenha_LinkClicked);
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(135)))));
+            this.btnLogin.ClickColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(47)))), ((int)(((byte)(95)))));
+            this.btnLogin.CornerRadius = 10;
+            this.btnLogin.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(135)))));
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnLogin, "btnLogin");
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(115)))));
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click_1);
+            // 
             // login
             // 
             resources.ApplyResources(this, "$this");
@@ -167,8 +167,8 @@
             this.Load += new System.EventHandler(this.login_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
