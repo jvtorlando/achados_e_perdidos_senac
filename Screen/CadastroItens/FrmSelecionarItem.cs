@@ -64,6 +64,7 @@ namespace achados_e_perdidos_senac.CadastroItens
 
         }
 
+        //botão pesquisar
         private void roundButton1_Click(object sender, EventArgs e)
         {
             List<ItemPerdido> listaItens = itemPerdidoController.BuscarItemPorDescricao(txtPesquisa.Text);

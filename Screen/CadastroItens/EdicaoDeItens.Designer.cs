@@ -191,7 +191,7 @@
             this.Controls.Add(this.panel3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EdicaoDeItens";
-            this.Text = "EdicaoDeItens";
+            this.Text = resources.GetString("$this.Text");
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFoto)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
