@@ -13,11 +13,16 @@ using achados_e_perdidos_senac.Controllers;
 using achados_e_perdidos_senac.Model;
 using achados_e_perdidos_senac.Repositorios;
 using achados_e_perdidos_senac.Services;
+using System.Data.SqlClient;
+
 
 namespace achados_e_perdidos_senac.CadastroItens
 {
     public partial class FrmCadastroItens: Form
     {
+        SqlDataAdapter da;
+        DataTable tabela;
+
         private ItemPerdidoController itemPerdidoController;
 
         OpenFileDialog openFileDialog = new OpenFileDialog
@@ -122,6 +127,7 @@ namespace achados_e_perdidos_senac.CadastroItens
             itemPerdido.imagem_url = Path.GetFileName(openFileDialog.FileName);
 
         }
+
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
