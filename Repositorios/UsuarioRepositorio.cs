@@ -68,7 +68,7 @@ namespace achados_e_perdidos_senac.Repositorios
                     new MySqlParameter("@cpf", usuario.cpf),
                     new MySqlParameter("@email", usuario.email),
                     new MySqlParameter("@telefone", usuario.telefone),
-                    new MySqlParameter("@senha", Criptografia.HashPassword(password))
+                    new MySqlParameter("@senha", (password))
                 };
 
                 int affectedRows = databaseService.ExecuteNonQuery(query, parameters);
