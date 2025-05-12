@@ -79,7 +79,7 @@ namespace achados_e_perdidos_senac.CadastroItens
                     if (sucesso)
                     {
                         MessageBox.Show("Item excluído com sucesso!");
-                        roundButton1_Click(null, null); // atualiza a pesquisa
+
                     }
                     else
                     {
@@ -102,8 +102,8 @@ namespace achados_e_perdidos_senac.CadastroItens
             if (dataGridViewItens.Columns.Contains("id_item"))
             {
                 //ocultar ou mostrar tabela id_itens (isso deu dor de cabeça de mais!!!)
-                dataGridViewItens.Columns["id_item"].Visible = true;
-                dataGridViewItens.Columns["imagem_url"].Visible = true;
+                dataGridViewItens.Columns["id_item"].Visible = false;
+                dataGridViewItens.Columns["imagem_url"].Visible = false;
             }
 
         }
@@ -113,15 +113,20 @@ namespace achados_e_perdidos_senac.CadastroItens
 
         }
 
-        //Mostrar Detalhes (Descrição e Foto do item)
+        //Mostrar Detalhes (Descrição de item)
         private void dataGridViewItens_SelectionChanged(object sender, EventArgs e)
         {
             if (dataGridViewItens.SelectedRows.Count > 0)
             {
                 var linha = dataGridViewItens.SelectedRows[0];
                 lblDescricao.Text = linha.Cells["descricao"].Value.ToString();
-                pictureBox1.ImageLocation = linha.Cells["imagem_url"].Value.ToString();
+
             }
+        }
+
+        private void btnAtualizar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

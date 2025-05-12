@@ -39,15 +39,14 @@
             this.btnPesquisar = new achados_e_perdidos_senac.Screen.Login.roundButton();
             this.dataGridViewItens = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBoxMonstarDetalhes = new System.Windows.Forms.PictureBox();
             this.lblDescricao = new System.Windows.Forms.Label();
             this.mySqlCommandBuilder1 = new MySqlConnector.MySqlCommandBuilder();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnAtualizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItens)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMonstarDetalhes)).BeginInit();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,7 +64,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
-            this.label2.Location = new System.Drawing.Point(202, 140);
+            this.label2.Location = new System.Drawing.Point(455, 33);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(168, 28);
             this.label2.TabIndex = 35;
@@ -118,7 +117,7 @@
             this.btnDelet.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnDelet.ForeColor = System.Drawing.Color.White;
             this.btnDelet.HoverColor = System.Drawing.Color.Transparent;
-            this.btnDelet.Location = new System.Drawing.Point(710, 287);
+            this.btnDelet.Location = new System.Drawing.Point(710, 267);
             this.btnDelet.Name = "btnDelet";
             this.btnDelet.Size = new System.Drawing.Size(44, 52);
             this.btnDelet.TabIndex = 38;
@@ -187,17 +186,6 @@
             this.panel2.Size = new System.Drawing.Size(642, 207);
             this.panel2.TabIndex = 39;
             // 
-            // pictureBoxMonstarDetalhes
-            // 
-            this.pictureBoxMonstarDetalhes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxMonstarDetalhes.Location = new System.Drawing.Point(399, 64);
-            this.pictureBoxMonstarDetalhes.Name = "pictureBoxMonstarDetalhes";
-            this.pictureBoxMonstarDetalhes.Size = new System.Drawing.Size(144, 82);
-            this.pictureBoxMonstarDetalhes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxMonstarDetalhes.TabIndex = 42;
-            this.pictureBoxMonstarDetalhes.TabStop = false;
-            this.pictureBoxMonstarDetalhes.Click += new System.EventHandler(this.pictureBoxMonstarDetalhes_Click);
-            // 
             // lblDescricao
             // 
             this.lblDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -232,6 +220,21 @@
             this.panel3.Size = new System.Drawing.Size(281, 83);
             this.panel3.TabIndex = 45;
             // 
+            // btnAtualizar
+            // 
+            this.btnAtualizar.BackColor = System.Drawing.Color.White;
+            this.btnAtualizar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAtualizar.BackgroundImage")));
+            this.btnAtualizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAtualizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAtualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAtualizar.ForeColor = System.Drawing.Color.White;
+            this.btnAtualizar.Location = new System.Drawing.Point(581, 113);
+            this.btnAtualizar.Name = "btnAtualizar";
+            this.btnAtualizar.Size = new System.Drawing.Size(57, 33);
+            this.btnAtualizar.TabIndex = 46;
+            this.btnAtualizar.UseVisualStyleBackColor = false;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
+            // 
             // FrmSelecionarItem
             // 
             this.AcceptButton = this.btnPesquisar;
@@ -239,8 +242,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(805, 492);
+            this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.btnPesquisar);
-            this.Controls.Add(this.pictureBoxMonstarDetalhes);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.btnDelet);
             this.Controls.Add(this.btnEdit);
@@ -259,7 +262,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItens)).EndInit();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMonstarDetalhes)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -279,10 +281,10 @@
         private Screen.Login.roundButton btnPesquisar;
         private System.Windows.Forms.DataGridView dataGridViewItens;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBoxMonstarDetalhes;
         private System.Windows.Forms.Label lblDescricao;
         private MySqlConnector.MySqlCommandBuilder mySqlCommandBuilder1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button btnAtualizar;
     }
 }
