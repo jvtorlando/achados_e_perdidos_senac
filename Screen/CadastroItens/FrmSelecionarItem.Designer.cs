@@ -42,6 +42,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnHelp = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItens)).BeginInit();
             this.panel2.SuspendLayout();
@@ -82,11 +83,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.SteelBlue;
             this.label3.Location = new System.Drawing.Point(230, 59);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(138, 24);
+            this.label3.Size = new System.Drawing.Size(117, 20);
             this.label3.TabIndex = 40;
             this.label3.Text = "Pesquisar ítem:";
             // 
@@ -104,7 +105,7 @@
             this.btnDelet.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnDelet.ForeColor = System.Drawing.Color.White;
             this.btnDelet.HoverColor = System.Drawing.Color.Transparent;
-            this.btnDelet.Location = new System.Drawing.Point(709, 397);
+            this.btnDelet.Location = new System.Drawing.Point(711, 239);
             this.btnDelet.Name = "btnDelet";
             this.btnDelet.Size = new System.Drawing.Size(44, 52);
             this.btnDelet.TabIndex = 38;
@@ -154,10 +155,11 @@
             // 
             // lblDescricao
             // 
-            this.lblDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescricao.Location = new System.Drawing.Point(3, 21);
+            this.lblDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescricao.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.lblDescricao.Location = new System.Drawing.Point(3, 25);
             this.lblDescricao.Name = "lblDescricao";
-            this.lblDescricao.Size = new System.Drawing.Size(442, 57);
+            this.lblDescricao.Size = new System.Drawing.Size(509, 53);
             this.lblDescricao.TabIndex = 43;
             // 
             // mySqlCommandBuilder1
@@ -170,12 +172,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
+            this.label1.ForeColor = System.Drawing.Color.SteelBlue;
             this.label1.Location = new System.Drawing.Point(3, 1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 20);
+            this.label1.Size = new System.Drawing.Size(84, 20);
             this.label1.TabIndex = 44;
-            this.label1.Text = "Descrição Completa:";
+            this.label1.Text = "Descrição:";
             // 
             // panel3
             // 
@@ -183,7 +185,7 @@
             this.panel3.Controls.Add(this.label1);
             this.panel3.Location = new System.Drawing.Point(69, 152);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(454, 83);
+            this.panel3.Size = new System.Drawing.Size(531, 83);
             this.panel3.TabIndex = 45;
             // 
             // btnHelp
@@ -192,12 +194,24 @@
             this.btnHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHelp.ForeColor = System.Drawing.Color.White;
-            this.btnHelp.Location = new System.Drawing.Point(689, 20);
+            this.btnHelp.Location = new System.Drawing.Point(534, 21);
             this.btnHelp.Name = "btnHelp";
-            this.btnHelp.Size = new System.Drawing.Size(40, 32);
+            this.btnHelp.Size = new System.Drawing.Size(25, 23);
             this.btnHelp.TabIndex = 46;
             this.btnHelp.UseVisualStyleBackColor = true;
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label2.Location = new System.Drawing.Point(559, 23);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(179, 45);
+            this.label2.TabIndex = 47;
+            this.label2.Text = "Selecione a primeira fileira da \r\ntabela para ver detalhes, aperte\r\n no botão inf" +
+    "o\r\n";
             // 
             // FrmSelecionarItem
             // 
@@ -206,6 +220,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(805, 492);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.panel3);
@@ -246,5 +261,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnHelp;
+        private System.Windows.Forms.Label label2;
     }
 }

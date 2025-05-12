@@ -131,7 +131,7 @@ namespace achados_e_perdidos_senac.CadastroItens
                 "🔍 *Como usar esta tela:*\n\n" +
                 "• Digite uma palavra-chave na caixa de pesquisa para localizar o item desejado.\n" +
                 "• Para *deletar um item*, selecione-o na lista e clique no ícone da lixeira 🗑️.\n" +
-                "Caso tenha dúvidas, entre em contato com o suporte.",
+                "• Caso queira vizualizar todos os itens, clique na tecla ENTER no teclado com o campo de pesquisa vasio.\n",
                 "Ajuda",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information

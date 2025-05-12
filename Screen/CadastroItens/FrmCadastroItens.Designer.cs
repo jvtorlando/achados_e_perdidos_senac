@@ -308,6 +308,7 @@
             this.ClientSize = new System.Drawing.Size(805, 526);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FrmCadastroItens";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Achados e Perdidos - Senac Lapa Tito";
