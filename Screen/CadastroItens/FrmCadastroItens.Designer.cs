@@ -37,16 +37,16 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtDescricao = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnSubirArquivo = new achados_e_perdidos_senac.Screen.Login.roundButton();
             this.label3 = new System.Windows.Forms.Label();
             this.SelectAndar = new System.Windows.Forms.ComboBox();
             this.dateTimePickerDataCadastro = new System.Windows.Forms.DateTimePicker();
             this.SelectCategoria = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnSalvarItem = new achados_e_perdidos_senac.Screen.Login.roundButton();
             this.pictureBoxFoto = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnSubirArquivo = new achados_e_perdidos_senac.Screen.Login.roundButton();
+            this.btnSalvarItem = new achados_e_perdidos_senac.Screen.Login.roundButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -154,25 +154,6 @@
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
             // 
-            // btnSubirArquivo
-            // 
-            this.btnSubirArquivo.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btnSubirArquivo.ClickColor = System.Drawing.Color.Transparent;
-            this.btnSubirArquivo.CornerRadius = 10;
-            this.btnSubirArquivo.DefaultColor = System.Drawing.SystemColors.ControlLight;
-            this.btnSubirArquivo.FlatAppearance.BorderSize = 0;
-            this.btnSubirArquivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubirArquivo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnSubirArquivo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(135)))));
-            this.btnSubirArquivo.HoverColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btnSubirArquivo.Location = new System.Drawing.Point(87, 400);
-            this.btnSubirArquivo.Name = "btnSubirArquivo";
-            this.btnSubirArquivo.Size = new System.Drawing.Size(147, 39);
-            this.btnSubirArquivo.TabIndex = 12;
-            this.btnSubirArquivo.Text = "Subir Arquivo";
-            this.btnSubirArquivo.UseVisualStyleBackColor = false;
-            this.btnSubirArquivo.Click += new System.EventHandler(this.btnSubirArquivo_Click);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -191,6 +172,7 @@
             this.SelectAndar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.SelectAndar.Items.AddRange(new object[] {
             "SS",
+            "T",
             "1",
             "2",
             "3",
@@ -259,25 +241,6 @@
             this.label1.TabIndex = 31;
             this.label1.Text = "A imagem do ítem aparecerá aqui";
             // 
-            // btnSalvarItem
-            // 
-            this.btnSalvarItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
-            this.btnSalvarItem.ClickColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(47)))), ((int)(((byte)(95)))));
-            this.btnSalvarItem.CornerRadius = 10;
-            this.btnSalvarItem.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(135)))));
-            this.btnSalvarItem.FlatAppearance.BorderSize = 0;
-            this.btnSalvarItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalvarItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnSalvarItem.ForeColor = System.Drawing.Color.White;
-            this.btnSalvarItem.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(115)))));
-            this.btnSalvarItem.Location = new System.Drawing.Point(453, 400);
-            this.btnSalvarItem.Name = "btnSalvarItem";
-            this.btnSalvarItem.Size = new System.Drawing.Size(147, 39);
-            this.btnSalvarItem.TabIndex = 13;
-            this.btnSalvarItem.Text = "Salvar Item";
-            this.btnSalvarItem.UseVisualStyleBackColor = false;
-            this.btnSalvarItem.Click += new System.EventHandler(this.btnSalvarItem_Click);
-            // 
             // pictureBoxFoto
             // 
             this.pictureBoxFoto.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -300,6 +263,44 @@
             this.pictureBox1.Size = new System.Drawing.Size(705, 471);
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
+            // 
+            // btnSubirArquivo
+            // 
+            this.btnSubirArquivo.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnSubirArquivo.ClickColor = System.Drawing.Color.Transparent;
+            this.btnSubirArquivo.CornerRadius = 10;
+            this.btnSubirArquivo.DefaultColor = System.Drawing.SystemColors.ControlLight;
+            this.btnSubirArquivo.FlatAppearance.BorderSize = 0;
+            this.btnSubirArquivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubirArquivo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnSubirArquivo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(135)))));
+            this.btnSubirArquivo.HoverColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnSubirArquivo.Location = new System.Drawing.Point(87, 400);
+            this.btnSubirArquivo.Name = "btnSubirArquivo";
+            this.btnSubirArquivo.Size = new System.Drawing.Size(147, 39);
+            this.btnSubirArquivo.TabIndex = 12;
+            this.btnSubirArquivo.Text = "Subir Arquivo";
+            this.btnSubirArquivo.UseVisualStyleBackColor = false;
+            this.btnSubirArquivo.Click += new System.EventHandler(this.btnSubirArquivo_Click);
+            // 
+            // btnSalvarItem
+            // 
+            this.btnSalvarItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
+            this.btnSalvarItem.ClickColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(47)))), ((int)(((byte)(95)))));
+            this.btnSalvarItem.CornerRadius = 10;
+            this.btnSalvarItem.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(135)))));
+            this.btnSalvarItem.FlatAppearance.BorderSize = 0;
+            this.btnSalvarItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalvarItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnSalvarItem.ForeColor = System.Drawing.Color.White;
+            this.btnSalvarItem.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(115)))));
+            this.btnSalvarItem.Location = new System.Drawing.Point(453, 400);
+            this.btnSalvarItem.Name = "btnSalvarItem";
+            this.btnSalvarItem.Size = new System.Drawing.Size(147, 39);
+            this.btnSalvarItem.TabIndex = 13;
+            this.btnSalvarItem.Text = "Salvar Item";
+            this.btnSalvarItem.UseVisualStyleBackColor = false;
+            this.btnSalvarItem.Click += new System.EventHandler(this.btnSalvarItem_Click);
             // 
             // FrmCadastroItens
             // 
