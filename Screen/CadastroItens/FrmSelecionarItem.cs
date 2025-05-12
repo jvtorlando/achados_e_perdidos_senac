@@ -128,5 +128,19 @@ namespace achados_e_perdidos_senac.CadastroItens
         {
 
         }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+             "🔍 *Como usar esta tela:*\n\n" +
+        "• Digite uma palavra-chave na caixa de pesquisa para localizar o item desejado.\n" +
+        "• Para **deletar um item**, selecione-o na lista e clique no ícone da lixeira 🗑️.\n" +
+        "• Para **editar um item**, clique no ícone de lápis ✏️ ao lado.\n\n" +
+        "Caso tenha dúvidas, entre em contato com o suporte.",
+        "Ajuda",
+        MessageBoxButtons.OK,
+        MessageBoxIcon.Information
+        );
+        }
     }
 }

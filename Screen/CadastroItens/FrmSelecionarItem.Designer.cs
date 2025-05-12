@@ -41,6 +41,7 @@
             this.mySqlCommandBuilder1 = new MySqlConnector.MySqlCommandBuilder();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnHelp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItens)).BeginInit();
             this.panel2.SuspendLayout();
@@ -104,7 +105,7 @@
             this.btnDelet.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnDelet.ForeColor = System.Drawing.Color.White;
             this.btnDelet.HoverColor = System.Drawing.Color.Transparent;
-            this.btnDelet.Location = new System.Drawing.Point(598, 183);
+            this.btnDelet.Location = new System.Drawing.Point(709, 396);
             this.btnDelet.Name = "btnDelet";
             this.btnDelet.Size = new System.Drawing.Size(44, 52);
             this.btnDelet.TabIndex = 38;
@@ -186,6 +187,20 @@
             this.panel3.Size = new System.Drawing.Size(458, 108);
             this.panel3.TabIndex = 45;
             // 
+            // btnHelp
+            // 
+            this.btnHelp.BackColor = System.Drawing.Color.White;
+            this.btnHelp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnHelp.BackgroundImage")));
+            this.btnHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHelp.ForeColor = System.Drawing.Color.White;
+            this.btnHelp.Location = new System.Drawing.Point(709, 24);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(37, 35);
+            this.btnHelp.TabIndex = 46;
+            this.btnHelp.UseVisualStyleBackColor = false;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            // 
             // FrmSelecionarItem
             // 
             this.AcceptButton = this.btnPesquisar;
@@ -193,6 +208,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(805, 492);
+            this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.btnDelet);
@@ -231,5 +247,6 @@
         private MySqlConnector.MySqlCommandBuilder mySqlCommandBuilder1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button btnHelp;
     }
 }
