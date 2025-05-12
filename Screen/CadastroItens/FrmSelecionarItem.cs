@@ -103,9 +103,25 @@ namespace achados_e_perdidos_senac.CadastroItens
             {
                 //ocultar ou mostrar tabela id_itens (isso deu dor de cabeça de mais!!!)
                 dataGridViewItens.Columns["id_item"].Visible = true;
-                dataGridViewItens.Columns["imagem_url"].Visible = false;
+                dataGridViewItens.Columns["imagem_url"].Visible = true;
             }
 
+        }
+
+        private void pictureBoxMonstarDetalhes_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //Mostrar Detalhes (Descrição e Foto do item)
+        private void dataGridViewItens_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dataGridViewItens.SelectedRows.Count > 0)
+            {
+                var linha = dataGridViewItens.SelectedRows[0];
+                lblDescricao.Text = linha.Cells["descricao"].Value.ToString();
+                pictureBox1.ImageLocation = linha.Cells["imagem_url"].Value.ToString();
+            }
         }
     }
 }
