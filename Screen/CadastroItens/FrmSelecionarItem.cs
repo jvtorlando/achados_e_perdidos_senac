@@ -104,7 +104,7 @@ namespace achados_e_perdidos_senac.CadastroItens
             dataGridViewItens.DataSource = listaItens;
             if (dataGridViewItens.Columns.Contains("id_item"))
             {
-                dataGridViewItens.Columns["id_item"].Visible = false;
+                dataGridViewItens.Columns["id_item"].Visible = true;
                 dataGridViewItens.Columns["imagem_url"].Visible = false;
             }
 

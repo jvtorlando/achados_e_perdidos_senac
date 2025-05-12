@@ -181,6 +181,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Screen\CadastroItens\FrmSelecionarItem.resx">
       <DependentUpon>FrmSelecionarItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Screen\Home\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
