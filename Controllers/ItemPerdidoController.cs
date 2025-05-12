@@ -31,7 +31,7 @@ namespace achados_e_perdidos_senac.Controllers
 
             }
 
-            MessageBox.Show("Não foio possível cadastrar o item. Tente novamente!");
+            MessageBox.Show("Não foi possível cadastrar o item. Tente novamente!");
 
 
             return false;
@@ -52,5 +52,6 @@ namespace achados_e_perdidos_senac.Controllers
 
 
         }
+
     }
 }
