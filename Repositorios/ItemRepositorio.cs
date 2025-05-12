@@ -73,7 +73,7 @@ namespace achados_e_perdidos_senac.Repositorios
 
                 while (resultadoBanco.Read())
                 {
-                    MessageBox.Show(resultadoBanco["descricao"].ToString());
+                    //MessageBox.Show(resultadoBanco["descricao"].ToString());
 
                     ItemPerdido itemPerdido = new ItemPerdido();
                     itemPerdido = ItemPerdido.ItemFromDataReader(resultadoBanco);
