@@ -13,6 +13,8 @@ namespace achados_e_perdidos_senac.Model
         public int id_item { get; set; }
         public int id_usuario { get; set; }
         public DateTime data_devolucao { get; set; }
+        public int id_historico { get; set; }
+        public string usuario_responsavel { get; set; }
 
         public static HistoricoDevolucao HistoricoFromDataReader(MySqlDataReader reader)
         {
@@ -21,7 +23,9 @@ namespace achados_e_perdidos_senac.Model
                 id_devolucao = Convert.ToInt32(reader["id_devolucao"].ToString()),
                 id_item = Convert.ToInt32(reader["id_item"].ToString()),
                 id_usuario = Convert.ToInt32(reader["id_usuario"].ToString()),
-                data_devolucao = Convert.ToDateTime(reader["data_devolucao"].ToString())
+                data_devolucao = Convert.ToDateTime(reader["data_devolucao"].ToString()),
+                usuario_responsavel = (reader["usuario_responsavel"].ToString())
+                
             };
         }
     }

@@ -19,6 +19,10 @@ namespace achados_e_perdidos_senac.Controllers
             this.itemRepositorio = itemRepositorio;
         }
 
+        public ItemPerdidoController()
+        {
+        }
+
         public bool InserirItemPerdido(ItemPerdido itemPerdido) {
 
            bool resultadoInsercao =  itemRepositorio.InserirItem(itemPerdido);
@@ -58,6 +62,14 @@ namespace achados_e_perdidos_senac.Controllers
             return itemRepositorio.Excluir(idItem);
         }
 
+        internal bool AtualizarStatusItem(int idItem, string v)
+        {
+            throw new NotImplementedException();
+        }
 
+        internal object BuscarTodosItens()
+        {
+            return itemRepositorio.getAllItens();
+        }
     }
 }
