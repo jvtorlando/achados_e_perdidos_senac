@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCadastroItens));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.SelectStatus = new System.Windows.Forms.ComboBox();
             this.txtNomeItem = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -46,7 +47,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSubirArquivo = new achados_e_perdidos_senac.Screen.Login.roundButton();
             this.btnSalvarItem = new achados_e_perdidos_senac.Screen.Login.roundButton();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -87,6 +87,17 @@
             this.panel2.Size = new System.Drawing.Size(769, 477);
             this.panel2.TabIndex = 16;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
+            this.label5.Location = new System.Drawing.Point(358, 107);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(111, 20);
+            this.label5.TabIndex = 38;
+            this.label5.Text = "Nome do ítem:";
+            // 
             // SelectStatus
             // 
             this.SelectStatus.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -106,9 +117,10 @@
             // 
             // txtNomeItem
             // 
+            this.txtNomeItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomeItem.Location = new System.Drawing.Point(359, 128);
             this.txtNomeItem.Name = "txtNomeItem";
-            this.txtNomeItem.Size = new System.Drawing.Size(330, 20);
+            this.txtNomeItem.Size = new System.Drawing.Size(330, 29);
             this.txtNomeItem.TabIndex = 35;
             // 
             // panel3
@@ -280,24 +292,13 @@
             this.btnSalvarItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnSalvarItem.ForeColor = System.Drawing.Color.White;
             this.btnSalvarItem.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(115)))));
-            this.btnSalvarItem.Location = new System.Drawing.Point(431, 400);
+            this.btnSalvarItem.Location = new System.Drawing.Point(450, 400);
             this.btnSalvarItem.Name = "btnSalvarItem";
             this.btnSalvarItem.Size = new System.Drawing.Size(147, 39);
             this.btnSalvarItem.TabIndex = 13;
             this.btnSalvarItem.Text = "Salvar Item";
             this.btnSalvarItem.UseVisualStyleBackColor = false;
             this.btnSalvarItem.Click += new System.EventHandler(this.btnSalvarItem_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
-            this.label5.Location = new System.Drawing.Point(358, 107);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(111, 20);
-            this.label5.TabIndex = 38;
-            this.label5.Text = "Nome do ítem:";
             // 
             // FrmCadastroItens
             // 
