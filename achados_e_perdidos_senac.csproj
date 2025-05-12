@@ -113,12 +113,6 @@
     <Compile Include="Screen\CadastroItens\FrmCadastroItens.Designer.cs">
       <DependentUpon>FrmCadastroItens.cs</DependentUpon>
     </Compile>
-    <Compile Include="Screen\CadastroItens\EdicaoDeItens.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Screen\CadastroItens\EdicaoDeItens.Designer.cs">
-      <DependentUpon>EdicaoDeItens.cs</DependentUpon>
-    </Compile>
     <Compile Include="Screen\CadastroItens\FrmSelecionarItem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,9 +169,6 @@
     <Compile Include="Services\DatabaseService.cs" />
     <EmbeddedResource Include="Screen\CadastroItens\FrmCadastroItens.resx">
       <DependentUpon>FrmCadastroItens.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Screen\CadastroItens\EdicaoDeItens.resx">
-      <DependentUpon>EdicaoDeItens.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screen\CadastroItens\FrmSelecionarItem.resx">
       <DependentUpon>FrmSelecionarItem.cs</DependentUpon>

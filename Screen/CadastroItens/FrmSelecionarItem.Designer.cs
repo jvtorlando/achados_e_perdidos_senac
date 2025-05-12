@@ -30,12 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSelecionarItem));
             this.txtPesquisa = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnDelet = new achados_e_perdidos_senac.Screen.Login.roundButton();
-            this.btnEdit = new achados_e_perdidos_senac.Screen.Login.roundButton();
             this.btnPesquisar = new achados_e_perdidos_senac.Screen.Login.roundButton();
             this.dataGridViewItens = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -43,7 +41,7 @@
             this.mySqlCommandBuilder1 = new MySqlConnector.MySqlCommandBuilder();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnAtualizar = new System.Windows.Forms.Button();
+            this.btnHelp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItens)).BeginInit();
             this.panel2.SuspendLayout();
@@ -52,23 +50,12 @@
             // 
             // txtPesquisa
             // 
-            this.txtPesquisa.Location = new System.Drawing.Point(65, 181);
+            this.txtPesquisa.Location = new System.Drawing.Point(234, 86);
             this.txtPesquisa.Multiline = true;
             this.txtPesquisa.Name = "txtPesquisa";
-            this.txtPesquisa.Size = new System.Drawing.Size(286, 26);
+            this.txtPesquisa.Size = new System.Drawing.Size(440, 26);
             this.txtPesquisa.TabIndex = 0;
             this.txtPesquisa.TextChanged += new System.EventHandler(this.txtPesquisa_TextChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
-            this.label2.Location = new System.Drawing.Point(455, 33);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(168, 28);
-            this.label2.TabIndex = 35;
-            this.label2.Text = "Pesquisar Ítem";
             // 
             // panel1
             // 
@@ -76,9 +63,9 @@
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel1.Location = new System.Drawing.Point(35, 34);
+            this.panel1.Location = new System.Drawing.Point(53, 34);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(171, 62);
+            this.panel1.Size = new System.Drawing.Size(171, 78);
             this.panel1.TabIndex = 33;
             // 
             // pictureBox1
@@ -97,7 +84,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
-            this.label3.Location = new System.Drawing.Point(58, 152);
+            this.label3.Location = new System.Drawing.Point(230, 59);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(138, 24);
             this.label3.TabIndex = 40;
@@ -117,33 +104,12 @@
             this.btnDelet.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnDelet.ForeColor = System.Drawing.Color.White;
             this.btnDelet.HoverColor = System.Drawing.Color.Transparent;
-            this.btnDelet.Location = new System.Drawing.Point(710, 267);
+            this.btnDelet.Location = new System.Drawing.Point(709, 397);
             this.btnDelet.Name = "btnDelet";
             this.btnDelet.Size = new System.Drawing.Size(44, 52);
             this.btnDelet.TabIndex = 38;
             this.btnDelet.UseVisualStyleBackColor = false;
             this.btnDelet.Click += new System.EventHandler(this.btnDelet_Click);
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.BackColor = System.Drawing.Color.Transparent;
-            this.btnEdit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEdit.BackgroundImage")));
-            this.btnEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnEdit.ClickColor = System.Drawing.Color.Transparent;
-            this.btnEdit.CornerRadius = 10;
-            this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEdit.DefaultColor = System.Drawing.Color.Transparent;
-            this.btnEdit.FlatAppearance.BorderSize = 0;
-            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnEdit.HoverColor = System.Drawing.Color.Transparent;
-            this.btnEdit.Location = new System.Drawing.Point(701, 205);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(42, 30);
-            this.btnEdit.TabIndex = 37;
-            this.btnEdit.UseVisualStyleBackColor = false;
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnPesquisar
             // 
@@ -159,9 +125,9 @@
             this.btnPesquisar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnPesquisar.ForeColor = System.Drawing.Color.White;
             this.btnPesquisar.HoverColor = System.Drawing.Color.Transparent;
-            this.btnPesquisar.Location = new System.Drawing.Point(362, 179);
+            this.btnPesquisar.Location = new System.Drawing.Point(683, 80);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(42, 30);
+            this.btnPesquisar.Size = new System.Drawing.Size(55, 37);
             this.btnPesquisar.TabIndex = 41;
             this.btnPesquisar.UseVisualStyleBackColor = false;
             this.btnPesquisar.Click += new System.EventHandler(this.roundButton1_Click);
@@ -188,10 +154,10 @@
             // 
             // lblDescricao
             // 
-            this.lblDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescricao.Location = new System.Drawing.Point(122, 2);
+            this.lblDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescricao.Location = new System.Drawing.Point(3, 21);
             this.lblDescricao.Name = "lblDescricao";
-            this.lblDescricao.Size = new System.Drawing.Size(157, 62);
+            this.lblDescricao.Size = new System.Drawing.Size(442, 57);
             this.lblDescricao.TabIndex = 43;
             // 
             // mySqlCommandBuilder1
@@ -203,11 +169,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
             this.label1.Location = new System.Drawing.Point(3, 1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 15);
+            this.label1.Size = new System.Drawing.Size(156, 20);
             this.label1.TabIndex = 44;
             this.label1.Text = "Descrição Completa:";
             // 
@@ -215,25 +181,23 @@
             // 
             this.panel3.Controls.Add(this.lblDescricao);
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(399, 152);
+            this.panel3.Location = new System.Drawing.Point(69, 152);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(281, 83);
+            this.panel3.Size = new System.Drawing.Size(454, 83);
             this.panel3.TabIndex = 45;
             // 
-            // btnAtualizar
+            // btnHelp
             // 
-            this.btnAtualizar.BackColor = System.Drawing.Color.White;
-            this.btnAtualizar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAtualizar.BackgroundImage")));
-            this.btnAtualizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAtualizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAtualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAtualizar.ForeColor = System.Drawing.Color.White;
-            this.btnAtualizar.Location = new System.Drawing.Point(581, 113);
-            this.btnAtualizar.Name = "btnAtualizar";
-            this.btnAtualizar.Size = new System.Drawing.Size(57, 33);
-            this.btnAtualizar.TabIndex = 46;
-            this.btnAtualizar.UseVisualStyleBackColor = false;
-            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
+            this.btnHelp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnHelp.BackgroundImage")));
+            this.btnHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHelp.ForeColor = System.Drawing.Color.White;
+            this.btnHelp.Location = new System.Drawing.Point(689, 20);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(40, 32);
+            this.btnHelp.TabIndex = 46;
+            this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // FrmSelecionarItem
             // 
@@ -242,15 +206,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(805, 492);
-            this.Controls.Add(this.btnAtualizar);
+            this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.btnDelet);
-            this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.txtPesquisa);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -272,10 +234,8 @@
         #endregion
 
         private System.Windows.Forms.TextBox txtPesquisa;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Screen.Login.roundButton btnEdit;
         private Screen.Login.roundButton btnDelet;
         private System.Windows.Forms.Label label3;
         private Screen.Login.roundButton btnPesquisar;
@@ -285,6 +245,6 @@
         private MySqlConnector.MySqlCommandBuilder mySqlCommandBuilder1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button btnAtualizar;
+        private System.Windows.Forms.Button btnHelp;
     }
 }
