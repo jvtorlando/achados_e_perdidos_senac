@@ -145,12 +145,6 @@
     <Compile Include="Screen\Login\roundButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Screen\Retirada de item\FrmRetiradaDeItens.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Screen\Retirada de item\FrmRetiradaDeItens.Designer.cs">
-      <DependentUpon>FrmRetiradaDeItens.cs</DependentUpon>
-    </Compile>
     <Compile Include="Screen\Splash\SplashScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,9 +186,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Screen\Retirada de item\FrmRetiradaDeItens.resx">
-      <DependentUpon>FrmRetiradaDeItens.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Screen\Splash\SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
