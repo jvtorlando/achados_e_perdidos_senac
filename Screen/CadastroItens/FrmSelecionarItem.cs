@@ -61,6 +61,36 @@ namespace achados_e_perdidos_senac.CadastroItens
 
         private void btnDelet_Click(object sender, EventArgs e)
         {
+            if (dataGridViewItens.SelectedRows.Count > 0)
+            {
+                int idItem = Convert.ToInt32(dataGridViewItens.SelectedRows[0].Cells["id_item"].Value);
+
+                DialogResult confirmacao = MessageBox.Show(
+                    "Tem certeza que deseja excluir este item?",
+                    "Confirmar exclusão",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning
+                );
+
+                if (confirmacao == DialogResult.Yes)
+                {
+                    bool sucesso = itemPerdidoController.DeletarItem(idItem);
+
+                    if (sucesso)
+                    {
+                        MessageBox.Show("Item excluído com sucesso!");
+                        roundButton1_Click(null, null); // atualiza a pesquisa
+                    }
+                    else
+                    {
+                        MessageBox.Show("Erro ao excluir o item.");
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Selecione um item para excluir.");
+            }
 
         }
 
@@ -71,6 +101,7 @@ namespace achados_e_perdidos_senac.CadastroItens
             dataGridViewItens.DataSource = listaItens;
             if (dataGridViewItens.Columns.Contains("id_item"))
             {
+                //ocultar ou mostrar tabela id_itens (isso deu dor de cabeça de mais!!!)
                 dataGridViewItens.Columns["id_item"].Visible = true;
                 dataGridViewItens.Columns["imagem_url"].Visible = false;
             }

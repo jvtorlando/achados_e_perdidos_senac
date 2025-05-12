@@ -53,5 +53,11 @@ namespace achados_e_perdidos_senac.Controllers
 
         }
 
+        public bool DeletarItem(int idItem)
+        {
+            return itemRepositorio.Excluir(idItem);
+        }
+
+
     }
 }

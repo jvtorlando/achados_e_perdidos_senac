@@ -17,6 +17,7 @@ namespace achados_e_perdidos_senac.Repositorios
         {
             this.databaseService = databaseService;
         }
+
             
         public List<ItemPerdido> getAllItens()
         {
@@ -128,6 +129,21 @@ namespace achados_e_perdidos_senac.Repositorios
                 throw new Exception("Erro ao registrar item perdido: " + ex.Message);
             }
         }
+
+        public bool Excluir(int idItem)
+        {
+            string query = "DELETE FROM item_perdido WHERE id_item = @id";
+
+            using (var conexao = databaseService.AbrirConexao())
+            using (var comando = new MySqlCommand(query, conexao))
+            {
+                comando.Parameters.AddWithValue("@id", idItem);
+
+                int linhasAfetadas = comando.ExecuteNonQuery();
+                return linhasAfetadas > 0;
+            }
+        }
+
     }
 
 }

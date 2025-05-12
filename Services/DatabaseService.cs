@@ -108,5 +108,14 @@ namespace achados_e_perdidos_senac.Services
             Dispose(true);
             GC.SuppressFinalize(this);
         }
+
+        public MySqlConnection AbrirConexao()
+        {
+            if (_connection.State != System.Data.ConnectionState.Open)
+                _connection.Open();
+
+            return _connection;
+        }
+
     }
 }
