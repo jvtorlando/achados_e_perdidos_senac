@@ -107,16 +107,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Screen\CadastroItens\FrmCadastroItens.cs">
+    <Compile Include="Screen\Cadastro Itens\FrmCadastroItens.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Screen\CadastroItens\FrmCadastroItens.Designer.cs">
+    <Compile Include="Screen\Cadastro Itens\FrmCadastroItens.Designer.cs">
       <DependentUpon>FrmCadastroItens.cs</DependentUpon>
     </Compile>
-    <Compile Include="Screen\CadastroItens\FrmSelecionarItem.cs">
+    <Compile Include="Screen\Selecionar Itens\FrmSelecionarItem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Screen\CadastroItens\FrmSelecionarItem.Designer.cs">
+    <Compile Include="Screen\Selecionar Itens\FrmSelecionarItem.Designer.cs">
       <DependentUpon>FrmSelecionarItem.cs</DependentUpon>
     </Compile>
     <Compile Include="Controllers\ItemPerdidoController.cs" />
@@ -151,20 +151,26 @@
     <Compile Include="Screen\Splash\SplashScreen.Designer.cs">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Screen\Cadastro de usuario\telaCadastroUsuario.cs">
+    <Compile Include="Screen\Cadastro Usuario\telaCadastroUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Screen\Cadastro de usuario\telaCadastroUsuario.Designer.cs">
+    <Compile Include="Screen\Cadastro Usuario\telaCadastroUsuario.Designer.cs">
       <DependentUpon>telaCadastroUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screen\Status Itens\FrmStatusItens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen\Status Itens\FrmStatusItens.Designer.cs">
+      <DependentUpon>FrmStatusItens.cs</DependentUpon>
     </Compile>
     <Compile Include="Services\AuthService.cs" />
     <Compile Include="Services\CloseEntireApplication.cs" />
     <Compile Include="Services\Criptografia.cs" />
     <Compile Include="Services\DatabaseService.cs" />
-    <EmbeddedResource Include="Screen\CadastroItens\FrmCadastroItens.resx">
+    <EmbeddedResource Include="Screen\Cadastro Itens\FrmCadastroItens.resx">
       <DependentUpon>FrmCadastroItens.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Screen\CadastroItens\FrmSelecionarItem.resx">
+    <EmbeddedResource Include="Screen\Selecionar Itens\FrmSelecionarItem.resx">
       <DependentUpon>FrmSelecionarItem.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -189,8 +195,11 @@
     <EmbeddedResource Include="Screen\Splash\SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Screen\Cadastro de usuario\telaCadastroUsuario.resx">
+    <EmbeddedResource Include="Screen\Cadastro Usuario\telaCadastroUsuario.resx">
       <DependentUpon>telaCadastroUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screen\Status Itens\FrmStatusItens.resx">
+      <DependentUpon>FrmStatusItens.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

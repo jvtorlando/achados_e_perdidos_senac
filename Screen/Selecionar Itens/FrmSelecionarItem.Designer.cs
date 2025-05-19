@@ -43,6 +43,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnHelp = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItens)).BeginInit();
             this.panel2.SuspendLayout();
@@ -103,9 +104,9 @@
             this.btnDelet.FlatAppearance.BorderSize = 0;
             this.btnDelet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelet.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnDelet.ForeColor = System.Drawing.Color.White;
+            this.btnDelet.ForeColor = System.Drawing.Color.Tomato;
             this.btnDelet.HoverColor = System.Drawing.Color.Transparent;
-            this.btnDelet.Location = new System.Drawing.Point(711, 239);
+            this.btnDelet.Location = new System.Drawing.Point(713, 396);
             this.btnDelet.Name = "btnDelet";
             this.btnDelet.Size = new System.Drawing.Size(44, 52);
             this.btnDelet.TabIndex = 38;
@@ -213,6 +214,19 @@
             this.label2.Text = "Selecione a primeira fileira da \r\ntabela para ver detalhes, aperte\r\n no botão inf" +
     "o\r\n";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(713, 241);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(44, 55);
+            this.button1.TabIndex = 48;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // FrmSelecionarItem
             // 
             this.AcceptButton = this.btnPesquisar;
@@ -220,6 +234,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(805, 492);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.btnPesquisar);
@@ -262,5 +277,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnHelp;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
     }
 }
