@@ -58,7 +58,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.txtCadastroSenha);
             this.panel2.Controls.Add(this.pictureBox4);
@@ -75,7 +75,7 @@
             this.panel2.Controls.Add(this.pictureBox7);
             this.panel2.Location = new System.Drawing.Point(166, 20);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(304, 389);
+            this.panel2.Size = new System.Drawing.Size(304, 380);
             this.panel2.TabIndex = 39;
             // 
             // label1
@@ -92,11 +92,11 @@
             // txtCadastroSenha
             // 
             this.txtCadastroSenha.AccessibleDescription = "";
-            this.txtCadastroSenha.BackColor = System.Drawing.Color.White;
+            this.txtCadastroSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(54)))), ((int)(((byte)(66)))));
             this.txtCadastroSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCadastroSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCadastroSenha.ForeColor = System.Drawing.Color.Gray;
-            this.txtCadastroSenha.Location = new System.Drawing.Point(22, 233);
+            this.txtCadastroSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.txtCadastroSenha.Location = new System.Drawing.Point(25, 229);
             this.txtCadastroSenha.Name = "txtCadastroSenha";
             this.txtCadastroSenha.Size = new System.Drawing.Size(217, 17);
             this.txtCadastroSenha.TabIndex = 32;
@@ -120,11 +120,11 @@
             // txtCadastroCpf
             // 
             this.txtCadastroCpf.AccessibleDescription = "";
-            this.txtCadastroCpf.BackColor = System.Drawing.Color.White;
+            this.txtCadastroCpf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(54)))), ((int)(((byte)(66)))));
             this.txtCadastroCpf.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCadastroCpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCadastroCpf.ForeColor = System.Drawing.Color.Gray;
-            this.txtCadastroCpf.Location = new System.Drawing.Point(23, 278);
+            this.txtCadastroCpf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.txtCadastroCpf.Location = new System.Drawing.Point(25, 273);
             this.txtCadastroCpf.Name = "txtCadastroCpf";
             this.txtCadastroCpf.Size = new System.Drawing.Size(217, 17);
             this.txtCadastroCpf.TabIndex = 23;
@@ -135,11 +135,11 @@
             // txtCadastroTelefone
             // 
             this.txtCadastroTelefone.AccessibleDescription = "";
-            this.txtCadastroTelefone.BackColor = System.Drawing.Color.White;
+            this.txtCadastroTelefone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(54)))), ((int)(((byte)(66)))));
             this.txtCadastroTelefone.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCadastroTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCadastroTelefone.ForeColor = System.Drawing.Color.Gray;
-            this.txtCadastroTelefone.Location = new System.Drawing.Point(25, 188);
+            this.txtCadastroTelefone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.txtCadastroTelefone.Location = new System.Drawing.Point(25, 185);
             this.txtCadastroTelefone.Name = "txtCadastroTelefone";
             this.txtCadastroTelefone.Size = new System.Drawing.Size(217, 17);
             this.txtCadastroTelefone.TabIndex = 29;
@@ -159,11 +159,11 @@
             // 
             // txtCadastroNome
             // 
-            this.txtCadastroNome.BackColor = System.Drawing.Color.White;
+            this.txtCadastroNome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(54)))), ((int)(((byte)(66)))));
             this.txtCadastroNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCadastroNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCadastroNome.ForeColor = System.Drawing.Color.Gray;
-            this.txtCadastroNome.Location = new System.Drawing.Point(26, 96);
+            this.txtCadastroNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.txtCadastroNome.Location = new System.Drawing.Point(25, 93);
             this.txtCadastroNome.Name = "txtCadastroNome";
             this.txtCadastroNome.Size = new System.Drawing.Size(217, 17);
             this.txtCadastroNome.TabIndex = 19;
@@ -184,11 +184,11 @@
             // 
             // txtCadastroEmail
             // 
-            this.txtCadastroEmail.BackColor = System.Drawing.Color.White;
+            this.txtCadastroEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(54)))), ((int)(((byte)(66)))));
             this.txtCadastroEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCadastroEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCadastroEmail.ForeColor = System.Drawing.Color.Gray;
-            this.txtCadastroEmail.Location = new System.Drawing.Point(26, 145);
+            this.txtCadastroEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.txtCadastroEmail.Location = new System.Drawing.Point(25, 141);
             this.txtCadastroEmail.Name = "txtCadastroEmail";
             this.txtCadastroEmail.Size = new System.Drawing.Size(217, 17);
             this.txtCadastroEmail.TabIndex = 36;
@@ -203,8 +203,8 @@
             this.lblJaTemCadastro.BackColor = System.Drawing.Color.Transparent;
             this.lblJaTemCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJaTemCadastro.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblJaTemCadastro.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(141)))));
-            this.lblJaTemCadastro.Location = new System.Drawing.Point(56, 357);
+            this.lblJaTemCadastro.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
+            this.lblJaTemCadastro.Location = new System.Drawing.Point(64, 354);
             this.lblJaTemCadastro.Name = "lblJaTemCadastro";
             this.lblJaTemCadastro.Size = new System.Drawing.Size(183, 16);
             this.lblJaTemCadastro.TabIndex = 35;
@@ -222,10 +222,10 @@
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastrar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrar.ForeColor = System.Drawing.Color.White;
-            this.btnCadastrar.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(141)))));
-            this.btnCadastrar.Location = new System.Drawing.Point(71, 310);
+            this.btnCadastrar.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(115)))));
+            this.btnCadastrar.Location = new System.Drawing.Point(73, 316);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(168, 39);
+            this.btnCadastrar.Size = new System.Drawing.Size(168, 31);
             this.btnCadastrar.TabIndex = 0;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
@@ -273,7 +273,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.Location = new System.Drawing.Point(152, 12);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(333, 407);
@@ -284,8 +284,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(636, 424);
             this.Controls.Add(this.panel2);

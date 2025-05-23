@@ -31,7 +31,7 @@ namespace achados_e_perdidos_senac
             txtUsuario.ForeColor = Color.Gray;
             txtSenha.Text = "Digite sua senha";
             txtSenha.ForeColor = Color.Gray;
-            txtSenha.UseSystemPasswordChar = false; 
+            txtSenha.UseSystemPasswordChar = false;
 
             
             txtUsuario.Enter += RemovePlaceholderUsuario;

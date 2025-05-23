@@ -104,7 +104,7 @@
             resources.ApplyResources(this.txtSenha, "txtSenha");
             this.txtSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(54)))), ((int)(((byte)(66)))));
             this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSenha.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
             // 
@@ -113,7 +113,7 @@
             this.txtUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(54)))), ((int)(((byte)(66)))));
             this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.txtUsuario, "txtUsuario");
-            this.txtUsuario.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged_1);
             // 
