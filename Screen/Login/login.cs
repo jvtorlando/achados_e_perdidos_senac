@@ -245,6 +245,15 @@ namespace achados_e_perdidos_senac
             // Alterna entre mostrar e esconder a senha
             txtSenha.UseSystemPasswordChar = !txtSenha.UseSystemPasswordChar;
 
+            // Alterar ícone do botão
+            //if (txtSenha.UseSystemPasswordChar)
+            //{
+            //    btnHide.Image = Properties.Resources.olho_fechado;
+            //}
+            //else
+            //{
+            //    btnHide.Image = Properties.Resources.olho_aberto;
+            //}
         }
     }
 }
