@@ -157,6 +157,7 @@ namespace achados_e_perdidos_senac.Screen
             {
                 txtCadastroCpf.Text = "CPF";
                 txtCadastroCpf.ForeColor = Color.DarkGray;
+
             }
         }
     }

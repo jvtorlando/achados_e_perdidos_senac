@@ -53,19 +53,21 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.panel3.Controls.Add(this.panel1);
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(54)))), ((int)(((byte)(66)))));
             resources.ApplyResources(this.pictureBox3, "pictureBox3");
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(54)))), ((int)(((byte)(66)))));
             resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
@@ -73,7 +75,7 @@
             // txtSenha
             // 
             resources.ApplyResources(this.txtSenha, "txtSenha");
-            this.txtSenha.BackColor = System.Drawing.Color.White;
+            this.txtSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(54)))), ((int)(((byte)(66)))));
             this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSenha.ForeColor = System.Drawing.Color.DarkGray;
             this.txtSenha.Name = "txtSenha";
@@ -81,7 +83,7 @@
             // 
             // txtUsuario
             // 
-            this.txtUsuario.BackColor = System.Drawing.Color.White;
+            this.txtUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(54)))), ((int)(((byte)(66)))));
             this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.txtUsuario, "txtUsuario");
             this.txtUsuario.ForeColor = System.Drawing.Color.DarkGray;
@@ -91,11 +93,13 @@
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Name = "label1";
             // 
             // pictureBox6
             // 
+            this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             resources.ApplyResources(this.pictureBox6, "pictureBox6");
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.TabStop = false;
@@ -118,8 +122,8 @@
             // 
             this.lblCadastrarUsuario.ActiveLinkColor = System.Drawing.Color.Navy;
             resources.ApplyResources(this.lblCadastrarUsuario, "lblCadastrarUsuario");
-            this.lblCadastrarUsuario.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblCadastrarUsuario.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(141)))));
+            this.lblCadastrarUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.lblCadastrarUsuario.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
             this.lblCadastrarUsuario.Name = "lblCadastrarUsuario";
             this.lblCadastrarUsuario.TabStop = true;
             this.lblCadastrarUsuario.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblCadastrarUsuario_LinkClicked);
@@ -128,20 +132,20 @@
             // 
             this.linkLabelEsqueceuSenha.ActiveLinkColor = System.Drawing.Color.Navy;
             resources.ApplyResources(this.linkLabelEsqueceuSenha, "linkLabelEsqueceuSenha");
-            this.linkLabelEsqueceuSenha.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.linkLabelEsqueceuSenha.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(141)))));
+            this.linkLabelEsqueceuSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.linkLabelEsqueceuSenha.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
             this.linkLabelEsqueceuSenha.Name = "linkLabelEsqueceuSenha";
             this.linkLabelEsqueceuSenha.TabStop = true;
             this.linkLabelEsqueceuSenha.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelEsqueceuSenha_LinkClicked);
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(135)))));
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(77)))), ((int)(((byte)(143)))));
+            resources.ApplyResources(this.btnLogin, "btnLogin");
             this.btnLogin.ClickColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(47)))), ((int)(((byte)(95)))));
             this.btnLogin.CornerRadius = 10;
             this.btnLogin.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(135)))));
             this.btnLogin.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btnLogin, "btnLogin");
             this.btnLogin.ForeColor = System.Drawing.Color.White;
             this.btnLogin.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(58)))), ((int)(((byte)(115)))));
             this.btnLogin.Name = "btnLogin";

@@ -93,7 +93,7 @@ namespace achados_e_perdidos_senac
             if (txtUsuario.Text == "Digite seu nome de usuário")
             {
                 txtUsuario.Text = "";
-                txtUsuario.ForeColor = Color.Black;
+                txtUsuario.ForeColor = Color.FromArgb(191, 191, 191);
             }
         }
 
@@ -111,7 +111,7 @@ namespace achados_e_perdidos_senac
             if (txtSenha.Text == "Digite sua senha")
             {
                 txtSenha.Text = "";
-                txtSenha.ForeColor = Color.Black;
+                txtSenha.ForeColor = Color.FromArgb(191, 191, 191);
                 txtSenha.UseSystemPasswordChar = true;
             }
         }
