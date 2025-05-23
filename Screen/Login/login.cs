@@ -201,9 +201,10 @@ namespace achados_e_perdidos_senac
         {
 
         }
-
+        //Botão "Entrar" conectado com banco de dados
         private void btnLogin_Click_1(object sender, EventArgs e)
         {
+        //Conexão Banco de Dados
          Usuario usuario = _loginController.Login(txtUsuario.Text, txtSenha.Text);
 
             if (usuario != null)
@@ -221,7 +222,7 @@ namespace achados_e_perdidos_senac
         {
 
         }
-
+        //Link que manda para a tela de cadastro
         private void lblCadastrarUsuario_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             telaCadastroUsuario FrmTelaCadastro = new telaCadastroUsuario();
