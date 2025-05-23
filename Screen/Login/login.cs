@@ -239,5 +239,12 @@ namespace achados_e_perdidos_senac
         {
 
         }
+
+        private void btnHide_Click(object sender, EventArgs e)
+        {
+            // Alterna entre mostrar e esconder a senha
+            txtSenha.UseSystemPasswordChar = !txtSenha.UseSystemPasswordChar;
+
+        }
     }
 }
