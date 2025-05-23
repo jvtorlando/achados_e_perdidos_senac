@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblMostrarNomeUsuário = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnPesquisarItem = new achados_e_perdidos_senac.Screen.Login.roundButton();
             this.btnCadastrarItem = new achados_e_perdidos_senac.Screen.Login.roundButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblMostrarNomeUsuário = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -51,8 +51,16 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(805, 492);
+            this.panel1.Size = new System.Drawing.Size(636, 424);
             this.panel1.TabIndex = 0;
+            // 
+            // lblMostrarNomeUsuário
+            // 
+            this.lblMostrarNomeUsuário.AutoSize = true;
+            this.lblMostrarNomeUsuário.Location = new System.Drawing.Point(32, 33);
+            this.lblMostrarNomeUsuário.Name = "lblMostrarNomeUsuário";
+            this.lblMostrarNomeUsuário.Size = new System.Drawing.Size(0, 13);
+            this.lblMostrarNomeUsuário.TabIndex = 10;
             // 
             // panel2
             // 
@@ -62,7 +70,7 @@
             this.panel2.Controls.Add(this.btnPesquisarItem);
             this.panel2.Controls.Add(this.btnCadastrarItem);
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(210, 69);
+            this.panel2.Location = new System.Drawing.Point(126, 33);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(375, 358);
             this.panel2.TabIndex = 9;
@@ -72,7 +80,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(141)))));
-            this.label1.Location = new System.Drawing.Point(103, 162);
+            this.label1.Location = new System.Drawing.Point(103, 157);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(168, 25);
             this.label1.TabIndex = 7;
@@ -82,7 +90,7 @@
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(96, 64);
+            this.pictureBox2.Location = new System.Drawing.Point(96, 53);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(175, 84);
             this.pictureBox2.TabIndex = 6;
@@ -136,23 +144,16 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
-            // lblMostrarNomeUsuário
-            // 
-            this.lblMostrarNomeUsuário.AutoSize = true;
-            this.lblMostrarNomeUsuário.Location = new System.Drawing.Point(32, 33);
-            this.lblMostrarNomeUsuário.Name = "lblMostrarNomeUsuário";
-            this.lblMostrarNomeUsuário.Size = new System.Drawing.Size(0, 13);
-            this.lblMostrarNomeUsuário.TabIndex = 10;
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(805, 492);
+            this.ClientSize = new System.Drawing.Size(636, 424);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(821, 531);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(652, 463);
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Achados e Perdidos - Senac Lapa Tito";
