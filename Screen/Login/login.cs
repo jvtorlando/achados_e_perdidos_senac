@@ -20,7 +20,7 @@ namespace achados_e_perdidos_senac
 {
     public partial class login : Form
     {
-
+        //Tela de login com banco de dados workbench intergrado
         private LoginController _loginController;
         public login()
         {
@@ -159,7 +159,7 @@ namespace achados_e_perdidos_senac
 
 
         } 
-
+        // Message box na área de login
         private bool ValidarCampos()
         {
             bool isValid = true;
@@ -222,7 +222,7 @@ namespace achados_e_perdidos_senac
         {
 
         }
-        //Link que manda para a tela de cadastro
+        //Link que manda para a tela de cadastro, funcionamento simmples
         private void lblCadastrarUsuario_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             telaCadastroUsuario FrmTelaCadastro = new telaCadastroUsuario();
